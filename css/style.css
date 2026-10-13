@@ -136,7 +136,7 @@
 :root{
     --primary-color: #0D3B89; 
     --secondary-color: #FF003C;
-    --font-family: 'Barlow'; 
+    --font-family: "Barlow", sans-serif; 
     --background-color: #F5F5F0;
 }
 
@@ -175,7 +175,7 @@
     display: block;
     position: fixed;
     top: 50%;
-    left: 50%;
+    left: 75%;
     transform: translate(-50%, -50%);
     background-color: var(--background-color);
     padding: 30px;
@@ -187,14 +187,11 @@
 
  .textbox h2 {
     color: var(--primary-color);
-    font-family:;
+    font-family:var(--font-family);
  }
  
 .textbox h3 {
     font-weight: normal;
-<<<<<<< HEAD
     font-size: 24px;
 }
-=======
-}
->>>>>>> 065dc05ceb6eaaa6f6c52c4ac7d1cd7f5dc6163f
+
