@@ -119,3 +119,17 @@ const fisk = [
             superkraft:"#"
         }
     }];
+const parentButton = document.querySelector("#parent-button");
+const parentBox = document.querySelector(".parent-box");
+
+parentButton.addEventListener("click", function () {
+    textbox.style.display = "none";
+    parentBox.style.display = "block";
+});
+
+const childButton = document.querySelector("#child-button");
+
+childButton.addEventListener("click", function () {
+    parentBox.style.display = "none";
+    textbox.style.display = "block";
+});
