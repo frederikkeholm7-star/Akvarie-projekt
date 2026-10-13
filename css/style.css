@@ -205,8 +205,16 @@
     background-color: #d9d9d9;
     padding: 8px;
     border-radius: 10px;
-    border: none;
     width: 80px;
+    position: relative;
+}
+
+.info-button .sound-icon {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
 }
 
 #parent-button {
