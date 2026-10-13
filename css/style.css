@@ -4,16 +4,6 @@
   box-sizing: border-box;
 }
 
-#play-button {
-  background-color: white;
-  width: 320px;
-  height: 180px;
-  border-radius: 200px;
-  /*border: none;*/
-  font-size: 100px;
-  color: #ff003c;
-}
-
 .aquarium,
 .aquarium * {
   box-sizing: border-box;
@@ -141,4 +131,14 @@
   height: 512px;
   position: relative;
   overflow: visible;
+}
+
+#play-button {
+  background-color: white;
+  width: 320px;
+  height: 180px;
+  border-radius: 200px;
+  /*border: none;*/
+  font-size: 100px;
+  color: #ff003c;
 }
