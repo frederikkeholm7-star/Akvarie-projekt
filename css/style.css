@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#play-button {
+    background-color: white;
+    width: 320px;
+    height: 180px;
+    border-radius: 200px;
+    /*border: none;*/
+}
