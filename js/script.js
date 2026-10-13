@@ -12,15 +12,15 @@ const fisk = [
         id: "klovnfisk",
         sounds: {
             intro:"sound/nemo/nemo-intro.m4a",
-            alder:"#",
-            levested:"#",
-            spiser:"#",
-            vaegt:"#",
-            superkraft:"#"
+            alder:"nemo-alder.m4a",
+            levested:"nemo-levested.m4a",
+            spiser:"nemo-spiser.m4a",
+            vaegt:"nemo-vaegt.m4a",
+            superkraft:"nemo-superkraft.m4a"
         }
     },
     {
-        id: "#",
+        id: "Orangeplettet-kirurg",
         sounds: {
             intro:"#",
             alder:"#",
@@ -31,14 +31,14 @@ const fisk = [
         }
     },
     {
-        id: "#",
+        id: "Banggai-kardinalfisk",
         sounds: {
-            intro:"#",
-            alder:"#",
-            levested:"#",
-            spiser:"#",
-            vaegt:"#",
-            superkraft:"#"
+            intro:"banggai-kardinalfisk-intro-m4a",
+            alder:"baggai-alder.m4a",
+            levested:"banggai-levested.m4a",
+            spiser:"banggai-spiser.m4a",
+            vaegt:"banggai-vaegt.m4a",
+            superkraft:"banggai-superkraft.m4a"
         }
     },
 {
