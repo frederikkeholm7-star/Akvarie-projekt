@@ -1,7 +1,136 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.aquarium,
+.aquarium * {
+  box-sizing: border-box;
+}
+
+.aquarium {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 1024px;
+  position: relative;
+  overflow: hidden;
+}
+
+.background {
+  background: linear-gradient(
+    180deg,
+    rgba(50, 207, 224, 1) 0%,
+    rgba(23, 165, 205, 1) 23.999999463558197%,
+    rgba(49, 93, 148, 1) 62.00000047683716%,
+    rgba(41, 75, 116, 1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.background-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.light-rays {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1440px;
+  height: 507px;
+  position: relative;
+  overflow: visible;
+  mix-blend-mode: overlay;
+}
+
+.cliffs {
+  margin: -524.73px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+}
+
+.cliff-foreground {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  height: auto;
+  position: relative;
+  z-index: 2;
+  overflow: visible;
+}
+
+.cliff-background {
+  margin: 112px 0 0 -265.6px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+}
+
+.background-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+}
+
+.seabed {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1440px;
+  position: relative;
+}
+
+.seabed-vector {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 512px;
+  position: relative;
+  overflow: visible;
 }
 
 :root{
@@ -12,6 +141,14 @@
 }
 
 #play-button {
+  background-color: white;
+  width: 320px;
+  height: 180px;
+  border-radius: 200px;
+  /*border: none;*/
+  font-size: 100px;
+  color: #ff003c;
+}
     background-color: white;
     width: 320px;
     height: 180px;
@@ -55,5 +192,9 @@
  
 .textbox h3 {
     font-weight: normal;
+<<<<<<< HEAD
     font-size: 24px;
 }
+=======
+}
+>>>>>>> 065dc05ceb6eaaa6f6c52c4ac7d1cd7f5dc6163f
