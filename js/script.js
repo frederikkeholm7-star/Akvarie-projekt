@@ -1,19 +1,9 @@
 "use strict";
-const fisk = [
-    {
-        id:"klovn-fisk",
-        introsound:"sound/Nemo-intro.m4a",
-        
 
+const selectedFish = document.querySelector(".fisk");
+const textbox = document.querySelector(".textbox");
 
+selectedFish.addEventListener("click", function () {
+        textbox.style.display = "block";
+});
 
-    }
-
-
-
-
-
-
-
-
-]
