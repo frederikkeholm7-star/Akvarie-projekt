@@ -28,7 +28,7 @@ const fisk = [
             spiser:"#",
             vaegt:"#",
             superkraft:"#"
-        },
+        }
     },
     {
         id: "#",
@@ -39,8 +39,8 @@ const fisk = [
             spiser:"#",
             vaegt:"#",
             superkraft:"#"
-        },
-    }
+        }
+    },
 {
         id: "#",
         sounds: {
@@ -50,8 +50,8 @@ const fisk = [
             spiser:"#",
             vaegt:"#",
             superkraft:"#"
-        },
-    }
+        }
+    },
 {
         id: "#",
         sounds: {
@@ -61,8 +61,8 @@ const fisk = [
             spiser:"#",
             vaegt:"#",
             superkraft:"#"
-        },
-    }
+        }
+    },
 {
         id: "#",
         sounds: {
@@ -72,8 +72,8 @@ const fisk = [
             spiser:"#",
             vaegt:"#",
             superkraft:"#"
-        },
-    }
+        }
+    },
 {
         id: "#",
         sounds: {
@@ -83,8 +83,8 @@ const fisk = [
             spiser:"#",
             vaegt:"#",
             superkraft:"#"
-        },
-    }
+        }
+    },
 {
         id: "#",
         sounds: {
@@ -94,8 +94,8 @@ const fisk = [
             spiser:"#",
             vaegt:"#",
             superkraft:"#"
-        },
-    }
+        }
+    },
 {
         id: "#",
         sounds: {
@@ -105,8 +105,8 @@ const fisk = [
             spiser:"#",
             vaegt:"#",
             superkraft:"#"
-        },
-    }
+        }
+    },
 {
         id: "#",
         sounds: {
@@ -116,5 +116,5 @@ const fisk = [
             spiser:"#",
             vaegt:"#",
             superkraft:"#"
-        },
+        }
     }];
