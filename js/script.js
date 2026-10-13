@@ -133,3 +133,11 @@ childButton.addEventListener("click", function () {
     parentBox.style.display = "none";
     textbox.style.display = "block";
 });
+
+document.querySelector("#bobby").addEventListener("click", function () {
+    this.classList.add("swim-forward");
+
+    setTimeout(function () {
+        document.querySelector(".textbox").style.display = "block";
+    }, 1500);
+});

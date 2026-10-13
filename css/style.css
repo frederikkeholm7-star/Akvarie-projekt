@@ -235,6 +235,16 @@
     height: auto;
 }
 
+#bobby {
+    cursor: pointer;
+    transition: transform 1.5s ease-in-out;
+}
+
+#bobby.swim-forward {
+    transform: scale(2.5);
+    z-index: 20;
+}
+
 .parent-box {
     display: none;
     position: fixed;
