@@ -339,3 +339,20 @@
    49.9% {transform: translateX(-130vw) rotateY(0deg);}
    50% {transform: translateX(-130vw) rotateY(180deg)}
     100% {transform: translateX(0) rotateY(180deg)}}
+
+#Sortbundet-kirurg {
+  left: -190px; 
+  animation: linear;
+  animation-name: Sortbundet-kirurg;
+  animation-duration: 18s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  top: 60%;
+  animation-delay: 6s;
+}
+
+@keyframes Sortbundet-kirurg {
+   0% {transform: translateX(0) rotateY(0deg); }
+   49.9% {transform: translateX(130vw) rotateY(0deg);}
+   50% {transform: translateX(130vw) rotateY(180deg)}
+    100% {transform: translateX(0) rotateY(180deg)}}
