@@ -35,7 +35,7 @@ const fisk = [
     {
         id: "Banggai-kardinalfisk",
         sounds: {
-            intro:"sound/banggai-kardinalfisk/banggai-kardinalfisk-intro-m4a",
+            intro:"sound/banggai-kardinalfisk/banggai-kardinalfisk-intro.m4a",
             alder:"sound/banggai-kardinalfisk/baggai-alder.m4a",
             levested:"sound/banggai-kardinalfisk/banggai-levested.m4a",
             spiser:"sound/banggai-kardinalfisk/banggai-spiser.m4a",
@@ -177,10 +177,15 @@ function playSound(fiskId, lydType) {
 }
 
 
-// variabel til at afspille intro.sound når man klikker på fisken
-const raevefiskElement = document.querySelector("#raevefisk");
-// Lyt efter et klik på rævefisken
-raevefiskElement.addEventListener("click", function () {
-    // Afspil rævefiskens introlyd ved at kalde din funktion
-    playSound("raevefisk", "intro");
+// Vælg alle elementer med klassen .fisk
+const alleFisk = document.querySelectorAll(".fisk");
+
+alleFisk.forEach(fiskElement => {
+    fiskElement.addEventListener("click", function () {
+        // Hent id'et direkte fra det element der blev klikket på (f.eks. "raevefisk" eller "klovnfisk")
+        const fiskId = fiskElement.id;
+        
+        // Afspil introlyden for netop den fisk
+        playSound(fiskId, "intro");
+    });
 });
