@@ -253,10 +253,14 @@ backButton.addEventListener("click", function () {
     
     infoBoxes.forEach(function(box){
         box.style.display= "none"
-        backButton.style.display = "none";
     });
 
-    
+    backButton.style.display = "none";
+
+     if (currentAudio) {
+        currentAudio.pause();
+        currentAudio.currentTime = 0;
+    }
     
     alleFisk.forEach(function (fiskElement){
         fiskElement.classList.remove("swim-forward");
