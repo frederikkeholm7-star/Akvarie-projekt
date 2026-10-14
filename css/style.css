@@ -373,3 +373,20 @@
    49.9% {transform: translateX(130vw) rotateY(180deg);}
    50% {transform: translateX(130vw) rotateY(0deg)}
     100% {transform: translateX(0) rotateY(0deg)}}
+
+#klovn-fisk {
+  left: -180px; 
+  animation: linear;
+  animation-name: klovn-fisk;
+  animation-duration: 17s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  top: 50%;
+  animation-delay: 3s;
+}
+
+@keyframes klovn-fisk {
+   0% {transform: translateX(0) rotateY(180deg); }
+   49.9% {transform: translateX(130vw) rotateY(180deg);}
+   50% {transform: translateX(130vw) rotateY(0deg)}
+    100% {transform: translateX(0) rotateY(0deg)}}
