@@ -151,7 +151,7 @@ document.querySelector("#Rævefisk").addEventListener("click", function () {
 //Informationsbox til Banggaifisk\\
 const banggaiInfo = document.querySelector("#banggai-info");
 const banggaiFish = document.querySelector("#Banggai-kardinalfisk");
-const banggaiTextbox = banggaitInfo.querySelector(".textbox");
+const banggaiTextbox = banggaiInfo.querySelector(".textbox");
 const banggaiParentBox = banggaiInfo.querySelector(".parent-box");
 
 banggaiFish.addEventListener("click", function () {
@@ -196,10 +196,10 @@ playButton.addEventListener("click", function() {
 
 //funktion til afspille en gældende lyd fra arrayet
 function playSound(fiskId, lydType) {
-    // 1. Find den specifikke fisk i arrayet hvor id matcher
+    // 1. Finder den specifikke fisk i arrayet hvor id matcher
     const valgtFisk = fisk.find(f => f.id === fiskId);
 
-    // 2. Tjek om fisken og lyden findes, før vi afspiller
+    // 2. Tjekker om fisken og lyden findes, før den afspilles
     if (valgtFisk && valgtFisk.sounds && valgtFisk.sounds[lydType]) {
         const audio = new Audio(valgtFisk.sounds[lydType]);
         audio.play().catch(error => {
@@ -211,15 +211,15 @@ function playSound(fiskId, lydType) {
 }
 
 
-// Vælg alle elementer med klassen .fisk
+// Spiller introsound ved click på fisken
 const alleFisk = document.querySelectorAll(".fisk");
 
 alleFisk.forEach(fiskElement => {
     fiskElement.addEventListener("click", function () {
-        // Hent id'et direkte fra det element der blev klikket på (f.eks. "raevefisk" eller "klovnfisk")
+        // Henter id'et direkte fra det element der blev klikket på (f.eks. "raevefisk" eller "klovnfisk")
         const fiskId = fiskElement.id;
         
-        // Afspil introlyden for netop den fisk
+        // Afspiller introlyden for netop den fisk
         playSound(fiskId, "intro");
     });
 });
