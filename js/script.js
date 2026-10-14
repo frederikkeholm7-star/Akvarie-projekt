@@ -283,7 +283,10 @@ function playSound(fiskId, lydType) {
         });
     }
 }
-
+if (currentAudio) {
+        currentAudio.pause();
+        currentAudio.currentTime = 0;
+    }
 //Tilbage knappen\\
 const backButton = document.querySelector("#back-button");
 
@@ -296,10 +299,7 @@ backButton.addEventListener("click", function () {
 
     backButton.style.display = "none";
 
-     if (currentAudio) {
-        currentAudio.pause();
-        currentAudio.currentTime = 0;
-    }
+     
     
     alleFisk.forEach(function (fiskElement){
         fiskElement.classList.remove("swim-forward");
