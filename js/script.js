@@ -57,7 +57,7 @@ const fisk = [
         }
     },
 {
-        id: "kuglefisk",
+        id: "Kuglefisk",
         sounds: {
             intro:"sound/kuglefisk/kuglefisk-intro.m4a",
             alder:"sound/kuglefisk/kuglefisk-alder.m4a",
