@@ -124,7 +124,7 @@ const fisk = [
         }
     }];
 
-//Informationsbox\\
+//Informationsbox til Rævefisk\\
 const parentButton = document.querySelector("#parent-button");
 const parentBox = document.querySelector(".parent-box");
 
@@ -148,10 +148,37 @@ document.querySelector("#raevefisk").addEventListener("click", function () {
     }, 1500);
 });
 
+//Informationsbox til Banggaifisk\\
 const banggaiInfo = document.querySelector("#banggai-info");
 const banggaiFish = document.querySelector("#Banggai-kardinalfisk");
 const banggaiTextbox = banggaitInfo.querySelector(".textbox");
+const banggaiParentBox = banggaiInfo.querySelector(".parent-box");
 
+banggaiFish.addEventListener("click", function () {
+    this.classList.add("swim-forward");
+
+    setTimeout(function () {
+        // Skjul de andre fisks informationsbokse
+        document.querySelectorAll(".Informationsbox").forEach(function (box) {
+            box.hidden = true;
+        });
+
+        // Vis Banggai-fiskens børneboks
+        banggaiInfo.hidden = false;
+        banggaiTextbox.style.display = "block";
+        banggaiParentBox.style.display = "none";
+    }, 1500);
+});
+
+banggaiInfo.querySelector("#parent-button").addEventListener("click", function () {
+    banggaiTextbox.style.display = "none";
+    banggaiParentBox.style.display = "block";
+});
+
+banggaiInfo.querySelector("#child-button").addEventListener("click", function () {
+    banggaiParentBox.style.display = "none";
+    banggaiTextbox.style.display = "block";
+});
 
 
 
