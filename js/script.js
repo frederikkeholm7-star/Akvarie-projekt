@@ -211,15 +211,25 @@ function playSound(fiskId, lydType) {
 }
 
 
-// Spiller introsound ved click på fisken
+
 const alleFisk = document.querySelectorAll(".fisk");
 
 alleFisk.forEach(fiskElement => {
     fiskElement.addEventListener("click", function () {
-        // Henter id'et direkte fra det element der blev klikket på (f.eks. "raevefisk" eller "klovnfisk")
-        const fiskId = fiskElement.id;
-        
-        // Afspiller introlyden for netop den fisk
+        const fiskId = this.id; 
+
+        // 1. Stopper svømning, flytter og forstørrer fisken via CSS-klassen
+        this.classList.add("swim-forward");
+
+        // 2. Afspiller introlyden
         playSound(fiskId, "intro");
+
+        // 3. Viser infoboksen efter et lille øjeblik
+        setTimeout(() => {
+            const textbox = document.querySelector(".textbox");
+            if (textbox) {
+                textbox.style.display = "block";
+            }
+        }, 1000);
     });
 });

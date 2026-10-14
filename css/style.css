@@ -257,11 +257,6 @@
     pointer-events: auto;
 }
 
-#Raevefisk.swim-forward {
-    transform: scale(2.5);
-    z-index: 20;
-}
-
 .parent-box {
     display: none;
     position: fixed;
@@ -453,4 +448,15 @@
   100% {
     transform: translate(0, 0) rotateY(0deg);
   }
+}
+
+/* Når en fisk bliver klikket på og får klassen swim-forward */
+.fisk.swim-forward {
+    animation: none !important; /* Stopper den uendelige svømmetur */
+    top: 35% !important;        /* Bestem højden på skærmen hvor den skal stoppe */
+    left: 20% !important;       /* Placerer den mod venstre (tilpas efter behov) */
+    right: auto !important;     
+    transform: scale(3);      /* Gør fisken stor */
+    z-index: 20;                /* Sørger for den er ovenpå baggrunden */
+    transition: all 0.8s ease-in-out; /* Gør overgangen blød */
 }
