@@ -309,7 +309,7 @@
   right: -150px; 
   animation: linear;
   animation-name: orangeplettet-kirurg;
-  animation-duration: 15s;
+  animation-duration: 18s;
   animation-iteration-count: infinite;
   animation-direction: normal;
   top: 30%;
@@ -327,7 +327,7 @@
   right: -180px; 
   animation: linear;
   animation-name: raevefisk;
-  animation-duration: 12s;
+  animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-direction: normal;
   top: 40%;
@@ -344,7 +344,7 @@
   left: -190px; 
   animation: linear;
   animation-name: Sortbundet-kirurg;
-  animation-duration: 18s;
+  animation-duration: 12s;
   animation-iteration-count: infinite;
   animation-direction: normal;
   top: 60%;
@@ -356,3 +356,20 @@
    49.9% {transform: translateX(130vw) rotateY(0deg);}
    50% {transform: translateX(130vw) rotateY(180deg)}
     100% {transform: translateX(0) rotateY(180deg)}}
+
+#Banggai-kardinalfisk {
+  left: -180px; 
+  animation: linear;
+  animation-name: Banggai-kardinalfisk;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  top: 10%;
+  animation-delay: 2s;
+}
+
+@keyframes Banggai-kardinalfisk {
+   0% {transform: translateX(0) rotateY(180deg); }
+   49.9% {transform: translateX(130vw) rotateY(180deg);}
+   50% {transform: translateX(130vw) rotateY(0deg)}
+    100% {transform: translateX(0) rotateY(0deg)}}
