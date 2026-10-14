@@ -72,11 +72,11 @@ const fisk = [
         id: "Raevefisk",
         sounds: {
             intro:"sound/raevefisk/rævefisk-intro.m4a",
-            alder:"#",
-            levested:"#",
-            spiser:"#",
-            vaegt:"#",
-            superkraft:"#"
+            alder:"sound/raevefisk/rævefisk-alder.m4a",
+            levested:"sound/raevefisk/rævefisk-levested.m4a",
+            spiser:"sound/raevefisk/rævefisk-spiser.m4a",
+            vaegt:"sound/raevefisk/rævefisk-vaegt.m4a",
+            superkraft:"sound/raevefisk/rævefisk-superkraft.m4a"
         }
     },
 {
