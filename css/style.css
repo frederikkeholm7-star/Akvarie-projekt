@@ -249,6 +249,13 @@
     position:absolute;
 }
 
+.benggai {
+    width: 70px;
+    height: auto;
+    position:absolute;
+    }
+
+
 #Raevefisk {
     width: 150px; /* Gør den samme størrelse som de andre fisk */
     height: auto;
@@ -359,11 +366,98 @@
   animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  top: 10%;
+  top: 80%;
   animation-delay: 2s;
 }
 
 @keyframes Banggai-kardinalfisk {
+   0% {transform: translateX(0) rotateY(0deg); }
+   49.9% {transform: translateX(130vw) rotateY(0deg);}
+   50% {transform: translateX(130vw) rotateY(180deg)}
+    100% {transform: translateX(0) rotateY(180deg)}}
+
+@keyframes Banggai-kardinalfisk {
+  0% {
+    transform: translate(0, 0) rotateY(0deg);
+  }
+
+  20% {
+    transform: translate(50vw, -30px) rotateY(0deg);
+  }
+
+  40% {
+    transform: translate(100vw, 10px) rotateY(0deg);
+  }
+
+  49.9% {
+    transform: translate(130vw, 0) rotateY(0deg);
+  }
+
+  50% {
+    transform: translate(130vw, 0) rotateY(180deg);
+  }
+
+  60% {
+    transform: translate(100vw, 10px) rotateY(180deg);
+  }
+
+  80% {
+    transform: translate(50vw, -30px) rotateY(180deg);
+  }
+
+  100% {
+    transform: translate(0, 0) rotateY(180deg);
+  }
+}
+
+    
+#Banggai-kardinalfisk2 {
+  left: -180px; 
+  animation: linear;
+  animation-name: Banggai-kardinalfisk2;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  top: 83%;
+  animation-delay: 2.5s;
+}
+
+@keyframes Banggai-kardinalfisk2 {
+   0% {transform: translateX(0) rotateY(0deg); }
+   49.9% {transform: translateX(130vw) rotateY(0deg);}
+   50% {transform: translateX(130vw) rotateY(180deg)}
+    100% {transform: translateX(0) rotateY(180deg)}}
+
+
+#Banggai-kardinalfisk3 {
+  left: -180px; 
+  animation: linear;
+  animation-name: Banggai-kardinalfisk3;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  top: 90%;
+  animation-delay: 2.1s;
+}
+
+@keyframes Banggai-kardinalfisk3 {
+   0% {transform: translateX(0) rotateY(0deg); }
+   49.9% {transform: translateX(130vw) rotateY(0deg);}
+   50% {transform: translateX(130vw) rotateY(180deg)}
+    100% {transform: translateX(0) rotateY(180deg)}}
+
+    #Banggai-kardinalfisk4 {
+  left: -180px; 
+  animation: linear;
+  animation-name: Banggai-kardinalfisk4;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  top: 94%;
+  animation-delay: 2.5s;
+}
+
+@keyframes Banggai-kardinalfisk4 {
    0% {transform: translateX(0) rotateY(0deg); }
    49.9% {transform: translateX(130vw) rotateY(0deg);}
    50% {transform: translateX(130vw) rotateY(180deg)}
@@ -436,15 +530,12 @@
   0% {
     transform: translate(0, 0) rotateY(180deg);
   }
-
   49.9% {
     transform: translate(130vw, -180px) rotateY(180deg);
   }
-
   50% {
     transform: translate(130vw, -180px) rotateY(0deg);
   }
-
   100% {
     transform: translate(0, 0) rotateY(0deg);
   }
