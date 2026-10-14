@@ -249,7 +249,7 @@
     position:absolute;
 }
 
-#Rævefisk {
+#Raevefisk {
     width: 150px; /* Gør den samme størrelse som de andre fisk */
     height: auto;
     cursor: pointer;
@@ -257,7 +257,7 @@
     pointer-events: auto;
 }
 
-#Rævefisk.swim-forward {
+#Raevefisk.swim-forward {
     transform: scale(2.5);
     z-index: 20;
 }
@@ -357,7 +357,6 @@
    50% {transform: translateX(130vw) rotateY(180deg)}
     100% {transform: translateX(0) rotateY(180deg)}}
 
-<<<<<<< HEAD
 
 #sommerfuglcichlide {
  left: -190px; 
@@ -383,74 +382,3 @@
     transform: translate(0, 0) rotateY(0deg);
   }
 }
-=======
-#Banggai-kardinalfisk {
-  left: -180px; 
-  animation: linear;
-  animation-name: Banggai-kardinalfisk;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  top: 10%;
-  animation-delay: 2s;
-}
-
-@keyframes Banggai-kardinalfisk {
-   0% {transform: translateX(0) rotateY(0deg); }
-   49.9% {transform: translateX(130vw) rotateY(0deg);}
-   50% {transform: translateX(130vw) rotateY(180deg)}
-    100% {transform: translateX(0) rotateY(180deg)}}
-
-#klovnfisk {
-  left: -180px; 
-  animation: linear;
-  animation-name: klovnfisk;
-  animation-duration: 17s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  top: 50%;
-  animation-delay: 3s;
-}
-
-@keyframes klovnfisk {
-   0% {transform: translateX(0) rotateY(180deg); }
-   49.9% {transform: translateX(130vw) rotateY(180deg);}
-   50% {transform: translateX(130vw) rotateY(0deg)}
-    100% {transform: translateX(0) rotateY(0deg)}}
-
-#Kuglefisk {
-  right: -180px; 
-  animation: linear;
-  animation-name: Kuglefisk;
-  animation-duration: 13s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  top: 70%;
-  animation-delay: 4s;
-}
-
-@keyframes Kuglefisk {
-   0% {transform: translateX(0) rotateY(0deg); }
-   49.9% {transform: translateX(-130vw) rotateY(0deg);}
-   50% {transform: translateX(-130vw) rotateY(180deg)}
-    100% {transform: translateX(0) rotateY(180deg)}}
-
-
-#Blå-kirurgfisk {
-  left: -180px; 
-  animation: linear;
-  animation-name: Blå-kirurgfisk;
-  animation-duration: 13s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  top: 70%;
-  animation-delay: 4s;
-}
-
-@keyframes Blå-kirurgfisk {
-   0% {transform: translateX(0) rotateY(180deg); }
-   49.9% {transform: translateX(130vw) rotateY(180deg);}
-   50% {transform: translateX(130vw) rotateY(0deg)}
-    100% {transform: translateX(0) rotateY(0deg)}}
-
->>>>>>> d956ab000e829ebff5e15e33978cee674d1935c0
