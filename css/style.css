@@ -254,6 +254,10 @@
     height: auto;
     position:absolute;
     }
+.Skildpadde
+{
+  width: 250px
+}
 
 
 #Raevefisk {
@@ -540,6 +544,26 @@
     transform: translate(0, 0) rotateY(0deg);
   }
 }
+
+#Skildpadde {
+  left: -300px; 
+  animation: linear;
+  animation-name: Skildpadde;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  top: 20%;
+  animation-delay: 8s;
+}
+
+@keyframes Skildpadde {
+   0% {transform: translate(0) rotateY(0deg); }
+   25% {transform: translate(60vw, -200px) rotateY(0deg)}
+   49.9% {transform: translate(130vw) rotateY(0deg);}
+   50% {transform: translate(130vw) rotateY(180deg)}
+   80% {transform: translate(40vw, -250px) rotateY(180deg)}
+   80% {transform: translate(40vw, -200px) rotateY(180deg)}
+   100% {transform: translate(0) rotateY(180deg)}}
 
 /* Når en fisk bliver klikket på og får klassen swim-forward */
 .fisk.swim-forward {
