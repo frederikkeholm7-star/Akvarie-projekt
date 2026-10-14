@@ -369,10 +369,10 @@
 }
 
 @keyframes Banggai-kardinalfisk {
-   0% {transform: translateX(0) rotateY(180deg); }
-   49.9% {transform: translateX(130vw) rotateY(180deg);}
-   50% {transform: translateX(130vw) rotateY(0deg)}
-    100% {transform: translateX(0) rotateY(0deg)}}
+   0% {transform: translateX(0) rotateY(0deg); }
+   49.9% {transform: translateX(130vw) rotateY(0deg);}
+   50% {transform: translateX(130vw) rotateY(180deg)}
+    100% {transform: translateX(0) rotateY(180deg)}}
 
 #klovnfisk {
   left: -180px; 

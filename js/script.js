@@ -123,6 +123,8 @@ const fisk = [
             superkraft:"#"
         }
     }];
+
+//Informationsbox\\
 const parentButton = document.querySelector("#parent-button");
 const parentBox = document.querySelector(".parent-box");
 
@@ -139,6 +141,14 @@ childButton.addEventListener("click", function () {
 });
 
 document.querySelector("#raevefisk").addEventListener("click", function () {
+    this.classList.add("swim-forward");
+
+    setTimeout(function () {
+        document.querySelector(".textbox").style.display = "block";
+    }, 1500);
+});
+
+document.querySelector("#Banggai-kardinalfisk").addEventListener("click", function () {
     this.classList.add("swim-forward");
 
     setTimeout(function () {
