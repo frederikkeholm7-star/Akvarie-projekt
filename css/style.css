@@ -460,8 +460,7 @@
     transform: scale(3);      /* Gør fisken stor */
     z-index: 20;                /* Sørger for den er ovenpå baggrunden */
     transition: all 0.8s ease-in-out; /* Gør overgangen blød */
-=======
-
+}
 /*Tilbage knappen*/
 #back-button {
   position: absolute;
@@ -473,7 +472,11 @@
   height: 55px;
   border-radius: 30px;
   font-size: 40px;
+<<<<<<< HEAD
 >>>>>>> 8d5d717e93f5f187bff0e37d41d0156f49fd7837
 }
 =======
 >>>>>>> Stashed changes
+=======
+}
+>>>>>>> 81610915714d326437bb4b701cc494aa412b97d3
