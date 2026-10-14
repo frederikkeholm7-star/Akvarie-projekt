@@ -384,31 +384,24 @@
   0% {
     transform: translate(0, 0) rotateY(0deg);
   }
-
   20% {
     transform: translate(50vw, -30px) rotateY(0deg);
   }
-
   40% {
     transform: translate(100vw, 10px) rotateY(0deg);
   }
-
   49.9% {
     transform: translate(130vw, 0) rotateY(0deg);
   }
-
   50% {
     transform: translate(130vw, 0) rotateY(180deg);
   }
-
   60% {
     transform: translate(100vw, 10px) rotateY(180deg);
   }
-
   80% {
     transform: translate(50vw, -30px) rotateY(180deg);
   }
-
   100% {
     transform: translate(0, 0) rotateY(180deg);
   }
@@ -432,6 +425,32 @@
    50% {transform: translateX(130vw) rotateY(180deg)}
     100% {transform: translateX(0) rotateY(180deg)}}
 
+    @keyframes Banggai-kardinalfisk2 {
+  0% {
+    transform: translate(0, 0) rotateY(0deg);
+  }
+  20% {
+    transform: translate(50vw, -20px) rotateY(0deg);
+  }
+  40% {
+    transform: translate(100vw, 25px) rotateY(0deg);
+  }
+  49.9% {
+    transform: translate(130vw, 0) rotateY(0deg);
+  }
+  50% {
+    transform: translate(130vw, 0) rotateY(180deg);
+  }
+  60% {
+    transform: translate(100vw, 15px) rotateY(180deg);
+  }
+  80% {
+    transform: translate(50vw, -20px) rotateY(180deg);
+  }
+  100% {
+    transform: translate(0, 0) rotateY(180deg);
+  }
+}
 
 #Banggai-kardinalfisk3 {
   left: -180px; 
@@ -450,6 +469,33 @@
    50% {transform: translateX(130vw) rotateY(180deg)}
     100% {transform: translateX(0) rotateY(180deg)}}
 
+      @keyframes Banggai-kardinalfisk3 {
+  0% {
+    transform: translate(0, 0) rotateY(0deg);
+  }
+  20% {
+    transform: translate(50vw, -25px) rotateY(0deg);
+  }
+  40% {
+    transform: translate(100vw, 20px) rotateY(0deg);
+  }
+  49.9% {
+    transform: translate(130vw, 0) rotateY(0deg);
+  }
+  50% {
+    transform: translate(130vw, 0) rotateY(180deg);
+  }
+  60% {
+    transform: translate(100vw, 20px) rotateY(180deg);
+  }
+  80% {
+    transform: translate(50vw, -15px) rotateY(180deg);
+  }
+  100% {
+    transform: translate(0, 0) rotateY(180deg);
+  }
+}
+
     #Banggai-kardinalfisk4 {
   left: -180px; 
   animation: linear;
@@ -466,6 +512,77 @@
    49.9% {transform: translateX(130vw) rotateY(0deg);}
    50% {transform: translateX(130vw) rotateY(180deg)}
     100% {transform: translateX(0) rotateY(180deg)}}
+
+       @keyframes Banggai-kardinalfisk4 {
+  0% {
+    transform: translate(0, 0) rotateY(0deg);
+  }
+  20% {
+    transform: translate(50vw, -25px) rotateY(0deg);
+  }
+  40% {
+    transform: translate(100vw, 20px) rotateY(0deg);
+  }
+  49.9% {
+    transform: translate(130vw, 0) rotateY(0deg);
+  }
+  50% {
+    transform: translate(130vw, 0) rotateY(180deg);
+  }
+  60% {
+    transform: translate(100vw, 20px) rotateY(180deg);
+  }
+  80% {
+    transform: translate(50vw, -15px) rotateY(180deg);
+  }
+  100% {
+    transform: translate(0, 0) rotateY(180deg);
+  }
+}
+
+    #Banggai-kardinalfisk5 {
+  left: -196px; 
+  animation: linear;
+  animation-name: Banggai-kardinalfisk5;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  top: 88%;
+  animation-delay: 2.8s;
+}
+
+@keyframes Banggai-kardinalfisk5 {
+   0% {transform: translateX(0) rotateY(0deg); }
+   49.9% {transform: translateX(130vw) rotateY(0deg);}
+   50% {transform: translateX(130vw) rotateY(180deg)}
+    100% {transform: translateX(0) rotateY(180deg)}}
+
+          @keyframes Banggai-kardinalfisk5 {
+  0% {
+    transform: translate(0, 0) rotateY(0deg);
+  }
+  20% {
+    transform: translate(50vw, -25px) rotateY(0deg);
+  }
+  40% {
+    transform: translate(100vw, 20px) rotateY(0deg);
+  }
+  49.9% {
+    transform: translate(130vw, 0) rotateY(0deg);
+  }
+  50% {
+    transform: translate(130vw, 0) rotateY(180deg);
+  }
+  60% {
+    transform: translate(100vw, 20px) rotateY(180deg);
+  }
+  80% {
+    transform: translate(52vw, -20px) rotateY(180deg);
+  }
+  100% {
+    transform: translate(0, 0) rotateY(180deg);
+  }
+}
 
 #klovnfisk {
   left: -180px; 
