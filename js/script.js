@@ -303,6 +303,109 @@ sortbundetInfo.querySelector("#child-button").addEventListener("click", function
     sortbundetTextbox.style.display = "block";
 });
 
+//Informationsbox til Klovfisk\\
+
+const klovnfiskInfo = document.querySelector("#klovnfisk-info");
+const klovnfiskFish = document.querySelectorAll("img#klovnfisk");
+
+const klovnfiskTextbox = klovnfiskInfo.querySelector(".textbox");
+const klovnfiskParentBox = klovnfiskInfo.querySelector(".parent-box");
+
+klovnfiskFish.forEach(function (fiskElement) {
+    fiskElement.addEventListener("click", function () {
+        this.classList.add("swim-forward");
+
+        setTimeout(function () {
+            document.querySelectorAll(".Informationsbox").forEach(function (box) {
+                box.hidden = true;
+            });
+
+            klovnfiskInfo.hidden = false;
+            klovnfiskTextbox.style.display = "block";
+            klovnfiskParentBox.style.display = "none";
+            backButton.style.display = "block";
+        }, 1500);
+    });
+});
+
+klovnfiskInfo.querySelector("#parent-button").addEventListener("click", function () {
+    klovnfiskTextbox.style.display = "none";
+    klovnfiskParentBox.style.display = "block";
+});
+
+klovnfiskInfo.querySelector("#child-button").addEventListener("click", function () {
+    klovnfiskParentBox.style.display = "none";
+    klovnfiskTextbox.style.display = "block";
+});
+
+
+//Informationsbox til Kuglefisk\\
+const kuglefiskInfo = document.querySelector("#kuglefisk-info");
+const kuglefiskFish = document.querySelectorAll("img#Kuglefisk");
+
+const kuglefiskTextbox = kuglefiskInfo.querySelector(".textbox");
+const kuglefiskParentBox = kuglefiskInfo.querySelector(".parent-box");
+
+kuglefiskFish.forEach(function (fiskElement) {
+    fiskElement.addEventListener("click", function () {
+        this.classList.add("swim-forward");
+
+        setTimeout(function () {
+            document.querySelectorAll(".Informationsbox").forEach(function (box) {
+                box.hidden = true;
+            });
+
+            kuglefiskInfo.hidden = false;
+            kuglefiskTextbox.style.display = "block";
+            kuglefiskParentBox.style.display = "none";
+            backButton.style.display = "block";
+        }, 1500);
+    });
+});
+
+kuglefiskInfo.querySelector("#parent-button").addEventListener("click", function () {
+    kuglefiskTextbox.style.display = "none";
+    kuglefiskParentBox.style.display = "block";
+});
+
+kuglefiskInfo.querySelector("#child-button").addEventListener("click", function () {
+    kuglefiskParentBox.style.display = "none";
+    kuglefiskTextbox.style.display = "block";
+});
+
+//Informationsbox til Blå Kirurgfisk\\
+const blaakirurgfiskInfo = document.querySelector("#blaakirurgfisk-info");
+const blaakirurgfiskFish = document.querySelectorAll("img#blaa-kirurgfisk");
+
+const blaakirurgfiskTextbox = blaakirurgfiskInfo.querySelector(".textbox");
+const blaakirurgfiskParentBox = blaakirurgfiskInfo.querySelector(".parent-box");
+
+blaakirurgfiskFish.forEach(function (fiskElement) {
+    fiskElement.addEventListener("click", function () {
+        this.classList.add("swim-forward");
+
+        setTimeout(function () {
+            document.querySelectorAll(".Informationsbox").forEach(function (box) {
+                box.hidden = true;
+            });
+
+            blaakirurgfiskInfo.hidden = false;
+            blaakirurgfiskTextbox.style.display = "block";
+            blaakirurgfiskParentBox.style.display = "none";
+            backButton.style.display = "block";
+        }, 1500);
+    });
+});
+
+blaakirurgfiskInfo.querySelector("#parent-button").addEventListener("click", function () {
+    blaakirurgfiskTextbox.style.display = "none";
+    blaakirurgfiskParentBox.style.display = "block";
+});
+
+blaakirurgfiskInfo.querySelector("#child-button").addEventListener("click", function () {
+    blaakirurgfiskParentBox.style.display = "none";
+    blaakirurgfiskTextbox.style.display = "block";
+});
 
 
 
