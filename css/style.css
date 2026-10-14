@@ -247,10 +247,11 @@
     width: 150px;
     height: auto;
     position:absolute;
-    left
 }
 
-#bobby {
+#raevefisk {
+    width: 150px; /* Gør den samme størrelse som de andre fisk */
+    height: auto;
     cursor: pointer;
     transition: transform 1.5s ease-in-out;
     pointer-events: auto;
