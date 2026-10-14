@@ -160,7 +160,7 @@ playButton.addEventListener("click", function() {
 }
 );
 
-
+//funktion til afspille en gældende lyd fra arrayet
 function playSound(fiskId, lydType) {
     // 1. Find den specifikke fisk i arrayet hvor id matcher
     const valgtFisk = fisk.find(f => f.id === fiskId);
@@ -176,6 +176,11 @@ function playSound(fiskId, lydType) {
     }
 }
 
-// Sådan kalder du den for at spille klovnfiskens intro:
-playSound("klovnfisk", "intro");
-playSound("raevefisk", "intro");
+
+// variabel til at afspille intro.sound når man klikker på fisken
+const raevefiskElement = document.querySelector("#raevefisk");
+// Lyt efter et klik på rævefisken
+raevefiskElement.addEventListener("click", function () {
+    // Afspil rævefiskens introlyd ved at kalde din funktion
+    playSound("raevefisk", "intro");
+});
