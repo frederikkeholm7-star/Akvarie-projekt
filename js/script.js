@@ -138,7 +138,7 @@ childButton.addEventListener("click", function () {
     textbox.style.display = "block";
 });
 
-document.querySelector("#bobby").addEventListener("click", function () {
+document.querySelector("#raevefisk").addEventListener("click", function () {
     this.classList.add("swim-forward");
 
     setTimeout(function () {
