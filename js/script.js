@@ -145,3 +145,17 @@ document.querySelector("#bobby").addEventListener("click", function () {
         document.querySelector(".textbox").style.display = "block";
     }, 1500);
 });
+
+
+
+//Startside\\
+const playButton = 
+document.querySelector ("#play-button");
+
+const startSide =
+document.querySelector(".start-side");
+
+playButton.addEventListener("click", function() {
+    startSide.style.display = "none";
+}
+);

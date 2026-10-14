@@ -144,6 +144,18 @@
     --background-color: #F5F5F0;
 }
 
+/*Startside*/
+
+.start-side {
+  position:absolute;
+  inset: 0;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  backdrop-filter: blur(8px);
+}
+
 #play-button {
     background-color: white;
     width: 320px;
@@ -165,7 +177,7 @@
 
 /* Informations box til børn*/
 .textbox {
-    display: block;
+    display: none;
     position: fixed;
     top: 50%;
     left: 75%;
