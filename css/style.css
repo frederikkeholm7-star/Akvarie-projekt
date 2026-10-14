@@ -449,7 +449,6 @@
     transform: translate(0, 0) rotateY(0deg);
   }
 }
-<<<<<<< Updated upstream
 
 /* Når en fisk bliver klikket på og får klassen swim-forward */
 .fisk.swim-forward {
@@ -472,11 +471,4 @@
   height: 55px;
   border-radius: 30px;
   font-size: 40px;
-<<<<<<< HEAD
->>>>>>> 8d5d717e93f5f187bff0e37d41d0156f49fd7837
 }
-=======
->>>>>>> Stashed changes
-=======
-}
->>>>>>> 81610915714d326437bb4b701cc494aa412b97d3
