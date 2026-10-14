@@ -245,6 +245,8 @@
 .fisk {
     width: 150px;
     height: auto;
+    position:absolute;
+    left
 }
 
 #bobby {
