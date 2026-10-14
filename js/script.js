@@ -180,6 +180,38 @@ banggaiInfo.querySelector("#child-button").addEventListener("click", function ()
     banggaiTextbox.style.display = "block";
 });
 
+//Informationsbox til Sommerfuglecichlide\\
+const sommerInfo = document.querySelector("#Sommerfuglcichlide");
+const sommerFish = document.querySelector("#sommerfuglcichlide");
+
+const sommerTextbox = sommerInfo.querySelector(".textbox");
+const sommerParentBox = sommerInfo.querySelector(".parent-box");
+
+sommerFish.addEventListener("click", function () {
+    this.classList.add("swim-forward");
+
+    setTimeout(function () {
+        document.querySelectorAll(".Informationsbox").forEach(function (box) {
+            box.hidden = true;
+        });
+
+        sommerInfo.hidden = false;
+        sommerTextbox.style.display = "block";
+        sommerParentBox.style.display = "none";
+        backButton.style.display = "block";
+    }, 1500);
+});
+
+sommerInfo.querySelector("#parent-button").addEventListener("click", function () {
+    sommerTextbox.style.display = "none";
+    sommerParentBox.style.display = "block";
+});
+
+sommerInfo.querySelector("#child-button").addEventListener("click", function () {
+    sommerParentBox.style.display = "none";
+    sommerTextbox.style.display = "block";
+});
+
 
 
 //Startside\\
@@ -210,15 +242,6 @@ alleFisk.forEach(fiskElement => {
 
         // 2. Afspiller introlyden
         playSound(fiskId, "intro");
-
-        // 3. Viser infoboksen efter et lille øjeblik
-        setTimeout(() => {
-            const textbox = document.querySelector(".textbox");
-            if (textbox) {
-                textbox.style.display = "block";
-                backButton.style.display = "block";
-            }
-        }, 1000);
     });
 });
 
