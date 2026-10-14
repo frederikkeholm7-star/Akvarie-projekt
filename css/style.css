@@ -168,11 +168,12 @@
 }
 
 #logo {
-    width: 140px;
+    width: 150px;
     height: auto;
     position:absolute;
-    top: 70px; 
+    top: 25px; 
     left: 25px; 
+    z-index: 99;
 }
 
 
