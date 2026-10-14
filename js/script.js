@@ -268,6 +268,8 @@ backButton.addEventListener("click", function () {
         box.style.display= "none"
         backButton.style.display = "none";
     });
+
+    
     
     alleFisk.forEach(function (fiskElement){
         fiskElement.classList.remove("swim-forward");
