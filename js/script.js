@@ -35,7 +35,7 @@ const fisk = [
     {
         id: "Banggai-kardinalfisk",
         sounds: {
-            intro:"sound/banggai-kardinalfisk/banggai-kardinalfisk-intro-m4a",
+            intro:"sound/banggai-kardinalfisk/banggai-kardinalfisk-intro.m4a",
             alder:"sound/banggai-kardinalfisk/baggai-alder.m4a",
             levested:"sound/banggai-kardinalfisk/banggai-levested.m4a",
             spiser:"sound/banggai-kardinalfisk/banggai-spiser.m4a",
@@ -57,7 +57,7 @@ const fisk = [
         }
     },
 {
-        id: "kuglefisk",
+        id: "Kuglefisk",
         sounds: {
             intro:"sound/kuglefisk/kuglefisk-intro.m4a",
             alder:"sound/kuglefisk/kuglefisk-alder.m4a",
@@ -69,7 +69,7 @@ const fisk = [
         }
     },
 {
-        id: "raevefisk",
+        id: "Rævefisk",
         sounds: {
             intro:"sound/raevefisk/rævefisk-intro.m4a",
             alder:"#",
@@ -80,25 +80,25 @@ const fisk = [
         }
     },
 {
-        id: "#",
+        id: "Sortbundet-kirurg",
         sounds: {
-            intro:"#",
-            alder:"#",
-            levested:"#",
-            spiser:"#",
-            vaegt:"#",
-            superkraft:"#"
+            intro:"sound/sortbaandet-kirurgfisk/sortbaandet-kirurgfisk-intro.m4a",
+            alder:"sound/sortbaandet-kirurgfisk/sortbaandet-kirurgfisk-alder.m4a",
+            levested:"sound/sortbaandet-kirurgfisk/sortbaandet-kirurgfisk-levested.m4a",
+            spiser:"sound/sortbaandet-kirurgfisk/sortbaandet-kirurgfisk-spiser.m4a",
+            vaegt:"sound/sortbaandet-kirurgfisk/sortbaandet-kirurgfisk-vaegt.m4a",
+            superkraft:"sound/sortbaandet-kirurgfisk/sortbaandet-kirurgfisk-superkraft.m4a"
         }
     },
 {
-        id: "#",
+        id: "Skildpadde",
         sounds: {
-            intro:"#",
-            alder:"#",
-            levested:"#",
-            spiser:"#",
-            vaegt:"#",
-            superkraft:"#"
+            intro:"sound/skildpadde/skildpadde-intro.m4a",
+            alder:"sound/skildpadde/skildpadde-alder.m4a",
+            levested:"sound/skildpadde/skildpadde-levested.m4a",
+            spiser:"sound/skildpadde/skildpadde-spiser.m4a",
+            vaegt:"sound/skildpadde/skildpadde-vaegt.m4a",
+            superkraft:"sound/skildpadde/skildpadde-superkraft.m4a"
         }
     },
 {
@@ -123,6 +123,8 @@ const fisk = [
             superkraft:"#"
         }
     }];
+
+//Informationsbox til Rævefisk\\
 const parentButton = document.querySelector("#parent-button");
 const parentBox = document.querySelector(".parent-box");
 
@@ -138,12 +140,44 @@ childButton.addEventListener("click", function () {
     textbox.style.display = "block";
 });
 
-document.querySelector("#raevefisk").addEventListener("click", function () {
+document.querySelector("#Raevefisk").addEventListener("click", function () {
     this.classList.add("swim-forward");
 
     setTimeout(function () {
         document.querySelector(".textbox").style.display = "block";
     }, 1500);
+});
+
+//Informationsbox til Banggaifisk\\
+const banggaiInfo = document.querySelector("#banggai-info");
+const banggaiFish = document.querySelector("#Banggai-kardinalfisk");
+const banggaiTextbox = banggaiInfo.querySelector(".textbox");
+const banggaiParentBox = banggaiInfo.querySelector(".parent-box");
+
+banggaiFish.addEventListener("click", function () {
+    this.classList.add("swim-forward");
+
+    setTimeout(function () {
+        // Skjul de andre fisks informationsbokse
+        document.querySelectorAll(".Informationsbox").forEach(function (box) {
+            box.hidden = true;
+        });
+
+        // Vis Banggai-fiskens børneboks
+        banggaiInfo.hidden = false;
+        banggaiTextbox.style.display = "block";
+        banggaiParentBox.style.display = "none";
+    }, 1500);
+});
+
+banggaiInfo.querySelector("#parent-button").addEventListener("click", function () {
+    banggaiTextbox.style.display = "none";
+    banggaiParentBox.style.display = "block";
+});
+
+banggaiInfo.querySelector("#child-button").addEventListener("click", function () {
+    banggaiParentBox.style.display = "none";
+    banggaiTextbox.style.display = "block";
 });
 
 
@@ -162,10 +196,10 @@ playButton.addEventListener("click", function() {
 
 //funktion til afspille en gældende lyd fra arrayet
 function playSound(fiskId, lydType) {
-    // 1. Find den specifikke fisk i arrayet hvor id matcher
+    // 1. Finder den specifikke fisk i arrayet hvor id matcher
     const valgtFisk = fisk.find(f => f.id === fiskId);
 
-    // 2. Tjek om fisken og lyden findes, før vi afspiller
+    // 2. Tjekker om fisken og lyden findes, før den afspilles
     if (valgtFisk && valgtFisk.sounds && valgtFisk.sounds[lydType]) {
         const audio = new Audio(valgtFisk.sounds[lydType]);
         audio.play().catch(error => {
@@ -177,10 +211,15 @@ function playSound(fiskId, lydType) {
 }
 
 
-// variabel til at afspille intro.sound når man klikker på fisken
-const raevefiskElement = document.querySelector("#raevefisk");
-// Lyt efter et klik på rævefisken
-raevefiskElement.addEventListener("click", function () {
-    // Afspil rævefiskens introlyd ved at kalde din funktion
-    playSound("raevefisk", "intro");
+// Spiller introsound ved click på fisken
+const alleFisk = document.querySelectorAll(".fisk");
+
+alleFisk.forEach(fiskElement => {
+    fiskElement.addEventListener("click", function () {
+        // Henter id'et direkte fra det element der blev klikket på (f.eks. "raevefisk" eller "klovnfisk")
+        const fiskId = fiskElement.id;
+        
+        // Afspiller introlyden for netop den fisk
+        playSound(fiskId, "intro");
+    });
 });
