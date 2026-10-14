@@ -102,14 +102,14 @@ const fisk = [
         }
     },
 {
-        id: "#",
+        id: "Blå-kirurgfisk",
         sounds: {
-            intro:"#",
-            alder:"#",
-            levested:"#",
-            spiser:"#",
-            vaegt:"#",
-            superkraft:"#"
+            intro:"sound/blåfisk/ blåfisk intro.m4a",
+            alder:"sound/blåfisk/blåfisk-alder.m4a",
+            levested:"sound/blåfisk/blåfisk-levested.m4a",
+            spiser:"sound/blåfisk/blåfisk-spiser.m4a",
+            vaegt:"sound/blåfisk/blåfisk-vaegt.m4a",
+            superkraft:"sound/blåfisk/blåfisk-superkraft.m4a"
         }
     },
 {
