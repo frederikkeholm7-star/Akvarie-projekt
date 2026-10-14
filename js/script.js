@@ -91,14 +91,14 @@ const fisk = [
         }
     },
 {
-        id: "#",
+        id: "Skildpadde",
         sounds: {
-            intro:"#",
-            alder:"#",
-            levested:"#",
-            spiser:"#",
-            vaegt:"#",
-            superkraft:"#"
+            intro:"sound/skildpadde/skildpadde-intro.m4a",
+            alder:"sound/skildpadde/skildpadde-alder.m4a",
+            levested:"sound/skildpadde/skildpadde-levested.m4a",
+            spiser:"sound/skildpadde/skildpadde-spiser.m4a",
+            vaegt:"sound/skildpadde/skildpadde-vaegt.m4a",
+            superkraft:"sound/skildpadde/skildpadde-superkraft.m4a"
         }
     },
 {
