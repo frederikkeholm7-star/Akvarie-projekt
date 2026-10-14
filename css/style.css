@@ -249,7 +249,7 @@
     position:absolute;
 }
 
-#Rævefisk {
+#Raevefisk {
     width: 150px; /* Gør den samme størrelse som de andre fisk */
     height: auto;
     cursor: pointer;
@@ -257,7 +257,7 @@
     pointer-events: auto;
 }
 
-#Rævefisk.swim-forward {
+#Raevefisk.swim-forward {
     transform: scale(2.5);
     z-index: 20;
 }
@@ -357,6 +357,7 @@
    50% {transform: translateX(130vw) rotateY(180deg)}
     100% {transform: translateX(0) rotateY(180deg)}}
 
+<<<<<<< HEAD
 #Banggai-kardinalfisk {
   left: -180px; 
   animation: linear;
@@ -435,6 +436,14 @@
   animation-direction: normal;
   top: 50%;
   animation-delay: 4s;
+=======
+
+#sommerfuglcichlide {
+ left: -190px; 
+  top: 50%;
+  animation: sommerfuglcichlide 15s linear 2s infinite normal;
+
+>>>>>>> d7f4153fc0a240eb150898c42980bd217f196fd2
 }
 
 @keyframes sommerfuglcichlide {
@@ -443,14 +452,26 @@
   }
 
   49.9% {
+<<<<<<< HEAD
     transform: translate(130vw, -180px) rotateY(180deg);
   }
 
   50% {
     transform: translate(130vw, -180px) rotateY(0deg);
+=======
+    transform: translate(130vw, -130px) rotateY(180deg);
+  }
+
+  50% {
+    transform: translate(130vw, -130px) rotateY(0deg);
+>>>>>>> d7f4153fc0a240eb150898c42980bd217f196fd2
   }
 
   100% {
     transform: translate(0, 0) rotateY(0deg);
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> d7f4153fc0a240eb150898c42980bd217f196fd2
