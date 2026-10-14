@@ -151,7 +151,7 @@ document.querySelector("#Rævefisk").addEventListener("click", function () {
 //Informationsbox til Banggaifisk\\
 const banggaiInfo = document.querySelector("#banggai-info");
 const banggaiFish = document.querySelector("#Banggai-kardinalfisk");
-const banggaiTextbox = banggaitInfo.querySelector(".textbox");
+const banggaiTextbox = banggaiInfo.querySelector(".textbox");
 const banggaiParentBox = banggaiInfo.querySelector(".parent-box");
 
 banggaiFish.addEventListener("click", function () {
