@@ -359,10 +359,7 @@ function playSound(fiskId, lydType) {
         });
     }
 }
-if (currentAudio) {
-        currentAudio.pause();
-        currentAudio.currentTime = 0;
-    }
+
 //Tilbage knappen\\
 const backButton = document.querySelector("#back-button");
 
