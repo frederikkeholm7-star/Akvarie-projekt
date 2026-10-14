@@ -519,10 +519,10 @@
    50% {transform: translateX(130vw) rotateY(0deg)}
     100% {transform: translateX(0) rotateY(0deg)}}
 
-#sommerfuglcichlide {
-  left: -190px; 
+#sommerfuglcichlide1 {
+  left: -150px; 
   animation: linear;
-  animation-name: sommerfuglcichlide;
+  animation-name: sommerfuglcichlide1;
   animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-direction: normal;
@@ -530,7 +530,33 @@
   animation-delay: 4s;
 }
 
-@keyframes sommerfuglcichlide {
+@keyframes sommerfuglcichlide1 {
+  0% {
+    transform: translate(0, 0) rotateY(180deg);
+  }
+  49.9% {
+    transform: translate(130vw, -180px) rotateY(180deg);
+  }
+  50% {
+    transform: translate(130vw, -180px) rotateY(0deg);
+  }
+  100% {
+    transform: translate(0, 0) rotateY(0deg);
+  }
+}
+
+#sommerfuglcichlide2 {
+  left: -210px; 
+  animation: linear;
+  animation-name: sommerfuglcichlide2;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  top: 30%;
+  animation-delay: 4s;
+}
+
+@keyframes sommerfuglcichlide2 {
   0% {
     transform: translate(0, 0) rotateY(180deg);
   }
