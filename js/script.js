@@ -45,7 +45,7 @@ const fisk = [
         }
     },
 {
-        id: "sommerfuglcichlide",
+        id: "sommerfuglcichlide1",
         sounds: {
             intro:"sound/sommerfuglcichlide/intro.wav",
             alder:"sound/sommerfuglcichlide/alder.wav",
@@ -56,6 +56,20 @@ const fisk = [
             outro:"sound/sommerfuglcichlide/outro.wav"
         }
     },
+
+{
+        id: "sommerfuglcichlide2",
+        sounds: {
+            intro:"sound/sommerfuglcichlide/intro.wav",
+            alder:"sound/sommerfuglcichlide/alder.wav",
+            levested:"sound/sommerfuglcichlide/levested.wav",
+            spiser:"sound/sommerfuglcichlide/spiser.wav",
+            vaegt:"sound/sommerfuglcichlide/vaegt.wav",
+            superkraft:"sound/sommerfuglcichlide/superkraft",
+            outro:"sound/sommerfuglcichlide/outro.wav"
+        }
+    },
+
 {
         id: "Kuglefisk",
         sounds: {
