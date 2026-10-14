@@ -69,7 +69,7 @@ const fisk = [
         }
     },
 {
-        id: "Rævefisk",
+        id: "Raevefisk",
         sounds: {
             intro:"sound/raevefisk/rævefisk-intro.m4a",
             alder:"#",
