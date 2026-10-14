@@ -373,6 +373,40 @@ kuglefiskInfo.querySelector("#child-button").addEventListener("click", function 
     kuglefiskTextbox.style.display = "block";
 });
 
+//Informationsbox til Blå Kirurgfisk\\
+const blaakirurgfiskInfo = document.querySelector("#blaakirurgfisk-info");
+const blaakirurgfiskFish = document.querySelectorAll("img#blaa-kirurgfisk");
+
+const blaakirurgfiskTextbox = blaakirurgfiskInfo.querySelector(".textbox");
+const blaakirurgfiskParentBox = blaakirurgfiskInfo.querySelector(".parent-box");
+
+blaakirurgfiskFish.forEach(function (fiskElement) {
+    fiskElement.addEventListener("click", function () {
+        this.classList.add("swim-forward");
+
+        setTimeout(function () {
+            document.querySelectorAll(".Informationsbox").forEach(function (box) {
+                box.hidden = true;
+            });
+
+            blaakirurgfiskInfo.hidden = false;
+            blaakirurgfiskTextbox.style.display = "block";
+            blaakirurgfiskParentBox.style.display = "none";
+            backButton.style.display = "block";
+        }, 1500);
+    });
+});
+
+blaakirurgfiskInfo.querySelector("#parent-button").addEventListener("click", function () {
+    blaakirurgfiskTextbox.style.display = "none";
+    blaakirurgfiskParentBox.style.display = "block";
+});
+
+blaakirurgfiskInfo.querySelector("#child-button").addEventListener("click", function () {
+    blaakirurgfiskParentBox.style.display = "none";
+    blaakirurgfiskTextbox.style.display = "block";
+});
+
 
 
 //Startside\\
