@@ -249,7 +249,7 @@
     position:absolute;
 }
 
-#raevefisk {
+#Rævefisk {
     width: 150px; /* Gør den samme størrelse som de andre fisk */
     height: auto;
     cursor: pointer;
@@ -257,7 +257,7 @@
     pointer-events: auto;
 }
 
-#bobby.swim-forward {
+#Rævefisk.swim-forward {
     transform: scale(2.5);
     z-index: 20;
 }
@@ -323,10 +323,10 @@
     100% {transform: translateX(0) rotateY(180deg)}}
 
 
-#raevefisk {
+#Rævefisk {
   right: -180px; 
   animation: linear;
-  animation-name: raevefisk;
+  animation-name: Rævefisk;
   animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-direction: normal;
@@ -334,7 +334,7 @@
   animation-delay: 5s;
 }
 
-@keyframes raevefisk {
+@keyframes Rævefisk {
    0% {transform: translateX(0) rotateY(0deg); }
    49.9% {transform: translateX(-130vw) rotateY(0deg);}
    50% {transform: translateX(-130vw) rotateY(180deg)}
