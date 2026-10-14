@@ -459,7 +459,6 @@
     transform: scale(3);      /* Gør fisken stor */
     z-index: 20;                /* Sørger for den er ovenpå baggrunden */
     transition: all 0.8s ease-in-out; /* Gør overgangen blød */
-=======
 }
 /*Tilbage knappen*/
 #back-button {
