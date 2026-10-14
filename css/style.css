@@ -324,14 +324,14 @@
 
 
 #raevefisk {
-  right: -150px; 
+  right: -180px; 
   animation: linear;
   animation-name: raevefisk;
-  animation-duration: 15s;
+  animation-duration: 12s;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  top: 30%;
-  animation-delay: 2s;
+  top: 40%;
+  animation-delay: 5s;
 }
 
 @keyframes raevefisk {
