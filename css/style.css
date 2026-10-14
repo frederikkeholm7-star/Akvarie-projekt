@@ -459,4 +459,18 @@
     transform: scale(3);      /* Gør fisken stor */
     z-index: 20;                /* Sørger for den er ovenpå baggrunden */
     transition: all 0.8s ease-in-out; /* Gør overgangen blød */
+=======
+
+/*Tilbage knappen*/
+#back-button {
+  position: absolute;
+  left: 25px; 
+  bottom: 25px; 
+  z-index: 11;
+  background-color: #d9d9d9;
+  width: 140px; 
+  height: 55px;
+  border-radius: 30px;
+  font-size: 40px;
+>>>>>>> 8d5d717e93f5f187bff0e37d41d0156f49fd7837
 }

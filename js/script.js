@@ -233,3 +233,12 @@ alleFisk.forEach(fiskElement => {
         }, 1000);
     });
 });
+
+
+
+//Tilbage knappen\\
+const backButton = document.querySelector("#back-button");
+backButton.addEventListener("click", function () {
+    const infoBoxes = document.querySelectorAll(".textbox, .parent-box");
+    infoBoxes.forEach = function(box)
+});
