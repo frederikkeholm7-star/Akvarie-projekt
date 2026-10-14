@@ -390,3 +390,21 @@
    49.9% {transform: translateX(130vw) rotateY(180deg);}
    50% {transform: translateX(130vw) rotateY(0deg)}
     100% {transform: translateX(0) rotateY(0deg)}}
+
+#Kuglefisk {
+  right: -180px; 
+  animation: linear;
+  animation-name: Kuglefisk;
+  animation-duration: 13s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  top: 70%;
+  animation-delay: 4s;
+}
+
+@keyframes Kuglefisk {
+   0% {transform: translateX(0) rotateY(0deg); }
+   49.9% {transform: translateX(-130vw) rotateY(0deg);}
+   50% {transform: translateX(-130vw) rotateY(180deg)}
+    100% {transform: translateX(0) rotateY(180deg)}}
+
