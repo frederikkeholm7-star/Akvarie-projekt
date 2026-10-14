@@ -238,7 +238,11 @@ alleFisk.forEach(fiskElement => {
 
 //Tilbage knappen\\
 const backButton = document.querySelector("#back-button");
+
 backButton.addEventListener("click", function () {
     const infoBoxes = document.querySelectorAll(".textbox, .parent-box");
-    infoBoxes.forEach = function(box)
+    
+    infoBoxes.forEach(function(box){
+        box.style.display= "none"
+    });
 });
