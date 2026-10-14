@@ -619,6 +619,10 @@
    50% {transform: translateX(-130vw) rotateY(180deg)}
     100% {transform: translateX(0) rotateY(180deg)}}
 
+    body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
 
 #Blå-kirurgfisk {
   left: -180px; 
