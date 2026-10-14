@@ -148,13 +148,10 @@ document.querySelector("#raevefisk").addEventListener("click", function () {
     }, 1500);
 });
 
-document.querySelector("#Banggai-kardinalfisk").addEventListener("click", function () {
-    this.classList.add("swim-forward");
+const banggaiInfo = document.querySelector("#banggai-info");
+const banggaiFish = document.querySelector("#Banggai-kardinalfisk");
+const banggaiTextbox = banggaitInfo.querySelector(".textbox");
 
-    setTimeout(function () {
-        document.querySelector(".textbox").style.display = "block";
-    }, 1500);
-});
 
 
 
