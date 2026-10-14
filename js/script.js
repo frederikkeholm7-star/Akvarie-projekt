@@ -140,7 +140,7 @@ childButton.addEventListener("click", function () {
     textbox.style.display = "block";
 });
 
-document.querySelector("#Rævefisk").addEventListener("click", function () {
+document.querySelector("#Raevefisk").addEventListener("click", function () {
     this.classList.add("swim-forward");
 
     setTimeout(function () {

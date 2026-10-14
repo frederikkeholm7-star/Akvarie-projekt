@@ -323,10 +323,10 @@
     100% {transform: translateX(0) rotateY(180deg)}}
 
 
-#Rævefisk {
+#Raevefisk {
   right: -180px; 
   animation: linear;
-  animation-name: Rævefisk;
+  animation-name: Raevefisk;
   animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-direction: normal;
@@ -334,7 +334,7 @@
   animation-delay: 5s;
 }
 
-@keyframes Rævefisk {
+@keyframes Raevefisk {
    0% {transform: translateX(0) rotateY(0deg); }
    49.9% {transform: translateX(-130vw) rotateY(0deg);}
    50% {transform: translateX(-130vw) rotateY(180deg)}
