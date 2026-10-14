@@ -182,24 +182,26 @@ banggaiInfo.querySelector("#child-button").addEventListener("click", function ()
 
 //Informationsbox til Sommerfuglecichlide\\
 const sommerInfo = document.querySelector("#Sommerfuglcichlide");
-const sommerFish = document.querySelector("#sommerfuglcichlide");
+const sommerFish = document.querySelectorAll(".sommerfugl");
 
 const sommerTextbox = sommerInfo.querySelector(".textbox");
 const sommerParentBox = sommerInfo.querySelector(".parent-box");
 
-sommerFish.addEventListener("click", function () {
-    this.classList.add("swim-forward");
+sommerFish.forEach(function (fiskElement) {
+    fiskElement.addEventListener("click", function () {
+        this.classList.add("swim-forward");
 
-    setTimeout(function () {
-        document.querySelectorAll(".Informationsbox").forEach(function (box) {
-            box.hidden = true;
-        });
+        setTimeout(function () {
+            document.querySelectorAll(".Informationsbox").forEach(function (box) {
+                box.hidden = true;
+            });
 
-        sommerInfo.hidden = false;
-        sommerTextbox.style.display = "block";
-        sommerParentBox.style.display = "none";
-        backButton.style.display = "block";
-    }, 1500);
+            sommerInfo.hidden = false;
+            sommerTextbox.style.display = "block";
+            sommerParentBox.style.display = "none";
+            backButton.style.display = "block";
+        }, 1500);
+    });
 });
 
 sommerInfo.querySelector("#parent-button").addEventListener("click", function () {
