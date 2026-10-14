@@ -195,20 +195,7 @@ playButton.addEventListener("click", function() {
 );
 
 //funktion til afspille en gældende lyd fra arrayet
-function playSound(fiskId, lydType) {
-    // 1. Finder den specifikke fisk i arrayet hvor id matcher
-    const valgtFisk = fisk.find(f => f.id === fiskId);
 
-    // 2. Tjekker om fisken og lyden findes, før den afspilles
-    if (valgtFisk && valgtFisk.sounds && valgtFisk.sounds[lydType]) {
-        const audio = new Audio(valgtFisk.sounds[lydType]);
-        audio.play().catch(error => {
-            console.log();
-        });
-    } else {
-        console.log();
-    }
-}
 
 
 
