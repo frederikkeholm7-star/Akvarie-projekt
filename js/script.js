@@ -229,6 +229,7 @@ alleFisk.forEach(fiskElement => {
             const textbox = document.querySelector(".textbox");
             if (textbox) {
                 textbox.style.display = "block";
+                backButton.style.display = "block";
             }
         }, 1000);
     });
@@ -265,6 +266,7 @@ backButton.addEventListener("click", function () {
     
     infoBoxes.forEach(function(box){
         box.style.display= "none"
+        backButton.style.display = "none";
     });
     
     alleFisk.forEach(function (fiskElement){
