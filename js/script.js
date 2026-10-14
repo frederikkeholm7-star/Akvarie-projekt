@@ -178,3 +178,4 @@ function playSound(fiskId, lydType) {
 
 // Sådan kalder du den for at spille klovnfiskens intro:
 playSound("klovnfisk", "intro");
+playSound("raevefisk", "intro");
