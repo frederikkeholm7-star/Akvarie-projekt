@@ -45,7 +45,7 @@ const fisk = [
         }
     },
 {
-        id: "Sommerfuglecichlide",
+        id: "sommerfuglcichlide",
         sounds: {
             intro:"sound/sommerfuglcichlide/intro.wav",
             alder:"sound/sommerfuglcichlide/alder.wav",
