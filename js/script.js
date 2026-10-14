@@ -80,14 +80,14 @@ const fisk = [
         }
     },
 {
-        id: "#",
+        id: "Sortbundet-kirurg",
         sounds: {
-            intro:"#",
-            alder:"#",
-            levested:"#",
-            spiser:"#",
-            vaegt:"#",
-            superkraft:"#"
+            intro:"sound/sortbaandet-kirurgfisk/sortbaandet-kirurgfisk-intro.m4a",
+            alder:"sound/sortbaandet-kirurgfisk/sortbaandet-kirurgfisk-alder.m4a",
+            levested:"sound/sortbaandet-kirurgfisk/sortbaandet-kirurgfisk-levested.m4a",
+            spiser:"sound/sortbaandet-kirurgfisk/sortbaandet-kirurgfisk-spiser.m4a",
+            vaegt:"sound/sortbaandet-kirurgfisk/sortbaandet-kirurgfisk-vaegt.m4a",
+            superkraft:"sound/sortbaandet-kirurgfisk/sortbaandet-kirurgfisk-superkraft.m4a"
         }
     },
 {
