@@ -268,6 +268,43 @@ orangeInfo.querySelector("#child-button").addEventListener("click", function () 
 });
 
 
+//Informationsbox til Sortbundet-Kirurg\\
+
+const sortbundetInfo = document.querySelector("#Sortbundet-info");
+const sortbundetFish = document.querySelectorAll("img#Sortbundet-kirurg");
+
+const sortbundetTextbox = sortbundetInfo.querySelector(".textbox");
+const sortbundetParentBox = sortbundetInfo.querySelector(".parent-box");
+
+sortbundetFish.forEach(function (fiskElement) {
+    fiskElement.addEventListener("click", function () {
+        this.classList.add("swim-forward");
+
+        setTimeout(function () {
+            document.querySelectorAll(".Informationsbox").forEach(function (box) {
+                box.hidden = true;
+            });
+
+            sortbundetInfo.hidden = false;
+            sortbundetTextbox.style.display = "block";
+            sortbundetParentBox.style.display = "none";
+            backButton.style.display = "block";
+        }, 1500);
+    });
+});
+
+sortbundetInfo.querySelector("#parent-button").addEventListener("click", function () {
+    sortbundetTextbox.style.display = "none";
+    sortbundetParentBox.style.display = "block";
+});
+
+sortbundetInfo.querySelector("#child-button").addEventListener("click", function () {
+    sortbundetParentBox.style.display = "none";
+    sortbundetTextbox.style.display = "block";
+});
+
+
+
 
 //Startside\\
 const playButton = 
