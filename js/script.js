@@ -303,6 +303,40 @@ sortbundetInfo.querySelector("#child-button").addEventListener("click", function
     sortbundetTextbox.style.display = "block";
 });
 
+//Informationsbox til Klovfisk\\
+
+const klovnfiskInfo = document.querySelector("#klovnfisk-info");
+const klovnfiskFish = document.querySelectorAll("img#klovnfisk");
+
+const klovnfiskTextbox = klovnfiskInfo.querySelector(".textbox");
+const klovnfiskParentBox = klovnfiskInfo.querySelector(".parent-box");
+
+klovnfiskFish.forEach(function (fiskElement) {
+    fiskElement.addEventListener("click", function () {
+        this.classList.add("swim-forward");
+
+        setTimeout(function () {
+            document.querySelectorAll(".Informationsbox").forEach(function (box) {
+                box.hidden = true;
+            });
+
+            klovnfiskInfo.hidden = false;
+            klovnfiskTextbox.style.display = "block";
+            klovnfiskParentBox.style.display = "none";
+            backButton.style.display = "block";
+        }, 1500);
+    });
+});
+
+klovnfiskInfo.querySelector("#parent-button").addEventListener("click", function () {
+    klovnfiskTextbox.style.display = "none";
+    klovnfiskParentBox.style.display = "block";
+});
+
+klovnfiskInfo.querySelector("#child-button").addEventListener("click", function () {
+    klovnfiskParentBox.style.display = "none";
+    klovnfiskTextbox.style.display = "block";
+});
 
 
 
