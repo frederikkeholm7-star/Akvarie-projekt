@@ -45,14 +45,15 @@ const fisk = [
         }
     },
 {
-        id: "#",
+        id: "Sommerfuglecichlide",
         sounds: {
-            intro:"#",
-            alder:"#",
-            levested:"#",
-            spiser:"#",
-            vaegt:"#",
-            superkraft:"#"
+            intro:"sound/sommerfuglcichlide/intro.wav",
+            alder:"sound/sommerfuglcichlide/alder.wav",
+            levested:"sound/sommerfuglcichlide/levested.wav",
+            spiser:"sound/sommerfuglcichlide/spiser.wav",
+            vaegt:"sound/sommerfuglcichlide/vaegt.wav",
+            superkraft:"sound/sommerfuglcichlide/superkraft",
+            outro:"sound/sommerfuglcichlide/outro.wav"
         }
     },
 {
@@ -122,3 +123,25 @@ const fisk = [
             superkraft:"#"
         }
     }];
+const parentButton = document.querySelector("#parent-button");
+const parentBox = document.querySelector(".parent-box");
+
+parentButton.addEventListener("click", function () {
+    textbox.style.display = "none";
+    parentBox.style.display = "block";
+});
+
+const childButton = document.querySelector("#child-button");
+
+childButton.addEventListener("click", function () {
+    parentBox.style.display = "none";
+    textbox.style.display = "block";
+});
+
+document.querySelector("#bobby").addEventListener("click", function () {
+    this.classList.add("swim-forward");
+
+    setTimeout(function () {
+        document.querySelector(".textbox").style.display = "block";
+    }, 1500);
+});
