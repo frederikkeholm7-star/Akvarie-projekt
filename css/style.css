@@ -356,3 +356,29 @@
    49.9% {transform: translateX(130vw) rotateY(0deg);}
    50% {transform: translateX(130vw) rotateY(180deg)}
     100% {transform: translateX(0) rotateY(180deg)}}
+
+
+#sommerfuglcichlide {
+ left: -190px; 
+  top: 50%;
+  animation: sommerfuglcichlide 15s linear 2s infinite normal;
+
+}
+
+@keyframes sommerfuglcichlide {
+  0% {
+    transform: translate(0, 0) rotateY(180deg);
+  }
+
+  49.9% {
+    transform: translate(130vw, -130px) rotateY(180deg);
+  }
+
+  50% {
+    transform: translate(130vw, -130px) rotateY(0deg);
+  }
+
+  100% {
+    transform: translate(0, 0) rotateY(0deg);
+  }
+}
