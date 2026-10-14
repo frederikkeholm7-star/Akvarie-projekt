@@ -234,7 +234,28 @@ alleFisk.forEach(fiskElement => {
     });
 });
 
+// Variabel til at holde styr på den lyd, der spiller lige nu
+let currentAudio = null;
 
+// Funktion til at afspille lyd (og stoppe den gamle først)
+function playSound(fiskId, lydType) {
+    // 1. Hvis der allerede er en lyd i gang, så stopper den og nulstiller den
+    if (currentAudio) {
+        currentAudio.pause();
+        currentAudio.currentTime = 0;
+    }
+
+    // 2. Finder den specifikke fisk i arrayet hvor id matcher
+    const valgtFisk = fisk.find(f => f.id === fiskId);
+
+    // 3. Tjeker om fisken og lyden findes, og afspiller den nye lyd
+    if (valgtFisk && valgtFisk.sounds && valgtFisk.sounds[lydType]) {
+        currentAudio = new Audio(valgtFisk.sounds[lydType]);
+        currentAudio.play().catch(error => {
+            console.log("Fejl ved afspilning:", error);
+        });
+    }
+}
 
 //Tilbage knappen\\
 const backButton = document.querySelector("#back-button");
