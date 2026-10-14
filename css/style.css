@@ -357,33 +357,6 @@
    50% {transform: translateX(130vw) rotateY(180deg)}
     100% {transform: translateX(0) rotateY(180deg)}}
 
-<<<<<<< HEAD
-
-#sommerfuglcichlide {
- left: -190px; 
-  top: 50%;
-  animation: sommerfuglcichlide 15s linear 2s infinite normal;
-
-}
-
-@keyframes sommerfuglcichlide {
-  0% {
-    transform: translate(0, 0) rotateY(180deg);
-  }
-
-  49.9% {
-    transform: translate(130vw, -130px) rotateY(180deg);
-  }
-
-  50% {
-    transform: translate(130vw, -130px) rotateY(0deg);
-  }
-
-  100% {
-    transform: translate(0, 0) rotateY(0deg);
-  }
-}
-=======
 #Banggai-kardinalfisk {
   left: -180px; 
   animation: linear;
@@ -453,4 +426,31 @@
    50% {transform: translateX(130vw) rotateY(0deg)}
     100% {transform: translateX(0) rotateY(0deg)}}
 
->>>>>>> d956ab000e829ebff5e15e33978cee674d1935c0
+#sommerfuglcichlide {
+  left: -190px; 
+  animation: linear;
+  animation-name: sommerfuglcichlide;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  top: 50%;
+  animation-delay: 4s;
+}
+
+@keyframes sommerfuglcichlide {
+  0% {
+    transform: translate(0, 0) rotateY(180deg);
+  }
+
+  49.9% {
+    transform: translate(130vw, -180px) rotateY(180deg);
+  }
+
+  50% {
+    transform: translate(130vw, -180px) rotateY(0deg);
+  }
+
+  100% {
+    transform: translate(0, 0) rotateY(0deg);
+  }
+}
