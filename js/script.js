@@ -1,11 +1,7 @@
 "use strict";
 
-const selectedFish = document.querySelector(".fisk");
 const textbox = document.querySelector(".textbox");
 
-selectedFish.addEventListener("click", function () {
-        textbox.style.display = "block";
-});
 
 const fisk = [
     {
@@ -158,7 +154,14 @@ document.querySelector("#Raevefisk").addEventListener("click", function () {
     this.classList.add("swim-forward");
 
     setTimeout(function () {
-        document.querySelector(".textbox").style.display = "block";
+        document.querySelectorAll(".Informationsbox").forEach(function (box) {
+            box.hidden = true;
+        });
+
+        textbox.closest(".Informationsbox").hidden = false;
+        textbox.style.display = "block";
+        parentBox.style.display = "none";
+        backButton.style.display = "block";
     }, 1500);
 });
 
@@ -173,9 +176,11 @@ banggaiFish.addEventListener("click", function () {
 
     setTimeout(function () {
         // Skjul de andre fisks informationsbokse
-        document.querySelectorAll(".Informationsbox").forEach(function (box) {
+            document.querySelectorAll(".Informationsbox").forEach(function (box) {
             box.hidden = true;
         });
+
+        backButton.style.display = "block";
 
         // Vis Banggai-fiskens børneboks
         banggaiInfo.hidden = false;
@@ -226,6 +231,40 @@ sommerInfo.querySelector("#parent-button").addEventListener("click", function ()
 sommerInfo.querySelector("#child-button").addEventListener("click", function () {
     sommerParentBox.style.display = "none";
     sommerTextbox.style.display = "block";
+});
+
+//Informationsbox til Orangeplettet-kirurg\\
+const orangeInfo = document.querySelector("#orange-info");
+const orangeFish = document.querySelectorAll("img#Orangeplettet-kirurg");
+
+const orangeTextbox = orangeInfo.querySelector(".textbox");
+const orangeParentBox = orangeInfo.querySelector(".parent-box");
+
+orangeFish.forEach(function (fiskElement) {
+    fiskElement.addEventListener("click", function () {
+        this.classList.add("swim-forward");
+
+        setTimeout(function () {
+            document.querySelectorAll(".Informationsbox").forEach(function (box) {
+                box.hidden = true;
+            });
+
+            orangeInfo.hidden = false;
+            orangeTextbox.style.display = "block";
+            orangeParentBox.style.display = "none";
+            backButton.style.display = "block";
+        }, 1500);
+    });
+});
+
+orangeInfo.querySelector("#parent-button").addEventListener("click", function () {
+    orangeTextbox.style.display = "none";
+    orangeParentBox.style.display = "block";
+});
+
+orangeInfo.querySelector("#child-button").addEventListener("click", function () {
+    orangeParentBox.style.display = "none";
+    orangeTextbox.style.display = "block";
 });
 
 
