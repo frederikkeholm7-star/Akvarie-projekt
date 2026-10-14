@@ -69,9 +69,9 @@ const fisk = [
         }
     },
 {
-        id: "#",
+        id: "raevefisk",
         sounds: {
-            intro:"#",
+            intro:"sound/raevefisk/rævefisk-intro.m4a",
             alder:"#",
             levested:"#",
             spiser:"#",
@@ -159,3 +159,22 @@ playButton.addEventListener("click", function() {
     startSide.style.display = "none";
 }
 );
+
+
+function playSound(fiskId, lydType) {
+    // 1. Find den specifikke fisk i arrayet hvor id matcher
+    const valgtFisk = fisk.find(f => f.id === fiskId);
+
+    // 2. Tjek om fisken og lyden findes, før vi afspiller
+    if (valgtFisk && valgtFisk.sounds && valgtFisk.sounds[lydType]) {
+        const audio = new Audio(valgtFisk.sounds[lydType]);
+        audio.play().catch(error => {
+            console.log();
+        });
+    } else {
+        console.log();
+    }
+}
+
+// Sådan kalder du den for at spille klovnfiskens intro:
+playSound("klovnfisk", "intro");
