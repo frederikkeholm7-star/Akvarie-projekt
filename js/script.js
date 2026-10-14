@@ -303,7 +303,7 @@ sortbundetInfo.querySelector("#child-button").addEventListener("click", function
     sortbundetTextbox.style.display = "block";
 });
 
-//Informationsbox til Klovfisk\\
+//Informationsbox til Klovnfisk\\
 
 const klovnfiskInfo = document.querySelector("#klovnfisk-info");
 const klovnfiskFish = document.querySelectorAll("img#klovnfisk");
