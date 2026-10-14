@@ -69,7 +69,7 @@ const fisk = [
         }
     },
 {
-        id: "raevefisk",
+        id: "Rævefisk",
         sounds: {
             intro:"sound/raevefisk/rævefisk-intro.m4a",
             alder:"#",
@@ -140,7 +140,7 @@ childButton.addEventListener("click", function () {
     textbox.style.display = "block";
 });
 
-document.querySelector("#raevefisk").addEventListener("click", function () {
+document.querySelector("#Rævefisk").addEventListener("click", function () {
     this.classList.add("swim-forward");
 
     setTimeout(function () {
