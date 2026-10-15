@@ -161,13 +161,13 @@ document
     this.classList.add("swim-forward");
 
     setTimeout(function () {
-        document.querySelectorAll(".informationsbox").forEach(function (box) {
-            box.hidden = true;
-        });
-        textbox.closest(".informationsbox").hidden = false;
-        textbox.style.display = "block";
-        parentBox.style.display = "none";
-        backButton.style.display = "block";
+      document.querySelectorAll(".informationsbox").forEach(function (box) {
+        box.hidden = true;
+      });
+      textbox.closest(".informationsbox").hidden = false;
+      textbox.style.display = "block";
+      parentBox.style.display = "none";
+      backButton.style.display = "block";
     }, 1500);
   });
 
@@ -599,62 +599,65 @@ function playSound(fiskId, lydType) {
 const backButton = document.querySelector("#back-button");
 
 backButton.addEventListener("click", function () {
-    const infoBoxes = document.querySelectorAll(".textbox, .parent-box");
-    backButton.style.display = "none";
+  const infoBoxes = document.querySelectorAll(".textbox, .parent-box");
+  backButton.style.display = "none";
 
-// Finder den fisk, der er blevet valgt
-    const valgtFisk = document.querySelector(".fish-item.swim-forward");
+  // Finder den fisk, der er blevet valgt
+  const valgtFisk = document.querySelector(".fish-item.swim-forward");
 
-    // Afspiller fiskens outro-lyd
-    if (valgtFisk) {
-        playSound(valgtFisk.id, "outro");
-    }
-    
-    infoBoxes.forEach(function(box){
-        box.style.display= "none"
-    });
+  // Afspiller fiskens outro-lyd
+  if (valgtFisk) {
+    playSound(valgtFisk.id, "outro");
+  }
 
   infoBoxes.forEach(function (box) {
     box.style.display = "none";
   });
 
-    
-    setTimeout(function() {
-        alleFisk.forEach(function (fiskElement){
-        fiskElement.classList.remove("swim-forward");
-         });
-        }, 5000);
- 
+  infoBoxes.forEach(function (box) {
+    box.style.display = "none";
+  });
+
+  setTimeout(function () {
+    alleFisk.forEach(function (fiskElement) {
+      fiskElement.classList.remove("swim-forward");
     });
-
-
+  }, 5000);
+});
+//Powder Blue Tang Fish Svømmer//
 const powderBlueTang = document.querySelector("#powder-blue-tang");
+
 let powderBlueTangX = 0;
 let powderBlueTangTime = 0;
 
 function swimPowderBlueTang() {
   powderBlueTangX -= 1;
-  powderBlueTangTime += 0.7;
+  powderBlueTangTime += 0.07;
 
   const powderBlueTangY = Math.sin(powderBlueTangTime) * 8;
 
   if (powderBlueTangX < -powderBlueTang.offsetWidth) {
     powderBlueTangX = window.innerWidth;
   }
-  powderBlueTang.style.transform = `translate(${powderBlueTangX}%, ${powderBlueTangY}%)`;
+
+  powderBlueTang.style.transform = `translate(${powderBlueTangX}px, ${powderBlueTangY}px)`;
+
+  requestAnimationFrame(swimPowderBlueTang);
 }
+
+swimPowderBlueTang();
 
 //Lyd til "Hvor gammel" knappen\\
 
 const soundButtons = document.querySelectorAll(
-    ".info-button[data-fisk][data-lyd]"
+  ".info-button[data-fisk][data-lyd]",
 );
 
 soundButtons.forEach(function (button) {
-    button.addEventListener("click", function () {
-        const fiskId = button.dataset.fisk;
-        const lydType = button.dataset.lyd;
+  button.addEventListener("click", function () {
+    const fiskId = button.dataset.fisk;
+    const lydType = button.dataset.lyd;
 
-        playSound(fiskId, lydType);
-    });
+    playSound(fiskId, lydType);
+  });
 });
