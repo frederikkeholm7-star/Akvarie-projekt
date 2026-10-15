@@ -159,7 +159,7 @@ document.querySelector("#foxface-rabbitfish").addEventListener("click", function
     this.classList.add("swim-forward");
 
     setTimeout(function () {
-        document.querySelectorAll(".Informationsbox").forEach(function (box) {
+        document.querySelectorAll(".informationsbox").forEach(function (box) {
             box.hidden = true;
         });
 
@@ -181,7 +181,7 @@ banggaiFish.addEventListener("click", function () {
 
     setTimeout(function () {
         // Skjul de andre fisks informationsbokse
-            document.querySelectorAll(".Informationsbox").forEach(function (box) {
+            document.querySelectorAll(".informationsbox").forEach(function (box) {
             box.hidden = true;
         });
 
@@ -216,7 +216,7 @@ sommerFish.forEach(function (fiskElement) {
         this.classList.add("swim-forward");
 
         setTimeout(function () {
-            document.querySelectorAll(".Informationsbox").forEach(function (box) {
+            document.querySelectorAll(".informationsbox").forEach(function (box) {
                 box.hidden = true;
             });
 
@@ -239,8 +239,8 @@ sommerInfo.querySelector("#child-button").addEventListener("click", function () 
 });
 
 //Informationsbox til Orangeplettet-kirurg\\
-const orangeInfo = document.querySelector("#orange-shoulder-tang-info");
-const orangeFish = document.querySelectorAll("img#orange-shoulder-tang");
+const orangeInfo = document.querySelector("#orange-shoulder-info");
+const orangeFish = document.querySelectorAll("#orange-shoulder");
 
 const orangeTextbox = orangeInfo.querySelector(".textbox");
 const orangeParentBox = orangeInfo.querySelector(".parent-box");
@@ -250,7 +250,7 @@ orangeFish.forEach(function (fiskElement) {
         this.classList.add("swim-forward");
 
         setTimeout(function () {
-            document.querySelectorAll(".Informationsbox").forEach(function (box) {
+            document.querySelectorAll(".informationsbox").forEach(function (box) {
                 box.hidden = true;
             });
 
@@ -276,7 +276,7 @@ orangeInfo.querySelector("#child-button").addEventListener("click", function () 
 //Informationsbox til Sortbundet-Kirurg\\
 
 const sortbundetInfo = document.querySelector("#black-barred-surgeonfish-info");
-const sortbundetFish = document.querySelectorAll("img#black-barred-surgeonfish");
+const sortbundetFish = document.querySelectorAll("#black-barred-surgeonfish");
 
 const sortbundetTextbox = sortbundetInfo.querySelector(".textbox");
 const sortbundetParentBox = sortbundetInfo.querySelector(".parent-box");
@@ -286,7 +286,7 @@ sortbundetFish.forEach(function (fiskElement) {
         this.classList.add("swim-forward");
 
         setTimeout(function () {
-            document.querySelectorAll(".Informationsbox").forEach(function (box) {
+            document.querySelectorAll(".informationsbox").forEach(function (box) {
                 box.hidden = true;
             });
 
@@ -308,20 +308,20 @@ sortbundetInfo.querySelector("#child-button").addEventListener("click", function
     sortbundetTextbox.style.display = "block";
 });
 
-//Informationsbox til Klovnfisk\\
+//Informationsbox til Clovnfish\\
 
 const clownfishInfo = document.querySelector("#clownfish-info");
-const clownfishFish = document.querySelectorAll("img#clownfish");
+const clownfishFish = document.querySelectorAll("#clownfish");
 
 const clownfishTextbox = clownfishInfo.querySelector(".textbox");
-const clownfisharentBox = clownfishInfo.querySelector(".parent-box");
+const clownfishParentBox = clownfishInfo.querySelector(".parent-box");
 
 clownfishFish.forEach(function (fiskElement) {
-    fishElement.addEventListener("click", function () {
+    fiskElement.addEventListener("click", function () {
         this.classList.add("swim-forward");
 
         setTimeout(function () {
-            document.querySelectorAll(".Informationsbox").forEach(function (box) {
+            document.querySelectorAll(".informationsbox").forEach(function (box) {
                 box.hidden = true;
             });
 
@@ -346,7 +346,7 @@ clownfishInfo.querySelector("#child-button").addEventListener("click", function 
 
 //Informationsbox til Kuglefisk\\
 const pufferfishInfo = document.querySelector("#pufferfish-info");
-const pufferfishFish = document.querySelectorAll("img#pufferfish");
+const pufferfishFish = document.querySelectorAll("#pufferfish");
 
 const pufferfishTextbox = pufferfishInfo.querySelector(".textbox");
 const pufferfishParentBox = pufferfishInfo.querySelector(".parent-box");
@@ -356,7 +356,7 @@ pufferfishFish.forEach(function (fiskElement) {
         this.classList.add("swim-forward");
 
         setTimeout(function () {
-            document.querySelectorAll(".Informationsbox").forEach(function (box) {
+            document.querySelectorAll(".informationsbox").forEach(function (box) {
                 box.hidden = true;
             });
 
@@ -380,7 +380,7 @@ pufferfishInfo.querySelector("#child-button").addEventListener("click", function
 
 //Informationsbox til Blå Kirurgfisk\\
 const powderbluefiskInfo = document.querySelector("#powder-blue-tang-info");
-const powderbluefiskFish = document.querySelectorAll("img#powder-blue-tang");
+const powderbluefiskFish = document.querySelectorAll("#powder-blue-tang");
 
 const powderbluefiskTextbox = powderbluefiskInfo.querySelector(".textbox");
 const powderbluefiskParentBox = powderbluefiskInfo.querySelector(".parent-box");
@@ -390,7 +390,7 @@ powderbluefiskFish.forEach(function (fiskElement) {
         this.classList.add("swim-forward");
 
         setTimeout(function () {
-            document.querySelectorAll(".Informationsbox").forEach(function (box) {
+            document.querySelectorAll(".informationsbox").forEach(function (box) {
                 box.hidden = true;
             });
 
@@ -453,7 +453,7 @@ function playSound(fiskId, lydType) {
     }
 
     // 2. Finder den specifikke fisk i arrayet hvor id matcher
-    const valgtFisk = fisk.find(f => f.id === fiskId);
+    const valgtFisk = fishItem.find(f => f.id === fiskId);
 
     // 3. Tjeker om fisken og lyden findes, og afspiller den nye lyd
     if (valgtFisk && valgtFisk.sounds && valgtFisk.sounds[lydType]) {
