@@ -164,6 +164,13 @@ document
       document.querySelectorAll(".informationsbox").forEach(function (box) {
         box.hidden = true;
       });
+      textbox.closest(".informationsbox").hidden = false;
+      textbox.style.display = "block";
+      parentBox.style.display = "none";
+      backButton.style.display = "block";
+      document.querySelectorAll(".informationsbox").forEach(function (box) {
+        box.hidden = true;
+      });
 
       textbox.closest(".Informationsbox").hidden = false;
       textbox.style.display = "block";
@@ -250,7 +257,7 @@ sommerInfo
 
 //Informationsbox til Orangeplettet-kirurg\\
 const orangeInfo = document.querySelector("#orange-shoulder-info");
-const orangeFish = document.querySelectorAll("#orange-shoulder");
+const orangeFish = document.querySelectorAll("#orange-shoulder-tang");
 
 const orangeTextbox = orangeInfo.querySelector(".textbox");
 const orangeParentBox = orangeInfo.querySelector(".parent-box");
