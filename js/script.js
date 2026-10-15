@@ -7,13 +7,13 @@ const fishItem = [
     {
         id: "clownfish",
         sounds: {
-            intro:"sound/nemo/nemo-intro.m4a",
-            alder:"sound/nemo/nemo-alder.m4a",
-            levested:"sound/nemo/nemo-levested.m4a",
-            spiser:"sound/nemo/nemo-spiser.m4a",
-            vaegt:"sound/nemo/nemo-vaegt.m4a",
-            superkraft:"sound/nemo/nemo-superkraft.m4a",
-            outro:"sound/nemo/nemo-outro.m4a"
+            intro:"sound/clownfish/intro.m4a",
+            alder:"sound/clownfish/age.m4a",
+            levested:"sound/clownfish/habitat.m4a",
+            spiser:"sound/clownfish/diet.m4a",
+            vaegt:"sound/clownfish/weight.m4a",
+            superkraft:"sound/clownfish/superpower.m4a",
+            outro:"sound/clownfish/outro.m4a"
         }
     },
     {
@@ -31,38 +31,38 @@ const fishItem = [
     {
         id: "banggai-cardinalfish",
         sounds: {
-            intro:"sound/banggai-kardinalfisk/banggai-kardinalfisk-intro.m4a",
-            alder:"sound/banggai-kardinalfisk/baggai-alder.m4a",
-            levested:"sound/banggai-kardinalfisk/banggai-levested.m4a",
-            spiser:"sound/banggai-kardinalfisk/banggai-spiser.m4a",
-            vaegt:"sound/banggai-kardinalfisk/banggai-vaegt.m4a",
-            superkraft:"sound/banggai-kardinalfisk/banggai-superkraft.m4a",
-            outro:"sound/banggai-kardinalfisk/banggai-outro.m4a"
+            intro:"sound/banggai-cardinalfish/intro.m4a",
+            alder:"sound/banggai-cardinalfish/age.m4a",
+            levested:"sound/banggai-cardinalfish/habitat.m4a",
+            spiser:"sound/banggai-cardinalfish/diet.m4a",
+            vaegt:"sound/banggai-cardinalfish/weight.m4a",
+            superkraft:"sound/banggai-cardinalfish/superpower.m4a",
+            outro:"sound/banggai-cardinalfish/outro.m4a"
         }
     },
 {
         id: "angel-fish",
         sounds: {
-            intro:"sound/sommerfuglcichlide/intro.wav",
-            alder:"sound/sommerfuglcichlide/alder.wav",
-            levested:"sound/sommerfuglcichlide/levested.wav",
-            spiser:"sound/sommerfuglcichlide/spiser.wav",
-            vaegt:"sound/sommerfuglcichlide/vaegt.wav",
-            superkraft:"sound/sommerfuglcichlide/superkraft",
-            outro:"sound/sommerfuglcichlide/outro.wav"
+            intro:"sound/angel-fish/intro.wav",
+            alder:"sound/angel-fish/age.wav",
+            levested:"sound/angel-fish/habitat.wav",
+            spiser:"sound/angel-fish/diet.wav",
+            vaegt:"sound/angel-fish/weight.wav",
+            superkraft:"sound/angel-fish/superpower.wav",
+            outro:"sound/angel-fish/outro.wav"
         }
     },
 
 {
         id: "angel-fish2",
         sounds: {
-            intro:"sound/sommerfuglcichlide/intro.wav",
-            alder:"sound/sommerfuglcichlide/alder.wav",
-            levested:"sound/sommerfuglcichlide/levested.wav",
-            spiser:"sound/sommerfuglcichlide/spiser.wav",
-            vaegt:"sound/sommerfuglcichlide/vaegt.wav",
-            superkraft:"sound/sommerfuglcichlide/superkraft",
-            outro:"sound/sommerfuglcichlide/outro.wav"
+            intro:"sound/angel-fish/intro.wav",
+            alder:"sound/angel-fish/age.wav",
+            levested:"sound/angel-fish/habitat.wav",
+            spiser:"sound/angel-fish/diet.wav",
+            vaegt:"sound/angel-fish/weight.wav",
+            superkraft:"sound/angel-fish/superpower.wav",
+            outro:"sound/angel-fish/outro.wav"
         }
     },
 
@@ -81,23 +81,23 @@ const fishItem = [
 {
         id: "foxface-rabbitfish",
         sounds: {
-            intro:"sound/raevefisk/rævefisk-intro.m4a",
-            alder:"sound/raevefisk/rævefisk-alder.m4a",
-            levested:"sound/raevefisk/rævefisk-levested.m4a",
-            spiser:"sound/raevefisk/rævefisk-spiser.m4a",
-            vaegt:"sound/raevefisk/rævefisk-vaegt.m4a",
-            superkraft:"sound/raevefisk/rævefisk-superkraft.m4a"
+            intro:"sound/foxface-rabbitfish/intro.m4a",
+            alder:"sound/foxface-rabbitfish/age.m4a",
+            levested:"sound/foxface-rabbitfish/habitat.m4a",
+            spiser:"sound/foxface-rabbitfish/diet.m4a",
+            vaegt:"sound/foxface-rabbitfish/weight.m4a",
+            superkraft:"sound/foxface-rabbitfish/superpower.m4a"
         }
     },
 {
         id: "black-barred-surgeonfish",
         sounds: {
-            intro:"sound/sortbaandet-kirurgfisk/sortbaandet-kirurgfisk-intro.m4a",
-            alder:"sound/sortbaandet-kirurgfisk/sortbaandet-kirurgfisk-alder.m4a",
-            levested:"sound/sortbaandet-kirurgfisk/sortbaandet-kirurgfisk-levested.m4a",
-            spiser:"sound/sortbaandet-kirurgfisk/sortbaandet-kirurgfisk-spiser.m4a",
-            vaegt:"sound/sortbaandet-kirurgfisk/sortbaandet-kirurgfisk-vaegt.m4a",
-            superkraft:"sound/sortbaandet-kirurgfisk/sortbaandet-kirurgfisk-superkraft.m4a"
+            intro:"sound/black-barred-surgeonfish/intro.m4a",
+            alder:"sound/black-barred-surgeonfish/age.m4a",
+            levested:"sound/black-barred-surgeonfish/habitat.m4a",
+            spiser:"sound/black-barred-surgeonfish/diet.m4a",
+            vaegt:"sound/black-barred-surgeonfish/weight.m4a",
+            superkraft:"sound/black-barred-surgeonfish/superpower.m4a"
         }
     },
 {
@@ -114,12 +114,12 @@ const fishItem = [
 {
         id: "powder-blue-tang",
         sounds: {
-            intro:"sound/blåfisk/ blåfisk intro.m4a",
-            alder:"sound/blåfisk/blåfisk-alder.m4a",
-            levested:"sound/blåfisk/blåfisk-levested.m4a",
-            spiser:"sound/blåfisk/blåfisk-spiser.m4a",
-            vaegt:"sound/blåfisk/blåfisk-vaegt.m4a",
-            superkraft:"sound/blåfisk/blåfisk-superkraft.m4a"
+            intro:"sound/powder-blue-tang/intro.m4a",
+            alder:"sound/powder-blue-tang/age.m4a",
+            levested:"sound/powder-blue-tang/habitat.m4a",
+            spiser:"sound/powder-blue-tang/diet.m4a",
+            vaegt:"sound/powder-blue-tang/weight.m4a",
+            superkraft:"sound/powder-blue-tang/superpower.m4a"
         }
     },
 {
