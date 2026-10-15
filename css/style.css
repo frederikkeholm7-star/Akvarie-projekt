@@ -625,7 +625,7 @@ main {
 
 /*Fiskene der svømmer*/
 
-.orange-shoulder-tang {
+#orange-shoulder-tang {
   right: -150px;
   animation: linear;
   animation-name: orange-shoulder-tang;
@@ -651,7 +651,7 @@ main {
   }
 }
 
-.foxface-rabbitfish {
+#foxface-rabbitfish {
   right: -180px;
   animation: linear;
   animation-name: foxface-rabbitfish;
@@ -677,7 +677,7 @@ main {
   }
 }
 
-.black-barred-surgeonfish {
+#black-barred-surgeonfish {
   left: -190px;
   animation: linear;
   animation-name: black-barred-surgeonfish;
@@ -703,7 +703,7 @@ main {
   }
 }
 
-.banggai-cardinalfish {
+#banggai-cardinalfish {
   left: -180px;
   animation: linear;
   animation-name: banggai-cardinalfish;
@@ -809,7 +809,7 @@ main {
   }
 }
 
-.banggai-cardinalfish3 {
+#banggai-cardinalfish3 {
   left: -180px;
   animation: linear;
   animation-name: Banggai-kardinalfisk3;
@@ -862,7 +862,7 @@ main {
   }
 }
 
-.banggai-cardinalfish4 {
+#banggai-cardinalfish4 {
   left: -180px;
   animation: linear;
   animation-name: Banggai-kardinalfisk4;
@@ -915,7 +915,7 @@ main {
   }
 }
 
-.banggai-cardinalfish5 {
+#banggai-cardinalfish5 {
   left: -196px;
   animation: linear;
   animation-name: Banggai-kardinalfisk5;
@@ -968,7 +968,7 @@ main {
   }
 }
 
-.clownfish {
+#clownfish {
   left: -180px;
   animation: linear;
   animation-name: clownfish;
@@ -994,7 +994,7 @@ main {
   }
 }
 
-.pufferfish {
+#pufferfish {
   right: -180px;
   animation: linear;
   animation-name: pufferfish;
@@ -1024,7 +1024,7 @@ body {
   overflow-x: hidden;
 }
 
-.powder-blue-tang {
+#powder-blue-tang {
   left: -180px;
   animation: linear;
   animation-name: powder-blue-tang;
@@ -1050,7 +1050,7 @@ body {
   }
 }
 
-.angel-fish {
+#angel-fish {
   left: -150px;
   animation: linear;
   animation-name: sommerfuglcichlide1;
@@ -1076,7 +1076,7 @@ body {
   }
 }
 
-.angel-fish2 {
+#angel-fish2 {
   left: -210px;
   animation: linear;
   animation-name: angel-fish2;
@@ -1102,7 +1102,7 @@ body {
   }
 }
 
-.turtle {
+#turtle {
   left: -300px;
   animation: linear;
   animation-name: turtle;
