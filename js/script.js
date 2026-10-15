@@ -163,7 +163,11 @@ document.querySelector("#foxface-rabbitfish").addEventListener("click", function
             box.hidden = true;
         });
 
+<<<<<<< HEAD
         textbox.closest(".informationsbox").hidden = false;
+=======
+textbox.closest(".informationsbox").hidden = false;
+>>>>>>> 1fb9d86756e041c272d863ee0d5a072256b717ef
         textbox.style.display = "block";
         parentBox.style.display = "none";
         backButton.style.display = "block";
@@ -240,7 +244,7 @@ sommerInfo.querySelector("#child-button").addEventListener("click", function () 
 
 //Informationsbox til Orangeplettet-kirurg\\
 const orangeInfo = document.querySelector("#orange-shoulder-info");
-const orangeFish = document.querySelectorAll("#orange-shoulder");
+const orangeFish = document.querySelectorAll("#orange-shoulder-tang");
 
 const orangeTextbox = orangeInfo.querySelector(".textbox");
 const orangeParentBox = orangeInfo.querySelector(".parent-box");
