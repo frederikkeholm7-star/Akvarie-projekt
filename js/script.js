@@ -605,18 +605,48 @@ function playSound(fiskId, lydType) {
 const backButton = document.querySelector("#back-button");
 
 backButton.addEventListener("click", function () {
+<<<<<<< Updated upstream
   const infoBoxes = document.querySelectorAll(".textbox, .parent-box");
+=======
+    const infoBoxes = document.querySelectorAll(".textbox, .parent-box");
+
+// Finder den fisk, der er blevet valgt
+    const valgtFisk = document.querySelector(".fish-item.swim-forward");
+
+    // Afspiller fiskens outro-lyd
+    if (valgtFisk) {
+        playSound(valgtFisk.id, "outro");
+    }
+    
+    infoBoxes.forEach(function(box){
+        box.style.display= "none"
+    });
+>>>>>>> Stashed changes
 
   infoBoxes.forEach(function (box) {
     box.style.display = "none";
   });
 
+<<<<<<< Updated upstream
   backButton.style.display = "none";
 
   alleFisk.forEach(function (fiskElement) {
     fiskElement.classList.remove("swim-forward");
   });
 });
+=======
+    
+    setTimeout(function() {
+        alleFisk.forEach(function (fiskElement){
+        fiskElement.classList.remove("swim-forward");
+         });
+        }, 5000);
+ 
+    });
+
+
+
+>>>>>>> Stashed changes
 
 const powderBlueTang = document.querySelector("#powder-blue-tang");
 let powderBlueTangX = 0;
