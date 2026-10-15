@@ -1193,3 +1193,15 @@ body {
   margin-top: 20px;
   cursor: pointer;
 }
+
+.fish-item {
+    padding: 0;
+    border: none;
+    background: transparent;
+}
+
+.fish-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
