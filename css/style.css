@@ -399,18 +399,9 @@ main {
 
 .fish-item {
   position: absolute;
-  width: 150px;
-  height: auto;
-  padding: 0;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-}
-
-.fish-item img {
-  display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  top: 35%;
 }
 
 /* ========================================
@@ -629,6 +620,32 @@ main {
 }
 
 @keyframes orange-shoulder-tang {
+  0% {
+    transform: translateX(0) rotateY(0deg);
+  }
+  49.9% {
+    transform: translateX(-130vw) rotateY(0deg);
+  }
+  50% {
+    transform: translateX(-130vw) rotateY(180deg);
+  }
+  100% {
+    transform: translateX(0) rotateY(180deg);
+  }
+}
+
+#siamese-fighting-fish {
+  right: -140px;
+  animation: linear;
+  animation-name: orange-shoulder-tang;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  top: 20%;
+  animation-delay: 2s;
+}
+
+@keyframes siamese-fighting-fish {
   0% {
     transform: translateX(0) rotateY(0deg);
   }
@@ -1016,29 +1033,29 @@ body {
   overflow-x: hidden;
 }
 
-#powder-blue-tang {
-  left: -180px;
+#blue-tang {
+  right: -150px;
   animation: linear;
-  animation-name: powder-blue-tang;
-  animation-duration: 13s;
+  animation-name: blue-tang;
+  animation-duration: 17s;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  top: 70%;
+  top: 10%;
   animation-delay: 4s;
 }
 
-@keyframes powder-blue-tang {
+@keyframes blue-tang {
   0% {
-    transform: translateX(0) rotateY(180deg);
+    transform: translateX(0) rotateY(0deg);
   }
   49.9% {
-    transform: translateX(130vw) rotateY(180deg);
+    transform: translateX(-130vw) rotateY(0deg);
   }
   50% {
-    transform: translateX(130vw) rotateY(0deg);
+    transform: translateX(-130vw) rotateY(180deg);
   }
   100% {
-    transform: translateX(0) rotateY(0deg);
+    transform: translateX(0) rotateY(180deg);
   }
 }
 
@@ -1130,7 +1147,7 @@ body {
 }
 
 /* Når en fisk bliver klikket på og får klassen swim-forward */
-.fisk.swim-forward {
+.fish-container.swim-forward {
   animation: none !important; /* Stopper den uendelige svømmetur */
   top: 35% !important; /* Bestem højden på skærmen hvor den skal stoppe */
   left: 20% !important; /* Placerer den mod venstre (tilpas efter behov) */
@@ -1141,7 +1158,7 @@ body {
 }
 /*Tilbage knappen*/
 #back-button {
-  position: absolute;
+  position: fixed;
   left: 25px;
   bottom: 25px;
   z-index: 11;
