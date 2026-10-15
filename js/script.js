@@ -163,7 +163,7 @@ document.querySelector("#foxface-rabbitfish").addEventListener("click", function
             box.hidden = true;
         });
 
-        textbox.closest(".Informationsbox").hidden = false;
+textbox.closest(".informationsbox").hidden = false;
         textbox.style.display = "block";
         parentBox.style.display = "none";
         backButton.style.display = "block";
@@ -240,7 +240,7 @@ sommerInfo.querySelector("#child-button").addEventListener("click", function () 
 
 //Informationsbox til Orangeplettet-kirurg\\
 const orangeInfo = document.querySelector("#orange-shoulder-info");
-const orangeFish = document.querySelectorAll("#orange-shoulder");
+const orangeFish = document.querySelectorAll("#orange-shoulder-tang");
 
 const orangeTextbox = orangeInfo.querySelector(".textbox");
 const orangeParentBox = orangeInfo.querySelector(".parent-box");
