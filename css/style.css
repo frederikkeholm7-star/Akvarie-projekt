@@ -564,24 +564,7 @@ main {
   height: auto;
   position: absolute;
 }
-
-.banggai-cardinalfish {
-  width: 70px;
-  height: auto;
-  position: absolute;
-}
-
-.turtle {
-  width: 250px;
-}
-
-.foxface-rabbitfish {
-  width: 150px; /* Gør den samme størrelse som de andre fisk */
-  height: auto;
-  cursor: pointer;
-  transition: transform 1.5s ease-in-out;
-  pointer-events: auto;
-}
+/* INFORMATIONS BOKSE TIL BØRN OG FORÆLDRE*/
 
 #parent-box {
   display: none;
