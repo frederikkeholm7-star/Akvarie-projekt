@@ -439,7 +439,7 @@ main {
   height: auto;
 }
 
-#orange-shoulder-tang{
+#orange-shoulder-tang {
   width: 12%;
   height: auto;
 }
@@ -450,6 +450,15 @@ main {
 }
 
 #turtle {
+  width: 12%;
+  height: auto;
+}
+#powder-blue-tang {
+  width: 12%;
+  height: auto;
+}
+
+#blue-tang {
   width: 12%;
   height: auto;
 }
@@ -1171,16 +1180,16 @@ body {
 }
 
 .parent-box {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 75%;
-    transform: translate(-50%, -50%);
-    background-color: var(--background-color);
-    padding: 30px;
-    border-radius: 15px;
-    width: 500px;
-    z-index: 10;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  background-color: var(--background-color);
+  padding: 30px;
+  border-radius: 15px;
+  width: 500px;
+  z-index: 10;
 }
 
 #child-button {
@@ -1195,13 +1204,13 @@ body {
 }
 
 .fish-item {
-    padding: 0;
-    border: none;
-    background: transparent;
+  padding: 0;
+  border: none;
+  background: transparent;
 }
 
 .fish-item img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
