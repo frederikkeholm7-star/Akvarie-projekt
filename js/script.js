@@ -3,9 +3,9 @@
 const textbox = document.querySelector(".textbox");
 
 
-const fisk = [
+const fishItem = [
     {
-        id: "klovnfisk",
+        id: "clownfish",
         sounds: {
             intro:"sound/nemo/nemo-intro.m4a",
             alder:"sound/nemo/nemo-alder.m4a",
@@ -17,7 +17,7 @@ const fisk = [
         }
     },
     {
-        id: "Orangeplettet-kirurg",
+        id: "orange-shoulder-tang",
         sounds: {
             intro:"sound/orangeplettede-kirurgfisk/intro.wav",
             alder:"sound/orangeplettede-kirurgfisk/alder.wav",
@@ -29,7 +29,7 @@ const fisk = [
         }
     },
     {
-        id: "Banggai-kardinalfisk",
+        id: "banggai-cardinalfish",
         sounds: {
             intro:"sound/banggai-kardinalfisk/banggai-kardinalfisk-intro.m4a",
             alder:"sound/banggai-kardinalfisk/baggai-alder.m4a",
@@ -41,7 +41,7 @@ const fisk = [
         }
     },
 {
-        id: "sommerfuglcichlide1",
+        id: "angel-fish",
         sounds: {
             intro:"sound/sommerfuglcichlide/intro.wav",
             alder:"sound/sommerfuglcichlide/alder.wav",
@@ -54,7 +54,7 @@ const fisk = [
     },
 
 {
-        id: "sommerfuglcichlide2",
+        id: "angel-fish2",
         sounds: {
             intro:"sound/sommerfuglcichlide/intro.wav",
             alder:"sound/sommerfuglcichlide/alder.wav",
@@ -67,7 +67,7 @@ const fisk = [
     },
 
 {
-        id: "Kuglefisk",
+        id: "pufferfish",
         sounds: {
             intro:"sound/kuglefisk/kuglefisk-intro.m4a",
             alder:"sound/kuglefisk/kuglefisk-alder.m4a",
@@ -79,7 +79,7 @@ const fisk = [
         }
     },
 {
-        id: "Raevefisk",
+        id: "foxface-rabbitfish",
         sounds: {
             intro:"sound/raevefisk/rævefisk-intro.m4a",
             alder:"sound/raevefisk/rævefisk-alder.m4a",
@@ -90,7 +90,7 @@ const fisk = [
         }
     },
 {
-        id: "Sortbundet-kirurg",
+        id: "black-barred-surgeonfish",
         sounds: {
             intro:"sound/sortbaandet-kirurgfisk/sortbaandet-kirurgfisk-intro.m4a",
             alder:"sound/sortbaandet-kirurgfisk/sortbaandet-kirurgfisk-alder.m4a",
@@ -101,7 +101,7 @@ const fisk = [
         }
     },
 {
-        id: "Skildpadde",
+        id: "turtle",
         sounds: {
             intro:"sound/skildpadde/skildpadde-intro.m4a",
             alder:"sound/skildpadde/skildpadde-alder.m4a",
@@ -112,7 +112,7 @@ const fisk = [
         }
     },
 {
-        id: "Blå-kirurgfisk",
+        id: "powder-blue-tang",
         sounds: {
             intro:"sound/blåfisk/ blåfisk intro.m4a",
             alder:"sound/blåfisk/blåfisk-alder.m4a",
