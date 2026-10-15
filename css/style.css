@@ -1,13 +1,26 @@
+/* ========================================
+   GRUNDINDSTILLINGER
+   Fjerner browserens standard margin og padding.
+   Border og padding medregnes i elementernes størrelse.
+======================================== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.aquarium,
-.aquarium * {
-  box-sizing: border-box;
+main {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1440 / 1024;
+  overflow: hidden;
 }
+
+/* ========================================
+   AKVARIETS BAGGRUND
+   Indeholder akvariets grundlæggende opsætning
+   og gradienten, der skaber vandets farver.
+======================================== */
 
 .aquarium {
   background: #ffffff;
@@ -16,17 +29,12 @@
   gap: 0px;
   align-items: flex-start;
   justify-content: flex-start;
-  height: 1024px;
+  height: 100%;
+  position: relative;
   overflow: hidden;
 }
 
-.akvarie {
-    position: absolute;
-    inset: 0;
-    z-index: 3; 
-}
-
-.background {
+.aquarium {
   background: linear-gradient(
     180deg,
     rgba(50, 207, 224, 1) 0%,
@@ -34,16 +42,11 @@
     rgba(49, 93, 148, 1) 62.00000047683716%,
     rgba(41, 75, 116, 1) 100%
   );
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  align-self: stretch;
-  flex: 1;
-  position: relative;
-  overflow: hidden;
 }
+/* ========================================
+   ØVERSTE DEL AF BAGGRUNDEN
+   Indeholder lysstråler og baggrundsklipper.
+======================================== */
 
 .background-top {
   display: flex;
@@ -56,6 +59,7 @@
   overflow: hidden;
 }
 
+/* Lysstråler i vandet */
 .light-rays {
   display: flex;
   flex-direction: row;
@@ -63,13 +67,14 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 1440px;
-  height: 507px;
+  width: 100%;
+  height: auto;
   position: relative;
   overflow: visible;
   mix-blend-mode: overlay;
+  filter: brightness(1.15);
 }
-
+/* Baggrundsklipper */
 .cliffs {
   margin: -524.73px 0 0 0;
   display: flex;
@@ -80,8 +85,8 @@
   flex: 1;
   position: relative;
 }
-
-.cliff-foreground {
+/* Mørk klippe i forgrunden */
+#cliff-foreground {
   display: flex;
   flex-direction: row;
   gap: 0px;
@@ -90,11 +95,11 @@
   flex-shrink: 0;
   height: auto;
   position: relative;
-  z-index: 2;
   overflow: visible;
+  z-index: 2;
 }
-
-.cliff-background {
+/* Lys klippe i baggrunden */
+#cliff-background {
   margin: 112px 0 0 -265.6px;
   display: flex;
   flex-direction: row;
@@ -104,9 +109,14 @@
   flex-shrink: 0;
   height: auto;
   position: relative;
-  z-index: 1;
   overflow: visible;
+  z-index: 1;
 }
+
+/* ========================================
+   NEDERSTE DEL AF BAGGRUNDEN
+   Indeholder akvariets havbund.
+======================================== */
 
 .background-bottom {
   display: flex;
@@ -137,20 +147,250 @@
   position: relative;
   overflow: visible;
 }
+/* ========================================
+   DEKORATIONER PÅ HAVBUNDEN
+   Fælles område for elementerne, der placeres
+   oven på akvariets baggrund.
+======================================== */
 
-:root{
-    --primary-color: #0D3B89; 
-    --secondary-color: #FF003C;
-    --font-family: "Barlow", sans-serif; 
-    --background-color: #F5F5F0;
+.seabed-decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1440px;
+  height: 1024px;
+}
+
+/* ========================================
+   PLANTER
+   Fælles område for alle planter.
+   Hver plante placeres individuelt med sit ID.
+======================================== */
+
+.plants {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#plant-01 {
+  position: absolute;
+  left: 86.25%;
+  bottom: 2.78%;
+  z-index: 4;
+}
+
+#plant-02 {
+  position: absolute;
+  left: 69.44%;
+  bottom: -53.71%;
+  z-index: 2;
+}
+
+#plant-03 {
+  position: absolute;
+  left: 85.14%;
+  bottom: 27.34%;
+  z-index: 3;
+}
+
+#plant-04 {
+  position: absolute;
+  left: 34.31%;
+  bottom: 12.5%;
+  z-index: 3;
+}
+
+#plant-05 {
+  position: absolute;
+  left: 76.94%;
+  bottom: 31.25%;
+  z-index: 3;
+}
+
+#plant-06 {
+  position: absolute;
+  left: -4.1%;
+  bottom: 6.38%;
+  z-index: 3;
+}
+
+#plant-07 {
+  position: absolute;
+  left: 10.42%;
+  bottom: 2.7%;
+  z-index: 3;
+}
+
+#plant-08 {
+  position: absolute;
+  left: 0%;
+  bottom: 41.71%;
+  z-index: 4;
+}
+
+#plant-09 {
+  position: absolute;
+  left: 14.79%;
+  bottom: 40.93%;
+  z-index: 3;
+}
+
+#plant-10 {
+  position: absolute;
+  left: 19.79%;
+  bottom: 17.3%;
+  z-index: 3;
+}
+
+#plant-11 {
+  position: absolute;
+  left: 87.5%;
+  bottom: 32.92%;
+  z-index: 2;
+}
+
+/* ========================================
+   STEN
+   Fælles område for stenene.
+   Hver sten placeres individuelt med sit ID.
+======================================== */
+
+.rocks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1440px;
+  height: 1024px;
+}
+
+#rock-01 {
+  position: absolute;
+  left: 19.58%;
+  bottom: 2.48%;
+  z-index: 3;
+}
+
+#rock-02 {
+  position: absolute;
+  left: -3.13%;
+  bottom: 0%;
+  z-index: 3;
+}
+
+/* ========================================
+   KORALKLIPPER
+   Fælles område for de tre koralklipper.
+   Klipperne placeres individuelt med deres ID.
+======================================== */
+.coral-cliff {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1440px;
+  height: 1024px;
+}
+
+#coral-cliff-01 {
+  position: absolute;
+  left: 0%;
+  bottom: 20.7%;
+  z-index: 1;
+}
+
+#coral-cliff-02 {
+  position: absolute;
+  left: 76.2%;
+  bottom: 11.28%;
+  z-index: 1;
+}
+
+#coral-cliff-03 {
+  position: absolute;
+  left: -1.18%;
+  bottom: 6.23%;
+  z-index: 2;
+}
+
+/* ========================================
+   DYR PÅ HAVBUNDEN
+   Indeholder musling og søstjerne.
+======================================== */
+.seabed-animals {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1440px;
+  height: 1024px;
+  z-index: 3;
+}
+/* Musling */
+#seabed-animal-01 {
+  position: absolute;
+  left: 55.56%;
+  bottom: 9.77%;
+  z-index: 3;
+}
+/* Søstjerne */
+#seabed-animal-02 {
+  position: absolute;
+  left: 46.32%;
+  bottom: 3.54%;
+  z-index: 3;
+}
+
+/* ========================================
+   ØVRIGE DEKORATIONER
+   Indeholder grotte og bobler.
+======================================== */
+.aquarium-decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1440px;
+  height: 1024px;
+}
+/* Grotten */
+#cave {
+  position: absolute;
+  left: 60.56%;
+  bottom: 39.77%;
+}
+/* Bobler */
+#bubble-big {
+  position: absolute;
+  left: 34.72%;
+  bottom: 78.13%;
+  z-index: 3;
+}
+
+#bubble-medium {
+  position: absolute;
+  left: 38.19%;
+  bottom: 63.48%;
+  z-index: 3;
+}
+
+#bubble-small {
+  position: absolute;
+  left: 48.61%;
+  bottom: 76.17%;
+  z-index: 3;
+}
+
+:root {
+  --primary-color: #0d3b89;
+  --secondary-color: #ff003c;
+  --font-family: "Barlow", sans-serif;
+  --background-color: #f5f5f0;
 }
 
 /*Startside*/
 
 .start-side {
-  position:absolute;
+  position: absolute;
   inset: 0;
-  display: flex; 
+  display: flex;
   justify-content: center;
   align-items: center;
   z-index: 20;
@@ -158,163 +398,159 @@
 }
 
 #play-button {
-    background-color: white;
-    width: 320px;
-    height: 180px;
-    border-radius: 200px;
-    /*border: none;*/
-    font-size: 100px;
-    color: var(--secondary-color);
+  background-color: white;
+  width: 320px;
+  height: 180px;
+  border-radius: 200px;
+  /*border: none;*/
+  font-size: 100px;
+  color: var(--secondary-color);
 }
 
 #logo {
-    width: 150px;
-    height: auto;
-    position:absolute;
-    top: 25px; 
-    left: 25px; 
-    z-index: 99;
+  width: 150px;
+  height: auto;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  z-index: 99;
 }
-
 
 /* Informations box til børn*/
 .textbox {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 75%;
-    transform: translate(-50%, -50%);
-    background-color: var(--background-color);
-    padding: 30px;
-    border-radius: 15px;
-    z-index: 10;
-    width: 500px;
-    box-sizing: border-box;
- }   
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  background-color: var(--background-color);
+  padding: 30px;
+  border-radius: 15px;
+  z-index: 10;
+  width: 500px;
+  box-sizing: border-box;
+}
 
- .textbox h2 {
-    color: var(--primary-color);
-    font-family:var(--font-family);
-    margin-bottom: 20px;
-    font-size: 32px;
- }
- 
+.textbox h2 {
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
 .textbox h3 {
-    font-weight: normal;
-    font-size: 24px;
+  font-weight: normal;
+  font-size: 24px;
 }
 
 .info-row {
-    display:flex;
-    align-items: center;
-    gap: 20px; 
-    margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 12px;
 }
 
 .info-row img {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
 
 .info-button {
-    background-color: #d9d9d9;
-    padding: 8px;
-    border-radius: 10px;
-    width: 80px;
-    position: relative;
+  background-color: #d9d9d9;
+  padding: 8px;
+  border-radius: 10px;
+  width: 80px;
+  position: relative;
 }
 
 .info-button .sound-icon {
-    width: 12px;
-    height: 12px;
-    position: absolute;
-    top: 5px;
-    right: 5px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
 
 #parent-button {
-    background-color: #d9d9d9;
-    color: var(--secondary-color);
-    border: none;
-    border-radius: 10px;
-    padding: 8px 12px; 
-    font-size: 24px;
-    margin-top: 20px;
+  background-color: #d9d9d9;
+  color: var(--secondary-color);
+  border: none;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-size: 24px;
+  margin-top: 20px;
 }
 
 /*Fiskene*/
 .fish-item {
-    width: 150px;
-    height: auto;
-    position:absolute;
+  width: 150px;
+  height: auto;
+  position: absolute;
 }
 
 .banggai-cardinalfish {
-    width: 70px;
-    height: auto;
-    position:absolute;
-    }
-
-.turtle
-{
-  width: 250px
+  width: 70px;
+  height: auto;
+  position: absolute;
 }
 
+.turtle {
+  width: 250px;
+}
 
 .foxface-rabbitfish {
-    width: 150px; /* Gør den samme størrelse som de andre fisk */
-    height: auto;
-    cursor: pointer;
-    transition: transform 1.5s ease-in-out;
-    pointer-events: auto;
+  width: 150px; /* Gør den samme størrelse som de andre fisk */
+  height: auto;
+  cursor: pointer;
+  transition: transform 1.5s ease-in-out;
+  pointer-events: auto;
 }
 
 .parent-box {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 75%;
-    transform: translate(-50%, -50%);
-    background-color: var(--background-color);
-    padding: 30px;
-    border-radius: 15px;
-    width: 500px;
-    min-height: auto;    
-    box-sizing: border-box;
-    z-index: 10;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  background-color: var(--background-color);
+  padding: 30px;
+  border-radius: 15px;
+  width: 500px;
+  min-height: auto;
+  box-sizing: border-box;
+  z-index: 10;
 }
 
 .parent-box h2 {
-    color: var(--primary-color);
-    font-family: var(--font-family);
-    font-size: 32px;
-    margin-bottom: 20px;
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  font-size: 32px;
+  margin-bottom: 20px;
 }
 
 .parent-box p {
-    font-family: var(--font-family);
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 15px;
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
 }
 
 #parent-button,
 #child-button {
-    background-color: #dddddd;
-    color: #ff0050;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-    font-size: 20px;
-    cursor: pointer;
+  background-color: #dddddd;
+  color: #ff0050;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
 }
-
 
 /*Fiskene der svømmer*/
 
 .orange-shoulder-tang {
-  right: -150px; 
+  right: -150px;
   animation: linear;
   animation-name: orange-shoulder-tang;
   animation-duration: 18s;
@@ -325,14 +561,22 @@
 }
 
 @keyframes orange-shoulder-tang {
-   0% {transform: translateX(0) rotateY(0deg); }
-   49.9% {transform: translateX(-130vw) rotateY(0deg);}
-   50% {transform: translateX(-130vw) rotateY(180deg)}
-    100% {transform: translateX(0) rotateY(180deg)}}
-
+  0% {
+    transform: translateX(0) rotateY(0deg);
+  }
+  49.9% {
+    transform: translateX(-130vw) rotateY(0deg);
+  }
+  50% {
+    transform: translateX(-130vw) rotateY(180deg);
+  }
+  100% {
+    transform: translateX(0) rotateY(180deg);
+  }
+}
 
 .foxface-rabbitfish {
-  right: -180px; 
+  right: -180px;
   animation: linear;
   animation-name: foxface-rabbitfish;
   animation-duration: 15s;
@@ -343,13 +587,22 @@
 }
 
 @keyframes foxface-rabbitfish {
-   0% {transform: translateX(0) rotateY(0deg); }
-   49.9% {transform: translateX(-130vw) rotateY(0deg);}
-   50% {transform: translateX(-130vw) rotateY(180deg)}
-    100% {transform: translateX(0) rotateY(180deg)}}
+  0% {
+    transform: translateX(0) rotateY(0deg);
+  }
+  49.9% {
+    transform: translateX(-130vw) rotateY(0deg);
+  }
+  50% {
+    transform: translateX(-130vw) rotateY(180deg);
+  }
+  100% {
+    transform: translateX(0) rotateY(180deg);
+  }
+}
 
 .black-barred-surgeonfish {
-  left: -190px; 
+  left: -190px;
   animation: linear;
   animation-name: black-barred-surgeonfish;
   animation-duration: 12s;
@@ -360,13 +613,22 @@
 }
 
 @keyframes black-barred-surgeonfish {
-   0% {transform: translateX(0) rotateY(0deg); }
-   49.9% {transform: translateX(130vw) rotateY(0deg);}
-   50% {transform: translateX(130vw) rotateY(180deg)}
-    100% {transform: translateX(0) rotateY(180deg)}}
+  0% {
+    transform: translateX(0) rotateY(0deg);
+  }
+  49.9% {
+    transform: translateX(130vw) rotateY(0deg);
+  }
+  50% {
+    transform: translateX(130vw) rotateY(180deg);
+  }
+  100% {
+    transform: translateX(0) rotateY(180deg);
+  }
+}
 
 .banggai-cardinalfish {
-  left: -180px; 
+  left: -180px;
   animation: linear;
   animation-name: banggai-cardinalfish;
   animation-duration: 20s;
@@ -377,12 +639,21 @@
 }
 
 @keyframes banggai-cardinalfish {
-   0% {transform: translateX(0) rotateY(0deg); }
-   49.9% {transform: translateX(130vw) rotateY(0deg);}
-   50% {transform: translateX(130vw) rotateY(180deg)}
-    100% {transform: translateX(0) rotateY(180deg)}}
+  0% {
+    transform: translateX(0) rotateY(0deg);
+  }
+  49.9% {
+    transform: translateX(130vw) rotateY(0deg);
+  }
+  50% {
+    transform: translateX(130vw) rotateY(180deg);
+  }
+  100% {
+    transform: translateX(0) rotateY(180deg);
+  }
+}
 
-@keyframes banggai-cardinalfish{
+@keyframes banggai-cardinalfish {
   0% {
     transform: translate(0, 0) rotateY(0deg);
   }
@@ -409,9 +680,8 @@
   }
 }
 
-    
 #banggai-cardinalfish2 {
-  left: -180px; 
+  left: -180px;
   animation: linear;
   animation-name: Banggai-kardinalfisk2;
   animation-duration: 20s;
@@ -422,12 +692,21 @@
 }
 
 @keyframes banggai-cardinalfish2 {
-   0% {transform: translateX(0) rotateY(0deg); }
-   49.9% {transform: translateX(130vw) rotateY(0deg);}
-   50% {transform: translateX(130vw) rotateY(180deg)}
-    100% {transform: translateX(0) rotateY(180deg)}}
+  0% {
+    transform: translateX(0) rotateY(0deg);
+  }
+  49.9% {
+    transform: translateX(130vw) rotateY(0deg);
+  }
+  50% {
+    transform: translateX(130vw) rotateY(180deg);
+  }
+  100% {
+    transform: translateX(0) rotateY(180deg);
+  }
+}
 
-    @keyframes banggai-cardinalfish2 {
+@keyframes banggai-cardinalfish2 {
   0% {
     transform: translate(0, 0) rotateY(0deg);
   }
@@ -455,7 +734,7 @@
 }
 
 .banggai-cardinalfish3 {
-  left: -180px; 
+  left: -180px;
   animation: linear;
   animation-name: Banggai-kardinalfisk3;
   animation-duration: 20s;
@@ -466,12 +745,21 @@
 }
 
 @keyframes banggai-cardinalfish3 {
-   0% {transform: translateX(0) rotateY(0deg); }
-   49.9% {transform: translateX(130vw) rotateY(0deg);}
-   50% {transform: translateX(130vw) rotateY(180deg)}
-    100% {transform: translateX(0) rotateY(180deg)}}
+  0% {
+    transform: translateX(0) rotateY(0deg);
+  }
+  49.9% {
+    transform: translateX(130vw) rotateY(0deg);
+  }
+  50% {
+    transform: translateX(130vw) rotateY(180deg);
+  }
+  100% {
+    transform: translateX(0) rotateY(180deg);
+  }
+}
 
-      @keyframes banggai-cardinalfish3 {
+@keyframes banggai-cardinalfish3 {
   0% {
     transform: translate(0, 0) rotateY(0deg);
   }
@@ -498,8 +786,8 @@
   }
 }
 
-  .banggai-cardinalfish4 {
-  left: -180px; 
+.banggai-cardinalfish4 {
+  left: -180px;
   animation: linear;
   animation-name: Banggai-kardinalfisk4;
   animation-duration: 20s;
@@ -510,12 +798,21 @@
 }
 
 @keyframes banggai-cardinalfish4 {
-   0% {transform: translateX(0) rotateY(0deg); }
-   49.9% {transform: translateX(130vw) rotateY(0deg);}
-   50% {transform: translateX(130vw) rotateY(180deg)}
-    100% {transform: translateX(0) rotateY(180deg)}}
+  0% {
+    transform: translateX(0) rotateY(0deg);
+  }
+  49.9% {
+    transform: translateX(130vw) rotateY(0deg);
+  }
+  50% {
+    transform: translateX(130vw) rotateY(180deg);
+  }
+  100% {
+    transform: translateX(0) rotateY(180deg);
+  }
+}
 
-       @keyframes banggai-cardinalfish4 {
+@keyframes banggai-cardinalfish4 {
   0% {
     transform: translate(0, 0) rotateY(0deg);
   }
@@ -542,8 +839,8 @@
   }
 }
 
-  .banggai-cardinalfish5 {
-  left: -196px; 
+.banggai-cardinalfish5 {
+  left: -196px;
   animation: linear;
   animation-name: Banggai-kardinalfisk5;
   animation-duration: 20s;
@@ -554,12 +851,21 @@
 }
 
 @keyframes banggai-cardinalfish5 {
-   0% {transform: translateX(0) rotateY(0deg); }
-   49.9% {transform: translateX(130vw) rotateY(0deg);}
-   50% {transform: translateX(130vw) rotateY(180deg)}
-    100% {transform: translateX(0) rotateY(180deg)}}
+  0% {
+    transform: translateX(0) rotateY(0deg);
+  }
+  49.9% {
+    transform: translateX(130vw) rotateY(0deg);
+  }
+  50% {
+    transform: translateX(130vw) rotateY(180deg);
+  }
+  100% {
+    transform: translateX(0) rotateY(180deg);
+  }
+}
 
-          @keyframes banggai-cardinalfish5 {
+@keyframes banggai-cardinalfish5 {
   0% {
     transform: translate(0, 0) rotateY(0deg);
   }
@@ -587,7 +893,7 @@
 }
 
 .clownfish {
-  left: -180px; 
+  left: -180px;
   animation: linear;
   animation-name: clownfish;
   animation-duration: 17s;
@@ -598,13 +904,22 @@
 }
 
 @keyframes clownfish {
-   0% {transform: translateX(0) rotateY(180deg); }
-   49.9% {transform: translateX(130vw) rotateY(180deg);}
-   50% {transform: translateX(130vw) rotateY(0deg)}
-    100% {transform: translateX(0) rotateY(0deg)}}
+  0% {
+    transform: translateX(0) rotateY(180deg);
+  }
+  49.9% {
+    transform: translateX(130vw) rotateY(180deg);
+  }
+  50% {
+    transform: translateX(130vw) rotateY(0deg);
+  }
+  100% {
+    transform: translateX(0) rotateY(0deg);
+  }
+}
 
 .pufferfish {
-  right: -180px; 
+  right: -180px;
   animation: linear;
   animation-name: pufferfish;
   animation-duration: 13s;
@@ -615,17 +930,26 @@
 }
 
 @keyframes pufferfish {
-   0% {transform: translateX(0) rotateY(0deg); }
-   49.9% {transform: translateX(-130vw) rotateY(0deg);}
-   50% {transform: translateX(-130vw) rotateY(180deg)}
-    100% {transform: translateX(0) rotateY(180deg)}}
+  0% {
+    transform: translateX(0) rotateY(0deg);
+  }
+  49.9% {
+    transform: translateX(-130vw) rotateY(0deg);
+  }
+  50% {
+    transform: translateX(-130vw) rotateY(180deg);
+  }
+  100% {
+    transform: translateX(0) rotateY(180deg);
+  }
+}
 
-    body {
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
 }
 
 .powder-blue-tang {
-  left: -180px; 
+  left: -180px;
   animation: linear;
   animation-name: powder-blue-tang;
   animation-duration: 13s;
@@ -636,13 +960,22 @@
 }
 
 @keyframes powder-blue-tang {
-   0% {transform: translateX(0) rotateY(180deg); }
-   49.9% {transform: translateX(130vw) rotateY(180deg);}
-   50% {transform: translateX(130vw) rotateY(0deg)}
-    100% {transform: translateX(0) rotateY(0deg)}}
+  0% {
+    transform: translateX(0) rotateY(180deg);
+  }
+  49.9% {
+    transform: translateX(130vw) rotateY(180deg);
+  }
+  50% {
+    transform: translateX(130vw) rotateY(0deg);
+  }
+  100% {
+    transform: translateX(0) rotateY(0deg);
+  }
+}
 
 .angel-fish {
-  left: -150px; 
+  left: -150px;
   animation: linear;
   animation-name: sommerfuglcichlide1;
   animation-duration: 15s;
@@ -668,7 +1001,7 @@
 }
 
 .angel-fish2 {
-  left: -210px; 
+  left: -210px;
   animation: linear;
   animation-name: angel-fish2;
   animation-duration: 15s;
@@ -694,7 +1027,7 @@
 }
 
 .turtle {
-  left: -300px; 
+  left: -300px;
   animation: linear;
   animation-name: turtle;
   animation-duration: 30s;
@@ -705,32 +1038,47 @@
 }
 
 @keyframes turtle {
-   0% {transform: translate(0) rotateY(0deg); }
-   25% {transform: translate(60vw, -200px) rotateY(0deg)}
-   49.9% {transform: translate(130vw) rotateY(0deg);}
-   50% {transform: translate(130vw) rotateY(180deg)}
-   80% {transform: translate(40vw, -250px) rotateY(180deg)}
-   80% {transform: translate(40vw, -200px) rotateY(180deg)}
-   100% {transform: translate(0) rotateY(180deg)}}
+  0% {
+    transform: translate(0) rotateY(0deg);
+  }
+  25% {
+    transform: translate(60vw, -200px) rotateY(0deg);
+  }
+  49.9% {
+    transform: translate(130vw) rotateY(0deg);
+  }
+  50% {
+    transform: translate(130vw) rotateY(180deg);
+  }
+  80% {
+    transform: translate(40vw, -250px) rotateY(180deg);
+  }
+  80% {
+    transform: translate(40vw, -200px) rotateY(180deg);
+  }
+  100% {
+    transform: translate(0) rotateY(180deg);
+  }
+}
 
 /* Når en fisk bliver klikket på og får klassen swim-forward */
 .fisk.swim-forward {
-    animation: none !important; /* Stopper den uendelige svømmetur */
-    top: 35% !important;        /* Bestem højden på skærmen hvor den skal stoppe */
-    left: 20% !important;       /* Placerer den mod venstre (tilpas efter behov) */
-    right: auto !important;     
-    transform: scale(3);      /* Gør fisken stor */
-    z-index: 20;                /* Sørger for den er ovenpå baggrunden */
-    transition: all 0.8s ease-in-out; /* Gør overgangen blød */
+  animation: none !important; /* Stopper den uendelige svømmetur */
+  top: 35% !important; /* Bestem højden på skærmen hvor den skal stoppe */
+  left: 20% !important; /* Placerer den mod venstre (tilpas efter behov) */
+  right: auto !important;
+  transform: scale(3); /* Gør fisken stor */
+  z-index: 20; /* Sørger for den er ovenpå baggrunden */
+  transition: all 0.8s ease-in-out; /* Gør overgangen blød */
 }
 /*Tilbage knappen*/
 #back-button {
   position: absolute;
-  left: 25px; 
-  bottom: 25px; 
+  left: 25px;
+  bottom: 25px;
   z-index: 11;
   background-color: #d9d9d9;
-  width: 140px; 
+  width: 140px;
   height: 55px;
   border-radius: 30px;
   font-size: 40px;
