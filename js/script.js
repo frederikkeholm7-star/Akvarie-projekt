@@ -645,3 +645,16 @@ function swimPowderBlueTang() {
 }
 
 //Lyd til "Hvor gammel" knappen\\
+
+const soundButtons = document.querySelectorAll(
+    ".info-button[data-fisk][data-lyd]"
+);
+
+soundButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+        const fiskId = button.dataset.fisk;
+        const lydType = button.dataset.lyd;
+
+        playSound(fiskId, lydType);
+    });
+});
