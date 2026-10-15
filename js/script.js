@@ -422,10 +422,6 @@ playButton.addEventListener("click", function() {
 );
 
 //funktion til afspille en gældende lyd fra arrayet
-
-
-
-
 const alleFisk = document.querySelectorAll(".fisk");
 
 alleFisk.forEach(fiskElement => {
@@ -457,9 +453,7 @@ function playSound(fiskId, lydType) {
     // 3. Tjeker om fisken og lyden findes, og afspiller den nye lyd
     if (valgtFisk && valgtFisk.sounds && valgtFisk.sounds[lydType]) {
         currentAudio = new Audio(valgtFisk.sounds[lydType]);
-        currentAudio.play().catch(error => {
-            console.log("Fejl ved afspilning:", error);
-        });
+        currentAudio.play().catch();
     }
 }
 
