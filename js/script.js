@@ -162,9 +162,13 @@ document.querySelector("#foxface-rabbitfish").addEventListener("click", function
         document.querySelectorAll(".informationsbox").forEach(function (box) {
             box.hidden = true;
         });
+<<<<<<< HEAD
 
         textbox.closest(".informationsbox").hidden = false;
 textbox.closest(".informationsbox").hidden = false;
+=======
+        textbox.closest(".informationsbox").hidden = false;
+>>>>>>> c7059c580bbdec8dfcb0cbd7c689fafa985748ac
         textbox.style.display = "block";
         parentBox.style.display = "none";
         backButton.style.display = "block";
