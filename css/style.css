@@ -244,24 +244,25 @@
 }
 
 /*Fiskene*/
-.fisk {
+.fish-item {
     width: 150px;
     height: auto;
     position:absolute;
 }
 
-.benggai {
+.banggai-cardinalfish {
     width: 70px;
     height: auto;
     position:absolute;
     }
-.Skildpadde
+
+.turtle
 {
   width: 250px
 }
 
 
-#Raevefisk {
+.foxface-rabbitfish {
     width: 150px; /* Gør den samme størrelse som de andre fisk */
     height: auto;
     cursor: pointer;
@@ -312,10 +313,10 @@
 
 /*Fiskene der svømmer*/
 
-#Orangeplettet-kirurg {
+.orange-shoulder-tang {
   right: -150px; 
   animation: linear;
-  animation-name: orangeplettet-kirurg;
+  animation-name: orange-shoulder-tang;
   animation-duration: 18s;
   animation-iteration-count: infinite;
   animation-direction: normal;
@@ -323,17 +324,17 @@
   animation-delay: 2s;
 }
 
-@keyframes orangeplettet-kirurg {
+@keyframes orange-shoulder-tang {
    0% {transform: translateX(0) rotateY(0deg); }
    49.9% {transform: translateX(-130vw) rotateY(0deg);}
    50% {transform: translateX(-130vw) rotateY(180deg)}
     100% {transform: translateX(0) rotateY(180deg)}}
 
 
-#Raevefisk {
+.foxface-rabbitfish {
   right: -180px; 
   animation: linear;
-  animation-name: Raevefisk;
+  animation-name: foxface-rabbitfish;
   animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-direction: normal;
@@ -341,16 +342,16 @@
   animation-delay: 5s;
 }
 
-@keyframes Raevefisk {
+@keyframes foxface-rabbitfish {
    0% {transform: translateX(0) rotateY(0deg); }
    49.9% {transform: translateX(-130vw) rotateY(0deg);}
    50% {transform: translateX(-130vw) rotateY(180deg)}
     100% {transform: translateX(0) rotateY(180deg)}}
 
-#Sortbundet-kirurg {
+.black-barred-surgeonfish {
   left: -190px; 
   animation: linear;
-  animation-name: Sortbundet-kirurg;
+  animation-name: black-barred-surgeonfish;
   animation-duration: 12s;
   animation-iteration-count: infinite;
   animation-direction: normal;
@@ -358,16 +359,16 @@
   animation-delay: 6s;
 }
 
-@keyframes Sortbundet-kirurg {
+@keyframes black-barred-surgeonfish {
    0% {transform: translateX(0) rotateY(0deg); }
    49.9% {transform: translateX(130vw) rotateY(0deg);}
    50% {transform: translateX(130vw) rotateY(180deg)}
     100% {transform: translateX(0) rotateY(180deg)}}
 
-#Banggai-kardinalfisk {
+.banggai-cardinalfish {
   left: -180px; 
   animation: linear;
-  animation-name: Banggai-kardinalfisk;
+  animation-name: banggai-cardinalfish;
   animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-direction: normal;
@@ -375,13 +376,13 @@
   animation-delay: 2s;
 }
 
-@keyframes Banggai-kardinalfisk {
+@keyframes banggai-cardinalfish {
    0% {transform: translateX(0) rotateY(0deg); }
    49.9% {transform: translateX(130vw) rotateY(0deg);}
    50% {transform: translateX(130vw) rotateY(180deg)}
     100% {transform: translateX(0) rotateY(180deg)}}
 
-@keyframes Banggai-kardinalfisk {
+@keyframes banggai-cardinalfish{
   0% {
     transform: translate(0, 0) rotateY(0deg);
   }
@@ -409,7 +410,7 @@
 }
 
     
-#Banggai-kardinalfisk2 {
+#banggai-cardinalfish2 {
   left: -180px; 
   animation: linear;
   animation-name: Banggai-kardinalfisk2;
@@ -420,13 +421,13 @@
   animation-delay: 2.5s;
 }
 
-@keyframes Banggai-kardinalfisk2 {
+@keyframes banggai-cardinalfish2 {
    0% {transform: translateX(0) rotateY(0deg); }
    49.9% {transform: translateX(130vw) rotateY(0deg);}
    50% {transform: translateX(130vw) rotateY(180deg)}
     100% {transform: translateX(0) rotateY(180deg)}}
 
-    @keyframes Banggai-kardinalfisk2 {
+    @keyframes banggai-cardinalfish2 {
   0% {
     transform: translate(0, 0) rotateY(0deg);
   }
@@ -453,7 +454,7 @@
   }
 }
 
-#Banggai-kardinalfisk3 {
+.banggai-cardinalfish3 {
   left: -180px; 
   animation: linear;
   animation-name: Banggai-kardinalfisk3;
@@ -464,13 +465,13 @@
   animation-delay: 2.1s;
 }
 
-@keyframes Banggai-kardinalfisk3 {
+@keyframes banggai-cardinalfish3 {
    0% {transform: translateX(0) rotateY(0deg); }
    49.9% {transform: translateX(130vw) rotateY(0deg);}
    50% {transform: translateX(130vw) rotateY(180deg)}
     100% {transform: translateX(0) rotateY(180deg)}}
 
-      @keyframes Banggai-kardinalfisk3 {
+      @keyframes banggai-cardinalfish3 {
   0% {
     transform: translate(0, 0) rotateY(0deg);
   }
@@ -497,7 +498,7 @@
   }
 }
 
-    #Banggai-kardinalfisk4 {
+  .banggai-cardinalfish4 {
   left: -180px; 
   animation: linear;
   animation-name: Banggai-kardinalfisk4;
@@ -508,13 +509,13 @@
   animation-delay: 2.5s;
 }
 
-@keyframes Banggai-kardinalfisk4 {
+@keyframes banggai-cardinalfish4 {
    0% {transform: translateX(0) rotateY(0deg); }
    49.9% {transform: translateX(130vw) rotateY(0deg);}
    50% {transform: translateX(130vw) rotateY(180deg)}
     100% {transform: translateX(0) rotateY(180deg)}}
 
-       @keyframes Banggai-kardinalfisk4 {
+       @keyframes banggai-cardinalfish4 {
   0% {
     transform: translate(0, 0) rotateY(0deg);
   }
@@ -541,7 +542,7 @@
   }
 }
 
-    #Banggai-kardinalfisk5 {
+  .banggai-cardinalfish5 {
   left: -196px; 
   animation: linear;
   animation-name: Banggai-kardinalfisk5;
@@ -552,13 +553,13 @@
   animation-delay: 2.8s;
 }
 
-@keyframes Banggai-kardinalfisk5 {
+@keyframes banggai-cardinalfish5 {
    0% {transform: translateX(0) rotateY(0deg); }
    49.9% {transform: translateX(130vw) rotateY(0deg);}
    50% {transform: translateX(130vw) rotateY(180deg)}
     100% {transform: translateX(0) rotateY(180deg)}}
 
-          @keyframes Banggai-kardinalfisk5 {
+          @keyframes banggai-cardinalfish5 {
   0% {
     transform: translate(0, 0) rotateY(0deg);
   }
@@ -585,10 +586,10 @@
   }
 }
 
-#klovnfisk {
+.clownfish {
   left: -180px; 
   animation: linear;
-  animation-name: klovnfisk;
+  animation-name: clownfish;
   animation-duration: 17s;
   animation-iteration-count: infinite;
   animation-direction: normal;
@@ -596,16 +597,16 @@
   animation-delay: 3s;
 }
 
-@keyframes klovnfisk {
+@keyframes clownfish {
    0% {transform: translateX(0) rotateY(180deg); }
    49.9% {transform: translateX(130vw) rotateY(180deg);}
    50% {transform: translateX(130vw) rotateY(0deg)}
     100% {transform: translateX(0) rotateY(0deg)}}
 
-#Kuglefisk {
+.pufferfish {
   right: -180px; 
   animation: linear;
-  animation-name: Kuglefisk;
+  animation-name: pufferfish;
   animation-duration: 13s;
   animation-iteration-count: infinite;
   animation-direction: normal;
@@ -613,7 +614,7 @@
   animation-delay: 4s;
 }
 
-@keyframes Kuglefisk {
+@keyframes pufferfish {
    0% {transform: translateX(0) rotateY(0deg); }
    49.9% {transform: translateX(-130vw) rotateY(0deg);}
    50% {transform: translateX(-130vw) rotateY(180deg)}
@@ -623,10 +624,10 @@
     overflow-x: hidden;
 }
 
-#Blå-kirurgfisk {
+.powder-blue-tang {
   left: -180px; 
   animation: linear;
-  animation-name: Blå-kirurgfisk;
+  animation-name: powder-blue-tang;
   animation-duration: 13s;
   animation-iteration-count: infinite;
   animation-direction: normal;
@@ -634,13 +635,13 @@
   animation-delay: 4s;
 }
 
-@keyframes Blå-kirurgfisk {
+@keyframes powder-blue-tang {
    0% {transform: translateX(0) rotateY(180deg); }
    49.9% {transform: translateX(130vw) rotateY(180deg);}
    50% {transform: translateX(130vw) rotateY(0deg)}
     100% {transform: translateX(0) rotateY(0deg)}}
 
-#sommerfuglcichlide1 {
+.angel-fish {
   left: -150px; 
   animation: linear;
   animation-name: sommerfuglcichlide1;
@@ -651,7 +652,7 @@
   animation-delay: 4s;
 }
 
-@keyframes sommerfuglcichlide1 {
+@keyframes angel-fish {
   0% {
     transform: translate(0, 0) rotateY(180deg);
   }
@@ -666,10 +667,10 @@
   }
 }
 
-#sommerfuglcichlide2 {
+.angel-fish2 {
   left: -210px; 
   animation: linear;
-  animation-name: sommerfuglcichlide2;
+  animation-name: angel-fish2;
   animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-direction: normal;
@@ -677,7 +678,7 @@
   animation-delay: 4s;
 }
 
-@keyframes sommerfuglcichlide2 {
+@keyframes angel-fish2 {
   0% {
     transform: translate(0, 0) rotateY(180deg);
   }
@@ -692,10 +693,10 @@
   }
 }
 
-#Skildpadde {
+.turtle {
   left: -300px; 
   animation: linear;
-  animation-name: Skildpadde;
+  animation-name: turtle;
   animation-duration: 30s;
   animation-iteration-count: infinite;
   animation-direction: normal;
@@ -703,7 +704,7 @@
   animation-delay: 8s;
 }
 
-@keyframes Skildpadde {
+@keyframes turtle {
    0% {transform: translate(0) rotateY(0deg); }
    25% {transform: translate(60vw, -200px) rotateY(0deg)}
    49.9% {transform: translate(130vw) rotateY(0deg);}
