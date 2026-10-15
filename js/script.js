@@ -412,7 +412,104 @@ powderbluefiskInfo.querySelector("#child-button").addEventListener("click", func
     powderbluefiskTextbox.style.display = "block";
 });
 
+// Informationsboks til Havskildpadde
 
+const turtleInfo = document.querySelector("#turtle-info");
+const turtleFish = document.querySelector("#turtle");
+
+const turtleTextbox = turtleInfo.querySelector(".textbox");
+const turtleParentBox = turtleInfo.querySelector(".parent-box");
+
+turtleFish.addEventListener("click", function () {
+    this.classList.add("swim-forward");
+
+    setTimeout(function () {
+        document.querySelectorAll(".informationsbox").forEach(function (box) {
+            box.hidden = true;
+        });
+
+        turtleInfo.hidden = false;
+        turtleTextbox.style.display = "block";
+        turtleParentBox.style.display = "none";
+        backButton.style.display = "block";
+    }, 1500);
+});
+
+turtleInfo.querySelector("#parent-button").addEventListener("click", function () {
+    turtleTextbox.style.display = "none";
+    turtleParentBox.style.display = "block";
+});
+
+turtleInfo.querySelector("#child-button").addEventListener("click", function () {
+    turtleParentBox.style.display = "none";
+    turtleTextbox.style.display = "block";
+});
+
+// Informationsboks til Blue Tang
+
+const blueTangInfo = document.querySelector("#blue-tang-info");
+const blueTangFish = document.querySelector("#blue-tang");
+
+const blueTangTextbox = blueTangInfo.querySelector(".textbox");
+const blueTangParentBox = blueTangInfo.querySelector(".parent-box");
+
+blueTangFish.addEventListener("click", function () {
+    this.classList.add("swim-forward");
+
+    setTimeout(function () {
+        document.querySelectorAll(".informationsbox").forEach(function (box) {
+            box.hidden = true;
+        });
+
+        blueTangInfo.hidden = false;
+        blueTangTextbox.style.display = "block";
+        blueTangParentBox.style.display = "none";
+        backButton.style.display = "block";
+    }, 1500);
+});
+
+blueTangInfo.querySelector("#parent-button").addEventListener("click", function () {
+    blueTangTextbox.style.display = "none";
+    blueTangParentBox.style.display = "block";
+});
+
+blueTangInfo.querySelector("#child-button").addEventListener("click", function () {
+    blueTangParentBox.style.display = "none";
+    blueTangTextbox.style.display = "block";
+});
+
+// Informationsboks til Siamesisk kampfisk
+
+const siameseInfo = document.querySelector("#siamese-fighting-fish-info");
+const siameseFish = document.querySelector("#siamese-fighting-fish");
+
+const siameseTextbox = siameseInfo.querySelector(".textbox");
+const siameseParentBox = siameseInfo.querySelector(".parent-box");
+
+siameseFish.addEventListener("click", function () {
+    this.classList.add("swim-forward");
+
+    setTimeout(function () {
+        document.querySelectorAll(".informationsbox").forEach(function (box) {
+            box.hidden = true;
+        });
+
+        siameseInfo.hidden = false;
+        siameseTextbox.style.display = "block";
+        siameseParentBox.style.display = "none";
+        backButton.style.display = "block";
+    }, 1500);
+});
+
+siameseInfo.querySelector("#parent-button").addEventListener("click", function () {
+    siameseTextbox.style.display = "none";
+    siameseParentBox.style.display = "block";
+});
+
+siameseInfo.querySelector("#child-button").addEventListener("click", function () {
+    siameseParentBox.style.display = "none";
+    siameseTextbox.style.display = "block";
+});
 
 //Startside\\
 const playButton = 
