@@ -234,8 +234,8 @@ sommerInfo.querySelector("#child-button").addEventListener("click", function () 
 });
 
 //Informationsbox til Orangeplettet-kirurg\\
-const orangeInfo = document.querySelector("#orange-shoulder-tang-info");
-const orangeFish = document.querySelectorAll("img#orange-shoulder-tang");
+const orangeInfo = document.querySelector("#orange-shoulder-info");
+const orangeFish = document.querySelectorAll("img#orange-shoulder");
 
 const orangeTextbox = orangeInfo.querySelector(".textbox");
 const orangeParentBox = orangeInfo.querySelector(".parent-box");
@@ -303,16 +303,16 @@ sortbundetInfo.querySelector("#child-button").addEventListener("click", function
     sortbundetTextbox.style.display = "block";
 });
 
-//Informationsbox til Klovnfisk\\
+//Informationsbox til Clovnfish\\
 
 const clownfishInfo = document.querySelector("#clownfish-info");
 const clownfishFish = document.querySelectorAll("img#clownfish");
 
 const clownfishTextbox = clownfishInfo.querySelector(".textbox");
-const clownfisharentBox = clownfishInfo.querySelector(".parent-box");
+const clownfishParentBox = clownfishInfo.querySelector(".parent-box");
 
 clownfishFish.forEach(function (fiskElement) {
-    fishElement.addEventListener("click", function () {
+    fiskElement.addEventListener("click", function () {
         this.classList.add("swim-forward");
 
         setTimeout(function () {
@@ -448,7 +448,7 @@ function playSound(fiskId, lydType) {
     }
 
     // 2. Finder den specifikke fisk i arrayet hvor id matcher
-    const valgtFisk = fisk.find(f => f.id === fiskId);
+    const valgtFisk = fishItem.find(f => f.id === fiskId);
 
     // 3. Tjeker om fisken og lyden findes, og afspiller den nye lyd
     if (valgtFisk && valgtFisk.sounds && valgtFisk.sounds[lydType]) {
