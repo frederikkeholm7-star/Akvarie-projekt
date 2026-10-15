@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+< lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,125 +11,202 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
 
+ <>
+    <>
+      <!-- BAGGRUND
+            Indeholder akvariets faste baggrund: lysstråler, klipper og havbund. -->
 
-  <body>
-    <main>
-      <section class="baggrund">
+      <section class="background">
         <div class="aquarium">
+          <!-- Øverste del af akvariets baggrund -->
+          <div class="background-top">
+            <!-- Lysstråler i vandet -->
 
-<!--Baggrund-->
-          <div class="background">    
-            <div class="background-top">
-              <img class="light-rays" src="img/light-rays.svg" />
+            <img class="light-rays" src="img/light-rays.svg" alt="light rays" />
 
-              <div class="cliffs">
-                <img class="cliff-foreground" src="img/cliff-foreground.svg" />
-                <img class="cliff-background" src="img/cliff-shape-background.svg" />
-              </div>
+            <!-- Klipper i baggrunden -->
+            <div class="cliffs">
+              <img
+                src="img/cliff-foreground.svg"
+                alt="cliffs"
+                id="cliff-foreground"
+              />
+              <img
+                src="img/cliff-shape-background.svg"
+                alt="cliffs"
+                id="cliff-background"
+              />
             </div>
-
-            <div class="background-bottom">
-              <div class="seabed">
-                <img class="seabed-vector" src="img/seabed.svg" />
-              </div>
+          </div>
+          <!-- Nederste del af akvariets baggrund -->
+          <div class="background-bottom">
+            <!-- Havbund / sand -->
+            <div class="seabed">
+              <img src="img/seabed.svg" alt="seabed" />
             </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- DEKORATIONER PÅ HAVBUNDEN
+            Indeholder de dekorative elementer, som placeres oven på baggrunden.
+            Elementerne er opdelt i grupper og placeres individuelt med CSS. -->
+
+      <section class="seabed-decor">
+        <!-- PLANTER -->
+        <div class="plants">
+          <img
+            src="img/plant-deep-green.svg"
+            alt="deep green plant"
+            id="plant-01"
+          />
+
+          <img src="img/plant-bubble.svg" alt="plant-bubble" id="plant-02" />
+
+          <img
+            src="img/plant-light-green.svg"
+            alt="plant light green"
+            id="plant-03"
+          />
+
+          <img src="img/plant-green.svg" alt="plant-green" id="plant-04" />
+
+          <img
+            src="img/plant-orange-yellow.svg"
+            alt="plant orange yellow"
+            id="plant-05"
+          />
+
+          <img src="img/plant-red.svg" alt="plant red" id="plant-06" />
+
+          <img src="img/plant-yellow.svg" alt="plant yellow" id="plant-07" />
+
+          <img src="img/plant-orange.svg" alt="plant orange" id="plant-08" />
+
+          <img src="img/plant-pink.svg" alt="plant pink" id="plant-09" />
+
+          <img
+            src="img/plant-red-pink.svg"
+            alt="plant red pink"
+            id="plant-10"
+          />
+
+          <img
+            src="img/plant-red-purple.svg"
+            alt="plant red purple"
+            id="plant-11"
+          />
+        </div>
+        <!-- STEN -->
+        <div class="rocks">
+          <img
+            src="img/rocks-collection.svg"
+            alt="rocks collection"
+            id="rock-01"
+          />
+
+          <img src="img/rocks-green.svg" alt="rocks green" id="rock-02" />
+        </div>
+
+        <!-- KORALKLIPPER -->
+        <div class="coral-cliff">
+          <img src="img/cliff-01.svg" alt="coral cliff" id="coral-cliff-01" />
+
+          <img src="img/cliff-02.svg" alt="coral cliff" id="coral-cliff-02" />
+
+          <img src="img/cliff-03.svg" alt="coral cliff" id="coral-cliff-03" />
+        </div>
+
+        <!-- DYR PÅ HAVBUNDEN
+            Indeholder musling og søstjerne. -->
+
+        <div class="seabed-animals">
+          <img src="img/shell.svg" alt="shell" id="seabed-animal-01" />
+
+          <img
+            src="img/starfish-red.svg"
+            alt="starfish red"
+            id="seabed-animal-02"
+          />
+        </div>
+
+        <!-- ØVRIGE DEKORATIONER
+            Indeholder grotten og boblerne. -->
+
+        <div class="aquarium-decor">
+          <img src="img/cave.svg" alt="cave" id="cave" />
+          <img src="img/bubble-big.svg" alt="big bubble" id="bubble-big" />
+          <img
+            src="img/bubble-medium.svg"
+            alt="medium bubble"
+            id="bubble-medium"
+          />
+          <img
+            src="img/bubble-small.svg"
+            alt="small bubble"
+            id="bubble-small"
+          />
+        </div>
+      </section>
+
+      <section class="fish-layer">
+        <div class="fish-container">
+          
+          <button class="fish-item" id="angel-fish" type="button"> 
+            <img src="img/angel-fish.svg" 
+            alt="angel fish"/>
+          </button>
+
+
+          <button= class="fish-item" id="siamese-fighting-fish" type="button">
+            <img src="img/siamese-fighting-fish.svg" 
+              alt="siamese fighting fish"/>
+          </button=>
+
+          <button= class="fish-item" id="banggai-cardinalfish" type="button">
+            <img src="img/banggai-cardinalfish.svg"
+              alt="banggai cardinalfish"/>
+          </button=>
+
+          <div class="fish-item">
+            <img
+              src="img/black-barred-surgeonfish.svg"
+              alt="black barred surgeonfish"
+              id="black-barred-surgeonfish"
+            />
           </div>
 
- <!--Fisk og logo-->         
-        <section class="akvarie">
-          <div class="fisk-container">
-            <img src="img/Gul fisk-1.svg"
-            id="Orangeplettet-kirurg"
-            class="fisk"
-            alt="Orangeplettet kirurg"
-            />
+          <div class="fish-item">
+            <img src="img/clownfish.svg" alt="clownfish" id="clownfish" />
+          </div>
 
-            <img src="img/raevefisk.svg"
-            id="Raevefisk"
-            class="fisk"
-            alt="raevefisk"
+          <div class="fish-item">
+            <img
+              src="img/foxface-rabbitfish.svg"
+              alt="foxface rabbitfish"
+              id="foxface-rabbitfish"
             />
+          </div>
 
-            <img src="img/sortbundet.svg"
-            id="Sortbundet-kirurg"
-            class="fisk"    
-            alt="Sortbundet kirurg"
+          <div class="fish-item">
+            <img
+              src="img/powder-blue-tang.svg"
+              alt="powder blue tang"
+              id="powder-blue-tang"
             />
+          </div>
 
-            <img src="img/banggai-kardinalfisk.svg"
-            id="Banggai-kardinalfisk"
-            class="fisk benggai"
-            alt="Banggai-kardinalfisk"
-            />
+          <div class="fish-item">
+            <img src="img/pufferfish.svg" alt="pufferfish" id="pufferfish" />
+          </div>
 
-            <img src="img/banggai-kardinalfisk.svg"
-            id="Banggai-kardinalfisk2"
-            class="fisk benggai"
-            alt="Banggai-kardinalfisk2"
-            />
-            
-            <img src="img/banggai-kardinalfisk.svg"
-            id="Banggai-kardinalfisk3"
-            class="fisk benggai"
-            alt="Banggai-kardinalfisk3"
-            />
-            
-            <img src="img/banggai-kardinalfisk.svg"
-            id="Banggai-kardinalfisk4"
-            class="fisk benggai"
-            alt="Banggai-kardinalfisk4"
-            />
-            
-            <img src="img/banggai-kardinalfisk.svg"
-            id="Banggai-kardinalfisk5"
-            class="fisk benggai"
-            alt="Banggai-kardinalfisk5"           
-            />
+          <div class="fish-item">
+            <img src="img/turtle.svg" alt="turtle" id="turtle" />
+          </div>
+        </div>
+      </section>
 
-            <img src="img/Fisk 2 · Vektor-1.svg"
-            id="sommerfuglcichlide1"
-            class="fisk sommerfugl"
-            alt="Sommerfuglcichlide1"
-            />
-            
-            <img src="img/Fisk 2 · Vektor-1.svg"
-            id="sommerfuglcichlide2"
-            class="fisk sommerfugl"
-            alt="Sommerfuglcichlide2"
-            />
-
-            <img src="img/Nemo fisk-1.svg"
-            id="klovnfisk"
-            class="fisk"
-            alt="klovnfisk"
-            />
-
-            <img src=""
-            id=""
-            class="fisk"
-            alt=""
-            />
-
-            <img src="img/Kuglefisk.svg"
-            id="Kuglefisk"
-            class="fisk"
-            alt="Kuglefisk"
-            />
-
-             <img src="img/Frame 11-1.svg"
-            id="Blå-kirurgfisk"
-            class="fisk"
-            alt="Blå kirurgfisk"
-            />
-
-            <img src="img/skildpadde.svg"
-            id="Skildpadde"
-            class="fisk Skildpadde"
-            alt="Skildpadde"
-            />
-            
-        </section>  
+  
  
  <!-- STARTSKÆRM-->     
         <section class="start-side" aria-label="Startskærm">
