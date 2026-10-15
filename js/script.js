@@ -422,7 +422,7 @@ playButton.addEventListener("click", function() {
 );
 
 //funktion til afspille en gældende lyd fra arrayet
-const alleFisk = document.querySelectorAll(".fisk");
+const alleFisk = document.querySelectorAll(".fish-item");
 
 alleFisk.forEach(fiskElement => {
     fiskElement.addEventListener("click", function () {
