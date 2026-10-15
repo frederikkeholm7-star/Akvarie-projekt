@@ -1147,7 +1147,7 @@ body {
 }
 
 /* Når en fisk bliver klikket på og får klassen swim-forward */
-.fisk.swim-forward {
+.fish-container.swim-forward {
   animation: none !important; /* Stopper den uendelige svømmetur */
   top: 35% !important; /* Bestem højden på skærmen hvor den skal stoppe */
   left: 20% !important; /* Placerer den mod venstre (tilpas efter behov) */
