@@ -159,7 +159,7 @@ document.querySelector("#foxface-rabbitfish").addEventListener("click", function
     this.classList.add("swim-forward");
 
     setTimeout(function () {
-        document.querySelectorAll(".Informationsbox").forEach(function (box) {
+        document.querySelectorAll(".informationsbox").forEach(function (box) {
             box.hidden = true;
         });
 
@@ -181,7 +181,7 @@ banggaiFish.addEventListener("click", function () {
 
     setTimeout(function () {
         // Skjul de andre fisks informationsbokse
-            document.querySelectorAll(".Informationsbox").forEach(function (box) {
+            document.querySelectorAll(".informationsbox").forEach(function (box) {
             box.hidden = true;
         });
 
@@ -216,7 +216,7 @@ sommerFish.forEach(function (fiskElement) {
         this.classList.add("swim-forward");
 
         setTimeout(function () {
-            document.querySelectorAll(".Informationsbox").forEach(function (box) {
+            document.querySelectorAll(".informationsbox").forEach(function (box) {
                 box.hidden = true;
             });
 
@@ -250,7 +250,7 @@ orangeFish.forEach(function (fiskElement) {
         this.classList.add("swim-forward");
 
         setTimeout(function () {
-            document.querySelectorAll(".Informationsbox").forEach(function (box) {
+            document.querySelectorAll(".informationsbox").forEach(function (box) {
                 box.hidden = true;
             });
 
@@ -286,7 +286,7 @@ sortbundetFish.forEach(function (fiskElement) {
         this.classList.add("swim-forward");
 
         setTimeout(function () {
-            document.querySelectorAll(".Informationsbox").forEach(function (box) {
+            document.querySelectorAll(".informationsbox").forEach(function (box) {
                 box.hidden = true;
             });
 
@@ -321,7 +321,7 @@ clownfishFish.forEach(function (fiskElement) {
         this.classList.add("swim-forward");
 
         setTimeout(function () {
-            document.querySelectorAll(".Informationsbox").forEach(function (box) {
+            document.querySelectorAll(".informationsbox").forEach(function (box) {
                 box.hidden = true;
             });
 
@@ -356,7 +356,7 @@ pufferfishFish.forEach(function (fiskElement) {
         this.classList.add("swim-forward");
 
         setTimeout(function () {
-            document.querySelectorAll(".Informationsbox").forEach(function (box) {
+            document.querySelectorAll(".informationsbox").forEach(function (box) {
                 box.hidden = true;
             });
 
@@ -390,7 +390,7 @@ powderbluefiskFish.forEach(function (fiskElement) {
         this.classList.add("swim-forward");
 
         setTimeout(function () {
-            document.querySelectorAll(".Informationsbox").forEach(function (box) {
+            document.querySelectorAll(".informationsbox").forEach(function (box) {
                 box.hidden = true;
             });
 
