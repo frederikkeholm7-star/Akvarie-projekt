@@ -473,7 +473,7 @@ main {
   backdrop-filter: blur(8px);
 }
 
-#play-button {
+.play-button {
   background-color: white;
   width: 320px;
   height: 180px;
@@ -483,7 +483,7 @@ main {
   color: var(--secondary-color);
 }
 
-#logo {
+.logo {
   width: 150px;
   height: auto;
   position: absolute;
