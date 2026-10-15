@@ -643,6 +643,32 @@ main {
   }
 }
 
+#siamese-fighting-fish {
+  right: -140px;
+  animation: linear;
+  animation-name: orange-shoulder-tang;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  top: 20%;
+  animation-delay: 2s;
+}
+
+@keyframes siamese-fighting-fish {
+  0% {
+    transform: translateX(0) rotateY(0deg);
+  }
+  49.9% {
+    transform: translateX(-130vw) rotateY(0deg);
+  }
+  50% {
+    transform: translateX(-130vw) rotateY(180deg);
+  }
+  100% {
+    transform: translateX(0) rotateY(180deg);
+  }
+}
+
 #foxface-rabbitfish {
   right: -180px;
   animation: linear;
