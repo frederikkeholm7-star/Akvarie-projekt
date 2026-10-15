@@ -19,13 +19,13 @@ const fishItem = [
     {
         id: "orange-shoulder-tang",
         sounds: {
-            intro:"sound/orangeplettede-kirurgfisk/intro.wav",
-            alder:"sound/orangeplettede-kirurgfisk/alder.wav",
-            levested:"sound/orangeplettede-kirurgfisk/levested.wav",
+            intro:"sound/orange-shoulder-tang/intro.wav",
+            alder:"sound/orange-shoulder-tang/age.wav",
+            levested:"sound/orange-shoulder-tang/age.wav",
             spiser:"#",
-            vaegt:"sound/orangeplettede-kirurgfisk/vaegt.wav",
-            superkraft:"sound/orangeplettede-kirurgfisk/superkraft.wav",
-            outro:"sound/orangeplettede-kirurgfisk/outro.wav"
+            vaegt:"sound/orange-shoulder-tang/weight.wav",
+            superkraft:"sound/orange-shoulder-tang/superpower.wav",
+            outro:"sound/orange-shoulder-tang/outro.wav"
         }
     },
     {
@@ -69,13 +69,13 @@ const fishItem = [
 {
         id: "pufferfish",
         sounds: {
-            intro:"sound/kuglefisk/kuglefisk-intro.m4a",
-            alder:"sound/kuglefisk/kuglefisk-alder.m4a",
-            levested:"sound/kuglefisk/kuglefisk-levested.m4a",
-            spiser:"sound/kuglefisk/kuglefisk-spiser.m4a",
-            vaegt:"sound/kuglefisk/kuglefisk-vaegt.m4a",
-            superkraft:"sound/kuglefisk/kuglefisk-superkraft.m4a",
-            outro:"sound/kuglefisk/kuglefisk-outro.m4a"
+            intro:"sound/banggai-cardinalfish/intro.m4a",
+            alder:"sound/banggai-cardinalfish/age.m4a",
+            levested:"sound/banggai-cardinalfish/habitat.m4a",
+            spiser:"sound/banggai-cardinalfish/diet.m4a",
+            vaegt:"sound/banggai-cardinalfish/weight.m4a",
+            superkraft:"sound/banggai-cardinalfish/superpower.m4a",
+            outro:"sound/banggai-cardinalfish/outro.m4a"
         }
     },
 {
@@ -86,7 +86,8 @@ const fishItem = [
             levested:"sound/foxface-rabbitfish/habitat.m4a",
             spiser:"sound/foxface-rabbitfish/diet.m4a",
             vaegt:"sound/foxface-rabbitfish/weight.m4a",
-            superkraft:"sound/foxface-rabbitfish/superpower.m4a"
+            superkraft:"sound/foxface-rabbitfish/superpower.m4a",
+            outro: "sound/foxface-rabbitfish/outro.m4a"
         }
     },
 {
@@ -97,18 +98,32 @@ const fishItem = [
             levested:"sound/black-barred-surgeonfish/habitat.m4a",
             spiser:"sound/black-barred-surgeonfish/diet.m4a",
             vaegt:"sound/black-barred-surgeonfish/weight.m4a",
-            superkraft:"sound/black-barred-surgeonfish/superpower.m4a"
+            superkraft:"sound/black-barred-surgeonfish/superpower.m4a",
+            outro: "sound/black-barred-surgeonfish/outro.m4a"
         }
     },
 {
         id: "turtle",
         sounds: {
-            intro:"sound/skildpadde/skildpadde-intro.m4a",
-            alder:"sound/skildpadde/skildpadde-alder.m4a",
-            levested:"sound/skildpadde/skildpadde-levested.m4a",
-            spiser:"sound/skildpadde/skildpadde-spiser.m4a",
-            vaegt:"sound/skildpadde/skildpadde-vaegt.m4a",
-            superkraft:"sound/skildpadde/skildpadde-superkraft.m4a"
+            intro:"sound/turtle/intro.m4a",
+            alder:"sound/turtle/age.m4a",
+            levested:"sound/turtle/habitat.m4a",
+            spiser:"sound/turtle/diet.m4a",
+            vaegt:"sound/turtle/weight.m4a",
+            superkraft:"sound/turtle/superpower.m4a",
+            outro: "sound/turtle/outro.m4a"
+        }
+    },
+{
+        id: "blue-tang",
+        sounds: {
+            intro:"sound/blue-tang/intro.m4a",
+            alder:"sound/blue-tang/age.m4a",
+            levested:"sound/blue-tang/habitat.m4a",
+            spiser:"sound/blue-tang/diet.m4a",
+            vaegt:"sound/blue-tang/weight.m4a",
+            superkraft:"sound/blue-tang/superpower.m4a",
+            outro: "sound/blue-tang/outro.m4a"
         }
     },
 {
@@ -119,18 +134,8 @@ const fishItem = [
             levested:"sound/powder-blue-tang/habitat.m4a",
             spiser:"sound/powder-blue-tang/diet.m4a",
             vaegt:"sound/powder-blue-tang/weight.m4a",
-            superkraft:"sound/powder-blue-tang/superpower.m4a"
-        }
-    },
-{
-        id: "hvidstrubet-kirurg",
-        sounds: {
-            intro:"sound/powder-blue-tang/intro.m4a",
-            alder:"sound/powder-blue-tang/age.m4a",
-            levested:"sound/powder-blue-tang/habitat.m4a",
-            spiser:"sound/powder-blue-tang/diet.m4a",
-            vaegt:"sound/powder-blue-tang/weight.m4a",
-            superkraft:"sound/powder-blue-tang/superpower.m4a"
+            superkraft:"sound/powder-blue-tang/superpower.m4a",
+            outro: "sound/powder-blue-tang/outro.m4a"
         }
     }];
 
