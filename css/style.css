@@ -378,6 +378,82 @@ main {
   z-index: 3;
 }
 
+/* ========================================
+   FISK
+   Fælles lag for fiskene i akvariet.
+======================================== */
+
+.fish-layer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+.fish-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.fish-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 35%;
+}
+
+/* ========================================
+   INDIVIDUELLE FISK
+   Størrelse på hver fisk.
+======================================== */
+
+#angel-fish {
+  width: 12%;
+  height: auto;
+}
+
+#siamese-fighting-fish {
+  width: 12%;
+  height: auto;
+}
+
+#banggai-cardinalfish {
+  width: 12%;
+  height: auto;
+}
+
+#black-barred-surgeonfish {
+  width: 12%;
+  height: auto;
+}
+
+#clownfish {
+  width: 12%;
+  height: auto;
+}
+
+#foxface-rabbitfish {
+  width: 12%;
+  height: auto;
+}
+
+#powder-blue-tang {
+  width: 12%;
+  height: auto;
+}
+
+#pufferfish {
+  width: 12%;
+  height: auto;
+}
+
+#turtle {
+  width: 12%;
+  height: auto;
+}
+
 :root {
   --primary-color: #0d3b89;
   --secondary-color: #ff003c;
