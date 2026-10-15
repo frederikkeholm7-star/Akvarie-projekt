@@ -1161,7 +1161,7 @@ body {
   top: 35% !important; /* Bestem højden på skærmen hvor den skal stoppe */
   left: 20% !important; /* Placerer den mod venstre (tilpas efter behov) */
   right: auto !important;
-  transform: scale(3); /* Gør fisken stor */
+  transform: scale(3) !important; /* Gør fisken stor */
   z-index: 20; /* Sørger for den er ovenpå baggrunden */
   transition: all 0.8s ease-in-out; /* Gør overgangen blød */
 }
