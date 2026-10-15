@@ -163,7 +163,7 @@ document.querySelector("#foxface-rabbitfish").addEventListener("click", function
             box.hidden = true;
         });
 
-        textbox.closest(".Informationsbox").hidden = false;
+        textbox.closest(".informationsbox").hidden = false;
         textbox.style.display = "block";
         parentBox.style.display = "none";
         backButton.style.display = "block";
