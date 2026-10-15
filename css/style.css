@@ -399,18 +399,9 @@ main {
 
 .fish-item {
   position: absolute;
-  width: 150px;
-  height: auto;
-  padding: 0;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-}
-
-.fish-item img {
-  display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  top: 35%;
 }
 
 /* ========================================
@@ -1130,7 +1121,7 @@ body {
 }
 
 /* Når en fisk bliver klikket på og får klassen swim-forward */
-.fish-item.swim-forward {
+.fisk.swim-forward {
   animation: none !important; /* Stopper den uendelige svømmetur */
   top: 35% !important; /* Bestem højden på skærmen hvor den skal stoppe */
   left: 20% !important; /* Placerer den mod venstre (tilpas efter behov) */
