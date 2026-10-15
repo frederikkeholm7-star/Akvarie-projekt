@@ -600,6 +600,7 @@ const backButton = document.querySelector("#back-button");
 
 backButton.addEventListener("click", function () {
     const infoBoxes = document.querySelectorAll(".textbox, .parent-box");
+    backButton.style.display = "none";
 
 // Finder den fisk, der er blevet valgt
     const valgtFisk = document.querySelector(".fish-item.swim-forward");
