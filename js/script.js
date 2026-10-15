@@ -475,3 +475,6 @@ backButton.addEventListener("click", function () {
         fiskElement.classList.remove("swim-forward");
     })
 });
+
+
+//Lyd til "Hvor gammel" knappen\\
