@@ -1071,7 +1071,7 @@ body {
 #angel-fish {
   left: -150px;
   animation: linear;
-  animation-name: sommerfuglcichlide1;
+  animation-name: angel-fish;
   animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-direction: normal;
