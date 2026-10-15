@@ -1033,29 +1033,29 @@ body {
   overflow-x: hidden;
 }
 
-#powder-blue-tang {
-  left: -180px;
+#blue-tang {
+  right: -150px;
   animation: linear;
-  animation-name: powder-blue-tang;
-  animation-duration: 13s;
+  animation-name: blue-tang;
+  animation-duration: 17s;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  top: 70%;
+  top: 10%;
   animation-delay: 4s;
 }
 
-@keyframes powder-blue-tang {
+@keyframes blue-tang {
   0% {
-    transform: translateX(0) rotateY(180deg);
+    transform: translateX(0) rotateY(0deg);
   }
   49.9% {
-    transform: translateX(130vw) rotateY(180deg);
+    transform: translateX(-130vw) rotateY(0deg);
   }
   50% {
-    transform: translateX(130vw) rotateY(0deg);
+    transform: translateX(-130vw) rotateY(180deg);
   }
   100% {
-    transform: translateX(0) rotateY(0deg);
+    transform: translateX(0) rotateY(180deg);
   }
 }
 
