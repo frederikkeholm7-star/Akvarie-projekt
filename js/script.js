@@ -123,14 +123,14 @@ const fishItem = [
         }
     },
 {
-        id: "#",
+        id: "hvidstrubet-kirurg",
         sounds: {
-            intro:"#",
-            alder:"#",
-            levested:"#",
-            spiser:"#",
-            vaegt:"#",
-            superkraft:"#"
+            intro:"sound/powder-blue-tang/intro.m4a",
+            alder:"sound/powder-blue-tang/age.m4a",
+            levested:"sound/powder-blue-tang/habitat.m4a",
+            spiser:"sound/powder-blue-tang/diet.m4a",
+            vaegt:"sound/powder-blue-tang/weight.m4a",
+            superkraft:"sound/powder-blue-tang/superpower.m4a"
         }
     }];
 
