@@ -69,13 +69,13 @@ const fishItem = [
 {
         id: "pufferfish",
         sounds: {
-            intro:"sound/banggai-cardinalfish/intro.m4a",
-            alder:"sound/banggai-cardinalfish/age.m4a",
-            levested:"sound/banggai-cardinalfish/habitat.m4a",
-            spiser:"sound/banggai-cardinalfish/diet.m4a",
-            vaegt:"sound/banggai-cardinalfish/weight.m4a",
-            superkraft:"sound/banggai-cardinalfish/superpower.m4a",
-            outro:"sound/banggai-cardinalfish/outro.m4a"
+            intro:"sound/pufferfish/intro.m4a",
+            alder:"sound/pufferfish/age.m4a",
+            levested:"sound/pufferfish/habitat.m4a",
+            spiser:"sound/pufferfish/diet.m4a",
+            vaegt:"sound/pufferfish/weight.m4a",
+            superkraft:"sound/pufferfish/superpower.m4a",
+            outro:"sound/pufferfish/outro.m4a"
         }
     },
 {
