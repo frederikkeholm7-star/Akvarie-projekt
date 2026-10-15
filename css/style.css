@@ -1214,3 +1214,83 @@ body {
   width: 100%;
   height: auto;
 }
+
+/* Bubble der flyver*/
+
+#bubble-big {
+  position: absolute;
+  left: 34.72%;
+  bottom: 20%;
+  z-index: 3;
+  animation: bubble-big-move 9s ease-in-out infinite;
+}
+
+#bubble-medium {
+  position: absolute;
+  left: 38.19%;
+  bottom: 15%;
+  z-index: 3;
+  animation: bubble-medium-move 7s ease-in-out infinite;
+}
+
+#bubble-small {
+  position: absolute;
+  left: 48.61%;
+  bottom: 10%;
+  z-index: 3;
+  animation: bubble-small-move 6s ease-in-out infinite;
+}
+
+@keyframes bubble-big-move {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(20px, -150px);
+  }
+  50% {
+    transform: translate(-15px, -300px);
+  }
+  75% {
+    transform: translate(25px, -450px);
+  }
+  100% {
+    transform: translate(0, -650px);
+  }
+}
+
+@keyframes bubble-medium-move {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-15px, -170px);
+  }
+  50% {
+    transform: translate(20px, -340px);
+  }
+  75% {
+    transform: translate(-10px, -510px);
+  }
+  100% {
+    transform: translate(10px, -680px);
+  }
+}
+
+@keyframes bubble-small-move {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(12px, -180px);
+  }
+  50% {
+    transform: translate(-20px, -360px);
+  }
+  75% {
+    transform: translate(15px, -540px);
+  }
+  100% {
+    transform: translate(-5px, -720px);
+  }
+}
