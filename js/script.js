@@ -150,7 +150,7 @@ childButton.addEventListener("click", function () {
     textbox.style.display = "block";
 });
 
-document.querySelector(".foxface-rabbitfish").addEventListener("click", function () {
+document.querySelector("#foxface-rabbitfish").addEventListener("click", function () {
     this.classList.add("swim-forward");
 
     setTimeout(function () {
@@ -166,8 +166,8 @@ document.querySelector(".foxface-rabbitfish").addEventListener("click", function
 });
 
 //Informationsbox til Banggaifisk\\
-const banggaiInfo = document.querySelector(".banggai-cardinalfish-info");
-const banggaiFish = document.querySelector(".banggai-cardinalfish");
+const banggaiInfo = document.querySelector("#banggai-cardinalfish-info");
+const banggaiFish = document.querySelector("#banggai-cardinalfish");
 const banggaiTextbox = banggaiInfo.querySelector(".textbox");
 const banggaiParentBox = banggaiInfo.querySelector(".parent-box");
 
@@ -200,8 +200,8 @@ banggaiInfo.querySelector("#child-button").addEventListener("click", function ()
 });
 
 //Informationsbox til Sommerfuglecichlide\\
-const sommerInfo = document.querySelector(".angel-fish-info");
-const sommerFish = document.querySelectorAll(".angel-fish");
+const sommerInfo = document.querySelector("#angel-fish-info");
+const sommerFish = document.querySelectorAll("#angel-fish");
 
 const sommerTextbox = sommerInfo.querySelector(".textbox");
 const sommerParentBox = sommerInfo.querySelector(".parent-box");
@@ -234,8 +234,8 @@ sommerInfo.querySelector("#child-button").addEventListener("click", function () 
 });
 
 //Informationsbox til Orangeplettet-kirurg\\
-const orangeInfo = document.querySelector(".orange-shoulder-tang-info");
-const orangeFish = document.querySelectorAll("img.orange-shoulder-tang");
+const orangeInfo = document.querySelector("#orange-shoulder-tang-info");
+const orangeFish = document.querySelectorAll("img#orange-shoulder-tang");
 
 const orangeTextbox = orangeInfo.querySelector(".textbox");
 const orangeParentBox = orangeInfo.querySelector(".parent-box");
@@ -270,8 +270,8 @@ orangeInfo.querySelector("#child-button").addEventListener("click", function () 
 
 //Informationsbox til Sortbundet-Kirurg\\
 
-const sortbundetInfo = document.querySelector(".black-barred-surgeonfish-info");
-const sortbundetFish = document.querySelectorAll("img.black-barred-surgeonfish");
+const sortbundetInfo = document.querySelector("#black-barred-surgeonfish-info");
+const sortbundetFish = document.querySelectorAll("img#black-barred-surgeonfish");
 
 const sortbundetTextbox = sortbundetInfo.querySelector(".textbox");
 const sortbundetParentBox = sortbundetInfo.querySelector(".parent-box");
@@ -305,8 +305,8 @@ sortbundetInfo.querySelector("#child-button").addEventListener("click", function
 
 //Informationsbox til Klovnfisk\\
 
-const clownfishInfo = document.querySelector(".clownfish-info");
-const clownfishFish = document.querySelectorAll("img.clownfish");
+const clownfishInfo = document.querySelector("#clownfish-info");
+const clownfishFish = document.querySelectorAll("img#clownfish");
 
 const clownfishTextbox = clownfishInfo.querySelector(".textbox");
 const clownfisharentBox = clownfishInfo.querySelector(".parent-box");
@@ -340,8 +340,8 @@ clownfishInfo.querySelector("#child-button").addEventListener("click", function 
 
 
 //Informationsbox til Kuglefisk\\
-const pufferfishInfo = document.querySelector(".pufferfish-info");
-const pufferfishFish = document.querySelectorAll("img.pufferfish");
+const pufferfishInfo = document.querySelector("#pufferfish-info");
+const pufferfishFish = document.querySelectorAll("img#pufferfish");
 
 const pufferfishTextbox = pufferfishInfo.querySelector(".textbox");
 const pufferfishParentBox = pufferfishInfo.querySelector(".parent-box");
@@ -374,8 +374,8 @@ pufferfishInfo.querySelector("#child-button").addEventListener("click", function
 });
 
 //Informationsbox til Blå Kirurgfisk\\
-const powderbluefiskInfo = document.querySelector(".powder-blue-tang-info");
-const powderbluefiskFish = document.querySelectorAll("img.powder-blue-tang");
+const powderbluefiskInfo = document.querySelector("#powder-blue-tang-info");
+const powderbluefiskFish = document.querySelectorAll("img#powder-blue-tang");
 
 const powderbluefiskTextbox = powderbluefiskInfo.querySelector(".textbox");
 const powderbluefiskParentBox = powderbluefiskInfo.querySelector(".parent-box");
