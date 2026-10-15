@@ -3,9 +3,9 @@
 const textbox = document.querySelector(".textbox");
 
 
-const fisk = [
+const fishItem = [
     {
-        id: "klovnfisk",
+        id: "clownfish",
         sounds: {
             intro:"sound/nemo/nemo-intro.m4a",
             alder:"sound/nemo/nemo-alder.m4a",
@@ -17,7 +17,7 @@ const fisk = [
         }
     },
     {
-        id: "Orangeplettet-kirurg",
+        id: "orange-shoulder-tang",
         sounds: {
             intro:"sound/orangeplettede-kirurgfisk/intro.wav",
             alder:"sound/orangeplettede-kirurgfisk/alder.wav",
@@ -29,7 +29,7 @@ const fisk = [
         }
     },
     {
-        id: "Banggai-kardinalfisk",
+        id: "banggai-cardinalfish",
         sounds: {
             intro:"sound/banggai-kardinalfisk/banggai-kardinalfisk-intro.m4a",
             alder:"sound/banggai-kardinalfisk/baggai-alder.m4a",
@@ -41,7 +41,7 @@ const fisk = [
         }
     },
 {
-        id: "sommerfuglcichlide1",
+        id: "angel-fish",
         sounds: {
             intro:"sound/sommerfuglcichlide/intro.wav",
             alder:"sound/sommerfuglcichlide/alder.wav",
@@ -54,7 +54,7 @@ const fisk = [
     },
 
 {
-        id: "sommerfuglcichlide2",
+        id: "angel-fish2",
         sounds: {
             intro:"sound/sommerfuglcichlide/intro.wav",
             alder:"sound/sommerfuglcichlide/alder.wav",
@@ -67,7 +67,7 @@ const fisk = [
     },
 
 {
-        id: "Kuglefisk",
+        id: "pufferfish",
         sounds: {
             intro:"sound/kuglefisk/kuglefisk-intro.m4a",
             alder:"sound/kuglefisk/kuglefisk-alder.m4a",
@@ -79,7 +79,7 @@ const fisk = [
         }
     },
 {
-        id: "Raevefisk",
+        id: "foxface-rabbitfish",
         sounds: {
             intro:"sound/raevefisk/rævefisk-intro.m4a",
             alder:"sound/raevefisk/rævefisk-alder.m4a",
@@ -90,7 +90,7 @@ const fisk = [
         }
     },
 {
-        id: "Sortbundet-kirurg",
+        id: "black-barred-surgeonfish",
         sounds: {
             intro:"sound/sortbaandet-kirurgfisk/sortbaandet-kirurgfisk-intro.m4a",
             alder:"sound/sortbaandet-kirurgfisk/sortbaandet-kirurgfisk-alder.m4a",
@@ -101,7 +101,7 @@ const fisk = [
         }
     },
 {
-        id: "Skildpadde",
+        id: "turtle",
         sounds: {
             intro:"sound/skildpadde/skildpadde-intro.m4a",
             alder:"sound/skildpadde/skildpadde-alder.m4a",
@@ -112,7 +112,7 @@ const fisk = [
         }
     },
 {
-        id: "Blå-kirurgfisk",
+        id: "powder-blue-tang",
         sounds: {
             intro:"sound/blåfisk/ blåfisk intro.m4a",
             alder:"sound/blåfisk/blåfisk-alder.m4a",
@@ -150,7 +150,7 @@ childButton.addEventListener("click", function () {
     textbox.style.display = "block";
 });
 
-document.querySelector("#Raevefisk").addEventListener("click", function () {
+document.querySelector(".foxface-rabbitfish").addEventListener("click", function () {
     this.classList.add("swim-forward");
 
     setTimeout(function () {
@@ -166,8 +166,8 @@ document.querySelector("#Raevefisk").addEventListener("click", function () {
 });
 
 //Informationsbox til Banggaifisk\\
-const banggaiInfo = document.querySelector("#banggai-info");
-const banggaiFish = document.querySelector("#Banggai-kardinalfisk");
+const banggaiInfo = document.querySelector(".banggai-cardinalfish-info");
+const banggaiFish = document.querySelector(".banggai-cardinalfish");
 const banggaiTextbox = banggaiInfo.querySelector(".textbox");
 const banggaiParentBox = banggaiInfo.querySelector(".parent-box");
 
@@ -200,8 +200,8 @@ banggaiInfo.querySelector("#child-button").addEventListener("click", function ()
 });
 
 //Informationsbox til Sommerfuglecichlide\\
-const sommerInfo = document.querySelector("#Sommerfuglcichlide");
-const sommerFish = document.querySelectorAll(".sommerfugl");
+const sommerInfo = document.querySelector(".angel-fish-info");
+const sommerFish = document.querySelectorAll(".angel-fish");
 
 const sommerTextbox = sommerInfo.querySelector(".textbox");
 const sommerParentBox = sommerInfo.querySelector(".parent-box");
@@ -234,8 +234,8 @@ sommerInfo.querySelector("#child-button").addEventListener("click", function () 
 });
 
 //Informationsbox til Orangeplettet-kirurg\\
-const orangeInfo = document.querySelector("#orange-info");
-const orangeFish = document.querySelectorAll("img#Orangeplettet-kirurg");
+const orangeInfo = document.querySelector(".orange-shoulder-tang-info");
+const orangeFish = document.querySelectorAll("img.orange-shoulder-tang");
 
 const orangeTextbox = orangeInfo.querySelector(".textbox");
 const orangeParentBox = orangeInfo.querySelector(".parent-box");
@@ -270,8 +270,8 @@ orangeInfo.querySelector("#child-button").addEventListener("click", function () 
 
 //Informationsbox til Sortbundet-Kirurg\\
 
-const sortbundetInfo = document.querySelector("#Sortbundet-info");
-const sortbundetFish = document.querySelectorAll("img#Sortbundet-kirurg");
+const sortbundetInfo = document.querySelector(".black-barred-surgeonfish-info");
+const sortbundetFish = document.querySelectorAll("img.black-barred-surgeonfish");
 
 const sortbundetTextbox = sortbundetInfo.querySelector(".textbox");
 const sortbundetParentBox = sortbundetInfo.querySelector(".parent-box");
@@ -305,14 +305,14 @@ sortbundetInfo.querySelector("#child-button").addEventListener("click", function
 
 //Informationsbox til Klovnfisk\\
 
-const klovnfiskInfo = document.querySelector("#klovnfisk-info");
-const klovnfiskFish = document.querySelectorAll("img#klovnfisk");
+const clownfishInfo = document.querySelector(".clownfish-info");
+const clownfishFish = document.querySelectorAll("img.clownfish");
 
-const klovnfiskTextbox = klovnfiskInfo.querySelector(".textbox");
-const klovnfiskParentBox = klovnfiskInfo.querySelector(".parent-box");
+const clownfishTextbox = clownfishInfo.querySelector(".textbox");
+const clownfisharentBox = clownfishInfo.querySelector(".parent-box");
 
-klovnfiskFish.forEach(function (fiskElement) {
-    fiskElement.addEventListener("click", function () {
+clownfishFish.forEach(function (fiskElement) {
+    fishElement.addEventListener("click", function () {
         this.classList.add("swim-forward");
 
         setTimeout(function () {
@@ -320,33 +320,33 @@ klovnfiskFish.forEach(function (fiskElement) {
                 box.hidden = true;
             });
 
-            klovnfiskInfo.hidden = false;
-            klovnfiskTextbox.style.display = "block";
-            klovnfiskParentBox.style.display = "none";
+            clownfishInfo.hidden = false;
+            clownfishTextbox.style.display = "block";
+            clownfishParentBox.style.display = "none";
             backButton.style.display = "block";
         }, 1500);
     });
 });
 
-klovnfiskInfo.querySelector("#parent-button").addEventListener("click", function () {
-    klovnfiskTextbox.style.display = "none";
-    klovnfiskParentBox.style.display = "block";
+clownfishInfo.querySelector("#parent-button").addEventListener("click", function () {
+    clownfishTextbox.style.display = "none";
+    clownfishParentBox.style.display = "block";
 });
 
-klovnfiskInfo.querySelector("#child-button").addEventListener("click", function () {
-    klovnfiskParentBox.style.display = "none";
-    klovnfiskTextbox.style.display = "block";
+clownfishInfo.querySelector("#child-button").addEventListener("click", function () {
+    clownfishParentBox.style.display = "none";
+    clownfishTextbox.style.display = "block";
 });
 
 
 //Informationsbox til Kuglefisk\\
-const kuglefiskInfo = document.querySelector("#kuglefisk-info");
-const kuglefiskFish = document.querySelectorAll("img#Kuglefisk");
+const pufferfishInfo = document.querySelector(".pufferfish-info");
+const pufferfishFish = document.querySelectorAll("img.pufferfish");
 
-const kuglefiskTextbox = kuglefiskInfo.querySelector(".textbox");
-const kuglefiskParentBox = kuglefiskInfo.querySelector(".parent-box");
+const pufferfishTextbox = pufferfishInfo.querySelector(".textbox");
+const pufferfishParentBox = pufferfishInfo.querySelector(".parent-box");
 
-kuglefiskFish.forEach(function (fiskElement) {
+pufferfishFish.forEach(function (fiskElement) {
     fiskElement.addEventListener("click", function () {
         this.classList.add("swim-forward");
 
@@ -355,32 +355,32 @@ kuglefiskFish.forEach(function (fiskElement) {
                 box.hidden = true;
             });
 
-            kuglefiskInfo.hidden = false;
-            kuglefiskTextbox.style.display = "block";
-            kuglefiskParentBox.style.display = "none";
+            pufferfishInfo.hidden = false;
+            pufferfishTextbox.style.display = "block";
+            pufferfishParentBox.style.display = "none";
             backButton.style.display = "block";
         }, 1500);
     });
 });
 
-kuglefiskInfo.querySelector("#parent-button").addEventListener("click", function () {
-    kuglefiskTextbox.style.display = "none";
-    kuglefiskParentBox.style.display = "block";
+pufferfishInfo.querySelector("#parent-button").addEventListener("click", function () {
+    pufferfishTextbox.style.display = "none";
+    pufferfishParentBox.style.display = "block";
 });
 
-kuglefiskInfo.querySelector("#child-button").addEventListener("click", function () {
-    kuglefiskParentBox.style.display = "none";
-    kuglefiskTextbox.style.display = "block";
+pufferfishInfo.querySelector("#child-button").addEventListener("click", function () {
+    pufferfishParentBox.style.display = "none";
+    pufferfishTextbox.style.display = "block";
 });
 
 //Informationsbox til Blå Kirurgfisk\\
-const blaakirurgfiskInfo = document.querySelector("#blaakirurgfisk-info");
-const blaakirurgfiskFish = document.querySelectorAll("img#blaa-kirurgfisk");
+const powderbluefiskInfo = document.querySelector(".powder-blue-tang-info");
+const powderbluefiskFish = document.querySelectorAll("img.powder-blue-tang");
 
-const blaakirurgfiskTextbox = blaakirurgfiskInfo.querySelector(".textbox");
-const blaakirurgfiskParentBox = blaakirurgfiskInfo.querySelector(".parent-box");
+const powderbluefiskTextbox = powderbluefiskInfo.querySelector(".textbox");
+const powderbluefiskParentBox = powderbluefiskInfo.querySelector(".parent-box");
 
-blaakirurgfiskFish.forEach(function (fiskElement) {
+powderbluefiskFish.forEach(function (fiskElement) {
     fiskElement.addEventListener("click", function () {
         this.classList.add("swim-forward");
 
@@ -389,22 +389,22 @@ blaakirurgfiskFish.forEach(function (fiskElement) {
                 box.hidden = true;
             });
 
-            blaakirurgfiskInfo.hidden = false;
-            blaakirurgfiskTextbox.style.display = "block";
-            blaakirurgfiskParentBox.style.display = "none";
+            powderbluefiskInfo.hidden = false;
+            powderbluefiskTextbox.style.display = "block";
+            powderbluefiskParentBox.style.display = "none";
             backButton.style.display = "block";
         }, 1500);
     });
 });
 
-blaakirurgfiskInfo.querySelector("#parent-button").addEventListener("click", function () {
-    blaakirurgfiskTextbox.style.display = "none";
-    blaakirurgfiskParentBox.style.display = "block";
+powderbluefiskInfo.querySelector("#parent-button").addEventListener("click", function () {
+    powderbluefiskTextbox.style.display = "none";
+    powderbluefiskParentBox.style.display = "block";
 });
 
-blaakirurgfiskInfo.querySelector("#child-button").addEventListener("click", function () {
-    blaakirurgfiskParentBox.style.display = "none";
-    blaakirurgfiskTextbox.style.display = "block";
+powderbluefiskInfo.querySelector("#child-button").addEventListener("click", function () {
+    powderbluefiskParentBox.style.display = "none";
+    powderbluefiskTextbox.style.display = "block";
 });
 
 
