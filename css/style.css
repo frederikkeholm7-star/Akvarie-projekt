@@ -1141,7 +1141,7 @@ body {
 }
 /*Tilbage knappen*/
 #back-button {
-  position: absolute;
+  position: fixed;
   left: 25px;
   bottom: 25px;
   z-index: 11;
