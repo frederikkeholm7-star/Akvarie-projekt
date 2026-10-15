@@ -164,13 +164,7 @@ document
         document.querySelectorAll(".informationsbox").forEach(function (box) {
             box.hidden = true;
         });
-<<<<<<< HEAD
-
         textbox.closest(".informationsbox").hidden = false;
-textbox.closest(".informationsbox").hidden = false;
-=======
-        textbox.closest(".informationsbox").hidden = false;
->>>>>>> c7059c580bbdec8dfcb0cbd7c689fafa985748ac
         textbox.style.display = "block";
         parentBox.style.display = "none";
         backButton.style.display = "block";
@@ -605,9 +599,6 @@ function playSound(fiskId, lydType) {
 const backButton = document.querySelector("#back-button");
 
 backButton.addEventListener("click", function () {
-<<<<<<< Updated upstream
-  const infoBoxes = document.querySelectorAll(".textbox, .parent-box");
-=======
     const infoBoxes = document.querySelectorAll(".textbox, .parent-box");
 
 // Finder den fisk, der er blevet valgt
@@ -621,20 +612,11 @@ backButton.addEventListener("click", function () {
     infoBoxes.forEach(function(box){
         box.style.display= "none"
     });
->>>>>>> Stashed changes
 
   infoBoxes.forEach(function (box) {
     box.style.display = "none";
   });
 
-<<<<<<< Updated upstream
-  backButton.style.display = "none";
-
-  alleFisk.forEach(function (fiskElement) {
-    fiskElement.classList.remove("swim-forward");
-  });
-});
-=======
     
     setTimeout(function() {
         alleFisk.forEach(function (fiskElement){
@@ -644,9 +626,6 @@ backButton.addEventListener("click", function () {
  
     });
 
-
-
->>>>>>> Stashed changes
 
 const powderBlueTang = document.querySelector("#powder-blue-tang");
 let powderBlueTangX = 0;
