@@ -632,7 +632,7 @@ let powderBlueTangX = 0;
 let powderBlueTangTime = 0;
 
 function swimPowderBlueTang() {
-  powderBlueTangX -= 1;
+  powderBlueTangX -= 2.5;
   powderBlueTangTime += 0.07;
 
   const powderBlueTangY = Math.sin(powderBlueTangTime) * 8;
