@@ -647,7 +647,7 @@ function swimPowderBlueTang() {
 
 swimPowderBlueTang();
 
-//Lyd til "Hvor gammel" knappen\\
+//Lyd til knapperne der fortæller om alder, spiser, vægt, superkraft, og alder\\
 
 const soundButtons = document.querySelectorAll(
   ".info-button[data-fisk][data-lyd]",
