@@ -140,7 +140,7 @@ const fishItem = [
 ];
 
 //Informationsbox til Rævefisk\\
-const parentButton = document.querySelector("#parent-button");
+const parentButton = document.querySelector(".parent-button");
 const parentBox = document.querySelector(".parent-box");
 
 parentButton.addEventListener("click", function () {
@@ -148,7 +148,7 @@ parentButton.addEventListener("click", function () {
   parentBox.style.display = "block";
 });
 
-const childButton = document.querySelector("#child-button");
+const childButton = document.querySelector(".child-button");
 
 childButton.addEventListener("click", function () {
   parentBox.style.display = "none";
