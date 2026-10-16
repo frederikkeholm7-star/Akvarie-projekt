@@ -487,6 +487,8 @@ main {
 }
 
 #play-button {
+  position: relative;
+  z-index: 21;
   background-color: white;
   width: 320px;
   height: 180px;

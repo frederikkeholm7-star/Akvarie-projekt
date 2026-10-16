@@ -196,14 +196,14 @@ banggaiFish.addEventListener("click", function () {
 });
 
 banggaiInfo
-  .querySelector("#parent-button")
+  .querySelector(".parent-button")
   .addEventListener("click", function () {
     banggaiTextbox.style.display = "none";
     banggaiParentBox.style.display = "block";
   });
 
 banggaiInfo
-  .querySelector("#child-button")
+  .querySelector(".child-button")
   .addEventListener("click", function () {
     banggaiParentBox.style.display = "none";
     banggaiTextbox.style.display = "block";
@@ -234,14 +234,14 @@ sommerFish.forEach(function (fiskElement) {
 });
 
 sommerInfo
-  .querySelector("#parent-button")
+  .querySelector(".parent-button")
   .addEventListener("click", function () {
     sommerTextbox.style.display = "none";
     sommerParentBox.style.display = "block";
   });
 
 sommerInfo
-  .querySelector("#child-button")
+  .querySelector(".child-button")
   .addEventListener("click", function () {
     sommerParentBox.style.display = "none";
     sommerTextbox.style.display = "block";
@@ -272,14 +272,14 @@ orangeFish.forEach(function (fiskElement) {
 });
 
 orangeInfo
-  .querySelector("#parent-button")
+  .querySelector(".parent-button")
   .addEventListener("click", function () {
     orangeTextbox.style.display = "none";
     orangeParentBox.style.display = "block";
   });
 
 orangeInfo
-  .querySelector("#child-button")
+  .querySelector(".child-button")
   .addEventListener("click", function () {
     orangeParentBox.style.display = "none";
     orangeTextbox.style.display = "block";
@@ -311,14 +311,14 @@ sortbundetFish.forEach(function (fiskElement) {
 });
 
 sortbundetInfo
-  .querySelector("#parent-button")
+  .querySelector(".parent-button")
   .addEventListener("click", function () {
     sortbundetTextbox.style.display = "none";
     sortbundetParentBox.style.display = "block";
   });
 
 sortbundetInfo
-  .querySelector("#child-button")
+  .querySelector(".child-button")
   .addEventListener("click", function () {
     sortbundetParentBox.style.display = "none";
     sortbundetTextbox.style.display = "block";
@@ -350,14 +350,14 @@ clownfishFish.forEach(function (fiskElement) {
 });
 
 clownfishInfo
-  .querySelector("#parent-button")
+  .querySelector(".parent-button")
   .addEventListener("click", function () {
     clownfishTextbox.style.display = "none";
     clownfishParentBox.style.display = "block";
   });
 
 clownfishInfo
-  .querySelector("#child-button")
+  .querySelector(".child-button")
   .addEventListener("click", function () {
     clownfishParentBox.style.display = "none";
     clownfishTextbox.style.display = "block";
@@ -388,14 +388,14 @@ pufferfishFish.forEach(function (fiskElement) {
 });
 
 pufferfishInfo
-  .querySelector("#parent-button")
+  .querySelector(".parent-button")
   .addEventListener("click", function () {
     pufferfishTextbox.style.display = "none";
     pufferfishParentBox.style.display = "block";
   });
 
 pufferfishInfo
-  .querySelector("#child-button")
+  .querySelector(".child-button")
   .addEventListener("click", function () {
     pufferfishParentBox.style.display = "none";
     pufferfishTextbox.style.display = "block";
@@ -426,14 +426,14 @@ powderbluefiskFish.forEach(function (fiskElement) {
 });
 
 powderbluefiskInfo
-  .querySelector("#parent-button")
+  .querySelector(".parent-button")
   .addEventListener("click", function () {
     powderbluefiskTextbox.style.display = "none";
     powderbluefiskParentBox.style.display = "block";
   });
 
 powderbluefiskInfo
-  .querySelector("#child-button")
+  .querySelector(".child-button")
   .addEventListener("click", function () {
     powderbluefiskParentBox.style.display = "none";
     powderbluefiskTextbox.style.display = "block";
@@ -463,14 +463,14 @@ turtleFish.addEventListener("click", function () {
 });
 
 turtleInfo
-  .querySelector("#parent-button")
+  .querySelector(".parent-button")
   .addEventListener("click", function () {
     turtleTextbox.style.display = "none";
     turtleParentBox.style.display = "block";
   });
 
 turtleInfo
-  .querySelector("#child-button")
+  .querySelector(".child-button")
   .addEventListener("click", function () {
     turtleParentBox.style.display = "none";
     turtleTextbox.style.display = "block";
@@ -500,14 +500,14 @@ blueTangFish.addEventListener("click", function () {
 });
 
 blueTangInfo
-  .querySelector("#parent-button")
+  .querySelector(".parent-button")
   .addEventListener("click", function () {
     blueTangTextbox.style.display = "none";
     blueTangParentBox.style.display = "block";
   });
 
 blueTangInfo
-  .querySelector("#child-button")
+  .querySelector(".child-button")
   .addEventListener("click", function () {
     blueTangParentBox.style.display = "none";
     blueTangTextbox.style.display = "block";
@@ -537,14 +537,14 @@ siameseFish.addEventListener("click", function () {
 });
 
 siameseInfo
-  .querySelector("#parent-button")
+  .querySelector(".parent-button")
   .addEventListener("click", function () {
     siameseTextbox.style.display = "none";
     siameseParentBox.style.display = "block";
   });
 
 siameseInfo
-  .querySelector("#child-button")
+  .querySelector(".child-button")
   .addEventListener("click", function () {
     siameseParentBox.style.display = "none";
     siameseTextbox.style.display = "block";
