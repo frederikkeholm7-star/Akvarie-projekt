@@ -624,7 +624,8 @@ backButton.addEventListener("click", function () {
     });
   }, 5000);
 });
-//Powder Blue Tang Fish Svømmer//
+//Powder Blue Tang Fish Svømmer - Frederikke//
+
 const powderBlueTang = document.querySelector("#powder-blue-tang");
 
 let powderBlueTangX = 0;
