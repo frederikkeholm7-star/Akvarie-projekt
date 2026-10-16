@@ -20,7 +20,7 @@ const fishItem = [
     sounds: {
       intro: "sound/orange-shoulder-tang/intro.wav",
       alder: "sound/orange-shoulder-tang/age.wav",
-      levested: "sound/orange-shoulder-tang/age.wav",
+      levested: "sound/orange-shoulder-tang/habitat.wav",
       spiser: "#",
       vaegt: "sound/orange-shoulder-tang/weight.wav",
       superkraft: "sound/orange-shoulder-tang/superpower.wav",
