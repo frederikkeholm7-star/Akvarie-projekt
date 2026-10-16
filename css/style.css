@@ -15,6 +15,10 @@ main {
   aspect-ratio: 1440 / 1024;
   overflow: hidden;
 }
+.background {
+  position: absolute;
+  inset: 0;
+}
 
 /* ========================================
    AKVARIETS BAGGRUND
@@ -273,8 +277,8 @@ main {
 
 #rock-02 {
   position: absolute;
-  left: -3.13%;
-  bottom: 0%;
+  left: -6.25%;
+  bottom: -3.42%;
   z-index: 3;
 }
 
@@ -300,7 +304,7 @@ main {
 
 #coral-cliff-02 {
   position: absolute;
-  left: 76.2%;
+  right: 0;
   bottom: 11.28%;
   z-index: 1;
 }
