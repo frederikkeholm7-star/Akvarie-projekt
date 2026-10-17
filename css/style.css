@@ -509,7 +509,6 @@ main {
 
 /* Informations box til børn*/
 .textbox {
-  display: none;
   position: fixed;
   top: 50%;
   left: 75%;
